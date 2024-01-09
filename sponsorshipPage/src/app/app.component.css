@@ -1,0 +1,76 @@
+[class^="number-slide"],
+[class*=" number-slide"] {
+  display: flex;
+  font-size: 50px;
+  height: 200px;
+}
+
+.p{
+    text-align: center;
+}
+
+
+.body{
+    position: absolute;
+    top:150px;
+    display:flex;
+    left:45px;
+    width: fit-content;
+}
+
+.onHover{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: blue;
+    margin:0px;
+    font-size: 12px;
+}
+
+img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+}
+
+
+.slide:hover .onHover{
+    opacity:1;
+}
+
+.slide{
+    min-width: 200px !important;
+    min-height: 200px !important;
+    border:1px solid black;
+    margin: 0px;
+    color: white;
+}
+
+.keen-slider{
+
+    min-width: 1756px;
+    max-width: 1756px;
+}
+
+.arrow--left{
+    position: absolute;
+    left:10px;
+    top:240px;
+    display: flex;
+    width: 20px;
+    float: left;
+}
+.arrow--right{
+    position: absolute;
+    right:30px;
+    top:240px;
+    display: flex;
+    width: 20px;
+    float: left;
+}
