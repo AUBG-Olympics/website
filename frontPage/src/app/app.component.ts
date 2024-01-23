@@ -15,27 +15,27 @@ export class AppComponent {
   }
 
   getDays(){
-    let endDate=new Date('January 24, 2024 23:00:00').getTime();
+    let endDate=new Date('January 25, 2024 00:00:00').getTime();
     let now=new Date().getTime();
     let remaining=endDate-now;
-    return Math.round(remaining/ (1000 * 3600 * 24));
+    return Math.floor(remaining/ (1000 * 3600 * 24));
   }
 
   getHours(){
-    let endDate=new Date('January 24, 2024 23:00:00').getTime();
+    let endDate=new Date('January 25, 2024 00:00:00').getTime();
     let now=new Date().getTime();
     let remaining=endDate-now;
     return Math.round(remaining% (1000 * 3600 * 24)/(1000 * 3600 ));
   }
 
   getMinutes(){
-    let endDate=new Date('January 24, 2024 23:00:00').getTime();
+    let endDate=new Date('January 25, 2024 00:00:00').getTime();
     let now=new Date().getTime();
     let remaining=endDate-now;
     return Math.round(remaining% (1000 * 3600)/(1000 * 60 ));
   }
   getSeconds(){
-    let endDate=new Date('January 24, 2024 23:00:00').getTime();
+    let endDate=new Date('January 25, 2024 00:00:00').getTime();
     let now=new Date().getTime();
     let remaining=endDate-now;
     return Math.round(remaining% (1000 * 60)/(1000));
