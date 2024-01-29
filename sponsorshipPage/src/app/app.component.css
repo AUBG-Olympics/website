@@ -1,16 +1,16 @@
-[class^="number-slide"],
+::ng-deep [class^="number-slide"],
 [class*=" number-slide"] {
   display: flex;
   font-size: 50px;
   height: 200px;
 }
 
-.p{
+::ng-deep .p{
     text-align: center;
 }
 
 
-.body{
+::ng-deep .body{
     position: absolute;
     top:150px;
     display:flex;
@@ -18,7 +18,7 @@
     width: fit-content;
 }
 
-.onHover{
+::ng-deep .onHover{
     position: absolute;
     left:0;
     top:0;
@@ -31,7 +31,7 @@
     font-size: 12px;
 }
 
-img{
+::ng-deep img{
     object-fit: contain;
     height: 100%;
     width: 100%;
@@ -40,11 +40,11 @@ img{
 }
 
 
-.slide:hover .onHover{
+::ng-deep .slide:hover .onHover{
     opacity:1;
 }
 
-.slide{
+::ng-deep .slide{
     min-width: 200px !important;
     min-height: 200px !important;
     border:1px solid black;
@@ -52,13 +52,13 @@ img{
     color: white;
 }
 
-.keen-slider{
+::ng-deep .keen-slider{
 
     min-width: 1756px;
     max-width: 1756px;
 }
 
-.arrow--left{
+::ng-deep .arrow--left{
     position: absolute;
     left:10px;
     top:240px;
@@ -66,7 +66,8 @@ img{
     width: 20px;
     float: left;
 }
-.arrow--right{
+
+::ng-deep .arrow--right{
     position: absolute;
     right:30px;
     top:240px;
