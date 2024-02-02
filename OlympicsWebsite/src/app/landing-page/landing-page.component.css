@@ -4,13 +4,13 @@ body {
     overflow-y: hidden !important;
 }
 
-:host /deep/ .slide img{
+.slide img{
     width: 120%;
     height: 130%;
     object-fit:fill;
 }
 
-:host /deep/ .slide{
+ .slide{
     width: 100%;
     height: 90vh;
     object-fit:fill;

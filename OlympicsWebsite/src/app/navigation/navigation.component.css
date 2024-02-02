@@ -1,5 +1,5 @@
 .menu-bar {
-    background-color: purple;
+    background-color:#FFFE2E ;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 .item {
-    color: yellow;
+    color: #5335A7;
     background-color: transparent;
     font-size: 3.5vh;
     display: inline-block;
