@@ -1,0 +1,45 @@
+body{
+    background-color:#5335A7;
+    overflow-x: hidden;
+}
+
+.keen-slider{
+    padding-left: 1.8vw;
+    overflow: visible !important;
+}
+
+.slide{
+    min-width: 20vw !important;
+    max-width: none !important;
+    width: 20vw !important;
+    height: 13vw !important;
+    box-shadow: 0px 0px 10px 10px  #240c64a6;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.onHover{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 10%;
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s ease;
+    margin:0px;
+    background-color: #FFFE2E;
+    color: #FFFE2E;
+    font-size:0.0001em;
+    text-indent:-9999px;
+}
+
+.slide:hover .onHover{
+    font-size: 18px;
+    text-indent:0px;
+    height: 100%;
+    color: black;
+}

@@ -5,6 +5,7 @@ import KeenSlider, { KeenSliderInstance } from "keen-slider";
 
 type Image = {
   src:string;
+  description:string|null;
 };
 
 @Component({
@@ -12,7 +13,7 @@ type Image = {
   standalone: true,
   imports: [CommonModule],
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css',"../../../node_modules/keen-slider/keen-slider.min.css"]
+  styleUrls: ['./carousel.component.css',"../../../node_modules/keen-slider/keen-slider.min.css"],
 })
 
 export class CarouselComponent {
@@ -23,6 +24,8 @@ export class CarouselComponent {
   numOfslides:number = 1;
   @Input()
   spacing:number = 0;
+  @Input()
+  hover:boolean = false;
   currentSlide: number = 1;
   slider: KeenSliderInstance|null = null;
 
@@ -55,7 +58,7 @@ export class CarouselComponent {
           if (mouseOver) return
           timeout = setTimeout(() => {
             slider.next()
-          }, 3000)
+          }, 10000)
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
