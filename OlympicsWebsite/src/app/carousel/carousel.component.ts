@@ -34,11 +34,12 @@ export class CarouselComponent {
       slides: {
         perView: this.numOfslides,
         spacing:this.spacing,
+        origin:'center'
       },
       range:{
         align:true
       },
-      mode:'snap',
+      mode:'free-snap',
       loop:true,
       renderMode:'performance',
       initial: this.currentSlide,

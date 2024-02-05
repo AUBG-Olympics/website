@@ -25,6 +25,9 @@ export class LandingPageComponent {
   }
   ngOnInit(){
     this.getPhotos();
+   
+  }
+  ngAfterViewInit(){
     setInterval(() => {
       this.getSeconds() 
     }, 1000);
@@ -35,25 +38,24 @@ export class LandingPageComponent {
     let remaining=endDate-now;
     return Math.floor(remaining/ (1000 * 3600 * 24));
   }
-
   getHours(){
     let endDate=new Date('April 20, 2024 00:00:00').getTime();
     let now=new Date().getTime();
     let remaining=endDate-now;
-    return Math.round(remaining% (1000 * 3600 * 24)/(1000 * 3600 ));
+    return Math.floor(remaining% (1000 * 3600 * 24)/(1000 * 3600 ));
   }
 
   getMinutes(){
     let endDate=new Date('April 20, 2024 00:00:00').getTime();
     let now=new Date().getTime();
     let remaining=endDate-now;
-    return Math.round(remaining% (1000 * 3600)/(1000 * 60 ));
+    return Math.floor(remaining% (1000 * 3600)/(1000 * 60 ));
   }
   
   getSeconds(){
     let endDate=new Date('April 20, 2024 00:00:00').getTime();
     let now=new Date().getTime();
     let remaining=endDate-now;
-    return Math.round(remaining% (1000 * 60)/(1000));
+    return Math.floor(remaining% (1000 * 60)/(1000));
   }
 }
