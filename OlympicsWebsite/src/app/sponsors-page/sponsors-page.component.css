@@ -3,7 +3,6 @@ body{
     overflow-x: hidden;
 }
 
-
 [class^="number-slide"],
 [class*=" number-slide"] {
     overflow: visible !important;

@@ -1,5 +1,5 @@
 .menu-bar {
-    background-color:#FFFE2E ;
+    background-color: #FFFE2E;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -10,24 +10,25 @@
     color: #5335A7;
     background-color: transparent;
     font-size: 3.5vh;
-    display: inline-block;
     box-sizing: border-box;
-    padding: 14px 20px;
     margin: auto;
+    display: flex;
 }
 
 .side {
     position: relative;
-    right: 1vw;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    padding: 3vh 20px;
     justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.group{
+.group {
     height: 100%;
     justify-content: center;
-
+    display: flex;
 }
 
 .item.title {
@@ -42,9 +43,10 @@ img {
     height: 100%;
 }
 
-a{
+.item {
     height: 100%;
-
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 a:link {
@@ -61,4 +63,32 @@ a:hover {
 
 a:active {
     text-decoration: none;
+}
+
+
+
+.subnav {
+    float: left;
+    height: 100% !important;
+}
+
+.subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.subnav-content {
+    display: none;
+    position: relative;
+    background-color: #FFFE2E;
+    width: 100%;
+    z-index: 1;
+}
+
+.sbnav {
+    border: black 1px solid;
+    font-size: 2.5vh;
+    text-align: justify;
+    min-height: 5vh;
+    align-items: center;
 }
