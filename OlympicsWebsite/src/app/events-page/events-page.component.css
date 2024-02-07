@@ -1,7 +1,11 @@
-body{
+html, body{
     background-color:#5335A7 !important;
     overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
 }
+
 
 h1{
     display: flex;
@@ -9,13 +13,15 @@ h1{
     text-align: center;
     width: 100%;
     justify-content: center;
+    height: 10vh;
 }
 
 .posters{
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    height: 80vh;
+    height: 74vh;
+    min-width: 100%;
 }
 
 .hover{
@@ -23,12 +29,24 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
+    font-size: 10vh;
+    color: #fffe2e;
+}
+
+.poster:hover .hover{
+    display: flex;
+} 
+
+.poster:hover img{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
 }
 
 .poster{
     display: flex;
     position: relative;
-    width: 33%;
+    width: 33.33333%;
     height: 100%;
 }
 
