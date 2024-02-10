@@ -1,0 +1,51 @@
+html, body{
+    background-color:#5335A7 !important;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.tab{
+    display: flex;
+    height: 100%;
+    overflow-y:hidden;
+}
+
+.text{
+    width: 33%;
+}
+
+.left{
+    position: relative;
+    left:0;
+    display: flex;
+    justify-content: left;
+    margin-left: 2%;
+}
+
+.right{
+    display: flex;
+    position: relative;
+    right:0;
+    justify-content: right;
+    flex-direction: row-reverse;
+    margin-right: 2%;
+}
+
+.img{
+    height: 100%;
+}
+
+.test{
+    height: 25%;
+    margin-top: 5%;
+}
+
+.page{
+    height:90vh;
+}

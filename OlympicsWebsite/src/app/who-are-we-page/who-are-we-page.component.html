@@ -1,0 +1,10 @@
+<app-navigation></app-navigation>
+<h1>WHO ARE WE</h1>
+<div class="page">
+    <div class="test" *ngFor="let tab of tabs">
+        <div class="tab" class={{tab.position}}>
+        <img class={{tab.position}} src={{tab.src}}>
+        <div class="text">{{tab.text}}</div>
+    </div>
+    </div>
+</div>
