@@ -8,5 +8,5 @@ export const routes: Routes = [
     {path:'',component:LandingPageComponent},
     {path:'sponsors',component:SponsorsPageComponent},
     {path:'events/:event',component:EventsPageComponent},
-    {path:'whoarewe',component:WhoAreWePageComponent}
+    {path:'who-ar0ewe',component:WhoAreWePageComponent}
 ];
