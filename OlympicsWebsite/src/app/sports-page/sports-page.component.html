@@ -1,3 +1,8 @@
-<div class="container" *ngFor="let sport of sportsData">
-    <app-sport-widget  [sport]="sport"></app-sport-widget>
+<app-navigation></app-navigation>
+<div class="header">
+    <h1>Sports</h1>
+</div>
+<div class="container">
+    
+    <app-sport-widget *ngFor="let sport of sportsData" [sport]="sport"></app-sport-widget>
 </div>
