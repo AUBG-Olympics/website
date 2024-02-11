@@ -1,0 +1,22 @@
+<div appRotateDirective class="wrapper" (rotate)="onRotate($event)">
+    <div class="sport-container">
+
+        <div class="container-wrapper" *ngIf="hide">
+            <div class="sport-data" [ngClass]="isHidden? '' : 'hidden'">
+                <img src="../../../assets/arm-wrestling-icon-copy.png" class="responsive" />
+                <h3 class="sport-header">Arm Wrestling</h3>
+            </div>
+
+            <div class="sport-description" [ngClass]="!isHidden? '' : 'hidden'">
+                <h3 class="sport-header">ARE YOU THE NEXT GLADIATOR?</h3>
+                <p class="description">Test yourself in this trial of strength. Two opponents sit opposite each other
+                    with one elbow resting on
+                    a table, clasp each other's hands, and try to force each other's arm down on to the table. Your
+                    position, way of clasping, and posture are all constituents of a successful play.</p>
+                <a href="https://drive.google.com/file/d/1Y-9MEirrzHPxkk4yiZK5gHRFtF8CVSDt/view?usp=sharing"
+                    target="_blank" class="rules">Rules</a>
+            </div>
+        </div>
+
+    </div>
+</div>
