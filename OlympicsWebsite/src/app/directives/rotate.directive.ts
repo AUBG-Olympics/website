@@ -12,17 +12,23 @@ export class RotateDirective {
 
   public rotated: boolean = true;
 
+  public counter = 0;
+
   constructor(private el: ElementRef, private renderer: Renderer2, private builder: AnimationBuilder, private host: SportWidgetComponent) { }
 
-  @HostListener('mouseenter') onMouseEnter() {
-    this.rotated = false;
-    this.animateElement(this.rotateIn());
-
-  }
-
-  @HostListener('mouseleave') onMouseLeave() {
-    this.rotated = true;
-    this.animateElement(this.rotateOut());
+  @HostListener('click') onClick() {  
+    if(this.counter == 0){
+      this.counter++;
+      this.rotated = false;
+      console.log(3);
+      this.animateElement(this.rotateIn());
+    }
+    else if(this.counter == 1){
+      this.rotated = true;
+      console.log(4);
+      this.animateElement(this.rotateOut());
+      this.counter = 0;
+    }
   }
 
   private animateElement(metadata: AnimationMetadata[]) {
@@ -31,10 +37,10 @@ export class RotateDirective {
 
     player.onStart(() => {
       this.rotate.emit(this.rotated)
+      //this.host.isHidden = this.rotated;
+      //this.host.hide = true;
     })
-
     player.play();
-
   }
 
   private rotateIn(): AnimationMetadata[] {

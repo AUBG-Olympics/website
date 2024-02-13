@@ -1,5 +1,5 @@
-<div appRotateDirective class="wrapper" (rotate)="onRotate($event)">
-    <div class="sport-container">
+<div  class="wrapper" >
+    <div class="sport-container" appRotateDirective (rotate)="onRotate($event)">
 
         <div class="container-wrapper" *ngIf="hide">
             <div class="sport-data" [ngClass]="isHidden? '' : 'hidden'">
@@ -10,7 +10,7 @@
             <div class="sport-description" [ngClass]="!isHidden? '' : 'hidden'">
                 <h3 class="sport-header">{{sport.Headline}}</h3>
                 <p class="description">{{sport.Description}}</p>
-                <a href="sport.RulesUrl"
+                <a href="{{sport.RulesUrl}}"
                     target="_blank" class="rules">Rules</a>
             </div>
         </div>

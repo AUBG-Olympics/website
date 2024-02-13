@@ -19,9 +19,7 @@ export class SportWidgetComponent {
 
   public onRotate(ev: boolean) {
     this.hide = false;
-    setTimeout(() => {
-      this.isHidden = ev;
-      this.hide = true;
-    }, 530);
+    this.isHidden = ev;
+    this.hide = true;
   }
 }

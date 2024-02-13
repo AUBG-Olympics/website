@@ -11,5 +11,5 @@ export const routes: Routes = [
     {path:'sponsors',component:SponsorsPageComponent},
     {path:'events/:event',component:EventsPageComponent},
     {path:'who-are-we',component:WhoAreWePageComponent},
-    {path: 'sports', component: SportsPageComponent}
+    {path: 'dday/sports', component: SportsPageComponent}
 ];

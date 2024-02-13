@@ -35,6 +35,13 @@ export const ddaySports = [
         RulesUrl: 'https://drive.google.com/file/d/1yjJi1_sPwoC7zsaigbn4ThIrPBkQqOPH/view'
     },
     {
+        Title: 'Giant Beer Bong',
+        Icon: '',
+        Headline: "READY, STEADY, GO!",
+        Description: "100 Meter Dash is the shortest outdoor running distance in track and field competitions. The champion from this competition is usually named “the fastest man/woman on Earth.” Men’s 100-meter dash has been an official Olympics sport since 1896; the women's discipline - since 1928.",
+        RulesUrl: 'https://drive.google.com/file/d/13rBUsCVP78oTrnVHjCjJHNQ-8udHbFDJ/view'
+    },
+    {
         Title: 'Long Jump',
         Icon: '',
         Headline: "HOW FAR CAN YOU GO?",
