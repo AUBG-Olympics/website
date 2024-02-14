@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Luckiest+Guy&display=swap');
+
+.wrapper {
+    width: 100%;
+    height: 250px;
+    font-family: "Luckiest Guy", cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.sport-container {
+    background-color: #FFFE2E;;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    border-radius: 80px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sport-data {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in forwards;
+
+}
+
+.sport-header {
+    margin: 0;
+    padding: 0;
+    font-size: 1.85em;
+    color: #5335A7;
+    margin: 0;
+    text-align: center;
+}
+
+.sport-description {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotateX(180deg);
+    animation: fadeIn 1.8s ease-in forwards;
+}
+
+.description {
+    color: #5335A7;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.responsive {
+    width: 60%;
+    height: auto;
+}
+
+.rules {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #5335A7;
+    background-color: #FFFE2E;
+    color: #5335A7;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
