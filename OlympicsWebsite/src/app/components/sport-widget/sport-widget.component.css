@@ -67,7 +67,7 @@
 
 .description {
     color: #5335A7;
-    font-size: 0.95em;
+    font-size: clamp(0.5vw,0.95em,0.95em);
     text-align: center;
 }
 
