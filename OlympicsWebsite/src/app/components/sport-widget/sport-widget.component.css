@@ -86,15 +86,38 @@
     height: auto;
 }
 
-.rules {
+.action-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 50%;
+    height: 15%;
+}
+
+.button {
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid #5335A7;
     background-color: #FFFE2E;
     color: #5335A7;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+}
+
+@media (width <= 650px) {
+    .description{
+        font-size: 0.75em;
+    }
+
+    .sport-header{
+        font-size: 1.5em;
+    }
+
+    .action-buttons{
+        width: 80%;
+    }
 }

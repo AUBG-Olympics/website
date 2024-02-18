@@ -3,15 +3,17 @@
 
         <div class="container-wrapper" *ngIf="hide">
             <div class="sport-data" [ngClass]="isHidden? '' : 'hidden'">
-                <img src="../../../assets/arm-wrestling-icon-copy.png" class="responsive" />
+                <img src="../../../assets/arm-wrestling-icon-copy.png" class="responsive" alt="Sport Icon"/>
                 <h3 class="sport-header">{{sport.Title}}</h3>
             </div>
 
             <div class="sport-description" [ngClass]="!isHidden? '' : 'hidden'">
                 <h3 class="sport-header">{{sport.Headline}}</h3>
                 <p class="description">{{sport.Description}}</p>
-                <a href="{{sport.RulesUrl}}"
-                    target="_blank" class="rules">Rules</a>
+                <div class="action-buttons">
+                    <a href="{{sport.RulesUrl}}" target="_blank" class="button">Rules</a>
+                    <a href="{{sport.SignUpUrl}}" target="_blank" class="button">Sign-Up</a>
+                </div>
             </div>
         </div>
 

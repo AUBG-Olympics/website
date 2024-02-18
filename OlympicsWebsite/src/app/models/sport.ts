@@ -4,4 +4,5 @@ export class Sport {
     Headline: string = '';
     Description: string = '';
     RulesUrl: string = '';
+    SignUpUrl: string = '';
 }
