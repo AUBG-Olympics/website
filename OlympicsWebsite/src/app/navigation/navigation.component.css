@@ -6,6 +6,7 @@
     box-sizing: border-box;
     height: 10vh;
     font-family:  "Luckiest Guy", cursive;
+    width: 100%;
 }
 
 .item {
