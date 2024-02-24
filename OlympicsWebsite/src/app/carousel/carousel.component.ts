@@ -35,10 +35,6 @@ export class CarouselComponent {
   constructor(private ngZone: NgZone){}
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      
-    })
-
     this.ngZone.onStable
       .asObservable()
       .pipe(take(1))
