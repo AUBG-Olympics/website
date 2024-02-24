@@ -2,6 +2,7 @@ import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { CommonModule } from '@angular/common';
 
+
 type Tab={
   src:String,
   text:String,
@@ -13,7 +14,7 @@ type Tab={
   standalone: true,
   imports: [NavigationComponent,CommonModule],
   templateUrl: './who-are-we-page.component.html',
-  styleUrl: './who-are-we-page.component.css',
+  styleUrls: ['./who-are-we-page.component.css','../app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 

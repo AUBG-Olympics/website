@@ -1,5 +1,5 @@
 body{
-    background-color:#5335A7;
+    background-color:var(--backgroundColor);
     overflow-x: hidden;
 }
 
@@ -15,9 +15,9 @@ body{
     cursor: pointer;
 }
 
-.slide{
-    box-shadow: 0px 0px 10px 10px  #240c64a6;
-}
+/* .slide{
+    box-shadow: 0px 0px 10px 10px  var(--accentColor);
+} */
 
 img {
     height: 100%;
@@ -34,7 +34,7 @@ img {
     opacity: 1;
     transition: 0.5s ease;
     margin:0px;
-    background-color: #FFFE2E;
+    background-color: var(--primaryColor);
     color: transparent; /* make the text invisible */
     user-select: none; /* prevent selection of the text */
 }
@@ -42,5 +42,9 @@ img {
 .slide:hover .onHover{
     font-size: 18px;
     height: 100%;
-    color: black;
+    color: var(--textColor);
+}
+
+.cc{
+    cursor: grab;
 }

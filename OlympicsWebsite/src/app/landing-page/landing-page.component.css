@@ -21,7 +21,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #5335A7;
+    color: var(--primaryColor);
     font-size: 1.3vw;
     display: flex;
     align-items: center;

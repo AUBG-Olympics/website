@@ -26,6 +26,8 @@ export class CarouselComponent {
   spacing:number = 0;
   @Input()
   hover:boolean = false;
+  @Input()
+  arrows:boolean=false;
   currentSlide: number = 1;
   slider: KeenSliderInstance|null = null;
 

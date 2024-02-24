@@ -14,9 +14,18 @@ export class SponsorsPageComponent {
   @ViewChild(CarouselComponent) car?:CarouselComponent;
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
   photos:any[]=[];
+  numOfSlides:number=4;
+  innerWidth:any;
 
+  
   ngOnInit(){
     this.getPhotos();
+    this.innerWidth = window.innerWidth;  
+    console.log(this.innerWidth)
+    if(this.innerWidth>1300)this.numOfSlides=4;
+    else if(this.innerWidth>900)this.numOfSlides=3;
+    else if(this.innerWidth>600)this.numOfSlides=2;
+    else this.numOfSlides=1;
   }
 
   getPhotos(){
