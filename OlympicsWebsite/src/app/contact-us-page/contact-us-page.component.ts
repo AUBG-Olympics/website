@@ -3,18 +3,20 @@ import { FormsModule, FormBuilder,ReactiveFormsModule } from '@angular/forms';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { NavigationComponent } from '../navigation/navigation.component';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-contact-us-page',
   standalone: true,
   imports: [FormsModule,ReactiveFormsModule,CommonModule,NavigationComponent],
+  providers: [ThemeService],
   templateUrl: './contact-us-page.component.html',
   styleUrl: './contact-us-page.component.css',
   encapsulation: ViewEncapsulation.None
 })
 export class ContactUsPageComponent {
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
-  constructor(private formBuilder: FormBuilder){}  
+  constructor(private formBuilder: FormBuilder, private themeService: ThemeService){}  
   emailForm = this.formBuilder.group({
     name: '',
     email: '',
@@ -24,6 +26,18 @@ export class ContactUsPageComponent {
   nameError='';
   emailError='';
   textError='';
+
+  ngOnInit(){
+    const themePreference = sessionStorage.getItem('theme');
+
+    if(themePreference === 'dark'){
+      this.themeService.setDarkTheme();
+    } else if(themePreference === 'light'){
+      this.themeService.setLightTheme();
+    } else if(themePreference === 'dday'){
+      this.themeService.setDDayTheme();
+    }
+  }
 
   public validate(){
     this.nameError='';

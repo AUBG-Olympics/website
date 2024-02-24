@@ -1,0 +1,8 @@
+<div class="dropdown">
+    <button class="dropdown-button" (click)="toggleDropdown()">Theme</button>
+    <div class="dropdown-content" *ngIf="isDropdownOpen">
+      <a class="item" (click)="selectedTheme('light')">Light</a>
+      <a class="item" (click)="selectedTheme('dark')">Dark</a>
+      <a class="item" (click)="selectedTheme('dday')">D-Day</a>
+    </div>
+  </div>

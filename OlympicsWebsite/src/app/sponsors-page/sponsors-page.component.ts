@@ -1,6 +1,7 @@
 import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { NavigationComponent } from '../navigation/navigation.component';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-sponsors-page',
@@ -8,6 +9,7 @@ import { NavigationComponent } from '../navigation/navigation.component';
   imports: [CarouselComponent,NavigationComponent],
   templateUrl: './sponsors-page.component.html',
   styleUrl: './sponsors-page.component.css',
+  providers: [ThemeService],
   encapsulation: ViewEncapsulation.None
 })
 export class SponsorsPageComponent {
@@ -17,15 +19,34 @@ export class SponsorsPageComponent {
   numOfSlides:number=4;
   innerWidth:any;
 
+  constructor(private themeService: ThemeService){}
   
   ngOnInit(){
     this.getPhotos();
     this.innerWidth = window.innerWidth;  
-    console.log(this.innerWidth)
-    if(this.innerWidth>1300)this.numOfSlides=4;
-    else if(this.innerWidth>900)this.numOfSlides=3;
-    else if(this.innerWidth>600)this.numOfSlides=2;
-    else this.numOfSlides=1;
+    
+    if(this.innerWidth>1300){
+      this.numOfSlides=4;
+    }
+    else if(this.innerWidth>900){
+      this.numOfSlides=3;
+    }
+    else if(this.innerWidth>600){
+      this.numOfSlides=2;
+    }
+    else {
+      this.numOfSlides=1;
+    }
+
+    const themePreference = sessionStorage.getItem('theme');
+
+    if(themePreference === 'dark'){
+      this.themeService.setDarkTheme();
+    } else if(themePreference === 'light'){
+      this.themeService.setLightTheme();
+    } else if(themePreference === 'dday'){
+      this.themeService.setDDayTheme();
+    }
   }
 
   getPhotos(){

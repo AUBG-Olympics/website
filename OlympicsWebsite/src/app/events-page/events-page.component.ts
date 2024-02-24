@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { CommonModule } from '@angular/common';
+import { ThemeService } from '../services/theme.service';
 
 type Poster={
   src:String,
@@ -13,6 +14,7 @@ type Poster={
   selector: 'app-events-page',
   standalone: true,
   imports: [NavigationComponent,CommonModule],
+  providers: [ThemeService],
   templateUrl: './events-page.component.html',
   styleUrl: './events-page.component.css',
   encapsulation: ViewEncapsulation.None
@@ -20,12 +22,22 @@ type Poster={
 
 export class EventsPageComponent {
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
-  constructor(  private route: ActivatedRoute,  private location: Location){}
+  constructor(  private route: ActivatedRoute,  private location: Location, private themeService: ThemeService){}
   event = this.route.snapshot.paramMap.get('event');
   title='';
   pictures:Poster[]=[];
   ngOnInit(){
-    this.getEventInfo()
+    this.getEventInfo();
+
+    const themePreference = sessionStorage.getItem('theme');
+
+    if(themePreference === 'dark'){
+      this.themeService.setDarkTheme();
+    } else if(themePreference === 'light'){
+      this.themeService.setLightTheme();
+    } else if(themePreference === 'dday'){
+      this.themeService.setDDayTheme();
+    }
   }
   getEventInfo(){
     if(this.event=='fall'){
