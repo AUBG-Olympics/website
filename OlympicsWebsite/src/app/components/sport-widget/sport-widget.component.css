@@ -108,7 +108,21 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-@media (width <= 650px) {
+@media screen and (max-width: 361px) {
+    .action-buttons{
+        width: 90%!important;
+    }
+
+    .description{
+        font-size: 0.65em!important;
+    }
+
+    .sport-header{
+        font-size: 1.1em!important;
+    }
+}
+
+@media screen and (min-width: 362px) and (max-width: 650px) {
     .description{
         font-size: 0.75em;
     }
@@ -121,3 +135,4 @@
         width: 80%;
     }
 }
+
