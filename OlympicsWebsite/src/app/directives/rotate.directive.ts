@@ -16,19 +16,21 @@ export class RotateDirective {
 
   constructor(private el: ElementRef, private renderer: Renderer2, private builder: AnimationBuilder, private host: SportWidgetComponent) { }
 
-  @HostListener('click') onClick() {  
-    if(this.counter == 0){
-      this.counter++;
-      this.rotated = false;
-      console.log(3);
-      this.animateElement(this.rotateIn());
+  @HostListener('click', ['$event']) onClick(ev: MouseEvent): void {  
+    let target = ev.target as HTMLElement;
+    if(target.classList.contains('button') != true){
+      if(this.counter == 0){
+        this.counter++;
+        this.rotated = false;
+        this.animateElement(this.rotateIn());
+      }
+      else if(this.counter == 1){
+        this.rotated = true;
+        this.animateElement(this.rotateOut());
+        this.counter = 0;
+      }
     }
-    else if(this.counter == 1){
-      this.rotated = true;
-      console.log(4);
-      this.animateElement(this.rotateOut());
-      this.counter = 0;
-    }
+    
   }
 
   private animateElement(metadata: AnimationMetadata[]) {
@@ -56,9 +58,4 @@ export class RotateDirective {
       animate('1s ease-out', style({ transform: 'rotateX(0)' }))
     ];
   }
-
-  test() {
-    console.log('test')
-  }
-
 }

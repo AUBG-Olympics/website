@@ -16,7 +16,7 @@ export class SponsorsPageComponent {
   @ViewChild(CarouselComponent) car?:CarouselComponent;
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
   photos:any[]=[];
-  numOfSlides:number=4;
+  numOfSlides:number=1;
   innerWidth:any;
 
   constructor(private themeService: ThemeService){}
@@ -25,7 +25,7 @@ export class SponsorsPageComponent {
     this.getPhotos();
     this.innerWidth = window.innerWidth;  
     
-    if(this.innerWidth>1300){
+    if(this.innerWidth>1200){
       this.numOfSlides=4;
     }
     else if(this.innerWidth>900){
@@ -37,7 +37,7 @@ export class SponsorsPageComponent {
     else {
       this.numOfSlides=1;
     }
-
+    
     const themePreference = sessionStorage.getItem('theme');
 
     if(themePreference === 'dark'){

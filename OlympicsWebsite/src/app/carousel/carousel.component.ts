@@ -3,11 +3,7 @@ import { CommonModule } from '@angular/common';
 import 'keen-slider/keen-slider.min.css';
 import KeenSlider, { KeenSliderInstance } from "keen-slider";
 import { take } from 'rxjs';
-
-type Image = {
-  src:string;
-  description:string|null;
-};
+import {Image} from '../models/image'
 
 @Component({
   selector: 'app-carousel',
@@ -87,8 +83,6 @@ export class CarouselComponent {
           },
         ],
         )  
-
-
       });
   }
 

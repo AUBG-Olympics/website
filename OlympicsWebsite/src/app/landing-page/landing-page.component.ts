@@ -2,11 +2,7 @@ import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ThemeService } from '../services/theme.service';
-
-type Image = {
-  src:string;
-  description:string|null;
-};
+import { Image } from '../models/image';
 
 @Component({
   selector: 'app-landing-page',
