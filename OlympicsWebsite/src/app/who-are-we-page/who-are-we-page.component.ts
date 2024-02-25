@@ -1,6 +1,8 @@
 import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { CommonModule } from '@angular/common';
+import { ThemeService } from '../services/theme.service';
+
 
 type Tab={
   src:String,
@@ -13,15 +15,29 @@ type Tab={
   standalone: true,
   imports: [NavigationComponent,CommonModule],
   templateUrl: './who-are-we-page.component.html',
-  styleUrl: './who-are-we-page.component.css',
+  providers: [ThemeService],
+  styleUrls: ['./who-are-we-page.component.css','../app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 
 export class WhoAreWePageComponent {
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
   tabs:Tab[]=[];
+
+  constructor(private themeService: ThemeService){}
+
   ngOnInit(){
     this.getTabs();
+
+    const themePreference = sessionStorage.getItem('theme');
+
+    if(themePreference === 'dark'){
+      this.themeService.setDarkTheme();
+    } else if(themePreference === 'light'){
+      this.themeService.setLightTheme();
+    } else if(themePreference === 'dday'){
+      this.themeService.setDDayTheme();
+    }
   }
   getTabs(){
     for(let i=0;i<3;i++){

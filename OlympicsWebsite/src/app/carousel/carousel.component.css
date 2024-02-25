@@ -1,0 +1,20 @@
+.arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: var(--secondaryColor);
+    cursor: pointer;
+  }
+  
+  .arrow--left {
+    left: 5px;
+  }
+  
+  .arrow--right {
+    right: 5px;
+  }
+  
+  

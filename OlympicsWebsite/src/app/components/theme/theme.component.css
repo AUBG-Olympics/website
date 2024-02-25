@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Luckiest+Guy&display=swap');
+
+.dropdown {
+    margin-top: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: var(--backgroundColor);
+    /* Green */
+    color: var(--textColor);
+    padding: 10px;
+    font-size: 3.5vh;
+    border: none;
+    cursor: pointer;
+    font-family:  "Luckiest Guy", cursive;
+    border-radius: 80px;
+    margin-top: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--backgroundColor);
+    right: 2%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--textColor);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family:  "Luckiest Guy", cursive;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--primaryColor);
+    cursor: pointer;
+}
+
+
+/* Use Angular animations or transition for smooth effect */
+.dropdown-content {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

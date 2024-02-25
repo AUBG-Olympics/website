@@ -2,3 +2,11 @@ body{
     width: 100%;
     height: 100%;
 }
+
+:root{
+    --textColor:#fedf2e;
+    --backgroundColor:#156ca2;
+    --primaryColor:#dd762c;
+    --secondaryColor:#173446;
+    --accentColor:#F4E3BA;
+}

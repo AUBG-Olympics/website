@@ -7,7 +7,7 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],
   encapsulation: ViewEncapsulation.None,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'OlympicsWebsite';

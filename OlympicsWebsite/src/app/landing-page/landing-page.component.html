@@ -1,5 +1,22 @@
 <app-navigation></app-navigation>
 <div class="images">
-    <app-carousel [numOfslides]=1 [photos]='photos' ></app-carousel>
-    <h1 class="timer">{{getDays()}}:{{getHours()}}:{{getMinutes()}}:{{getSeconds()}}</h1>
+    <app-carousel [numOfslides]=1 [photos]='photos' [arrows]="true"></app-carousel>
+    <div class="timer">
+        <div class="days">
+            <h1 class="time">{{getDays()}}</h1>
+            <h1>DAYS</h1>
+        </div>
+        <div class="hours">
+            <h1 class="time">{{getHours()}}</h1>
+            <h1>HOURS</h1>
+        </div>
+        <div class="minutes">
+            <h1 class="time">{{getMinutes()}}</h1>
+            <h1>MINUTES</h1>
+        </div>
+        <div class="seconds">
+            <h1 class="time">{{getSeconds()}}</h1>
+            <h1>SECONDS</h1>
+        </div>
+    </div>
 </div>

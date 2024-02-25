@@ -1,5 +1,8 @@
+@import '../app.component.css';
+
+
 html, body{
-    background-color:#5335A7 !important;
+    background-color:var(--backgroundColor) !important;
     overflow-x: hidden;
     overflow-y: visible;
     margin: 0;

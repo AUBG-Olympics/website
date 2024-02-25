@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ThemeComponent } from '../components/theme/theme.component';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [],
+  imports: [ThemeComponent],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css'
 })
