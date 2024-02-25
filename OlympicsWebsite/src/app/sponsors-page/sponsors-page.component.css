@@ -13,16 +13,19 @@ body{
     height: 200px;
     max-height: 200px;
     cursor: pointer;
+
 }
 
-/* .slide{
-    box-shadow: 0px 0px 10px 10px  var(--accentColor);
-} */
+ .slide{
+  /* box-shadow: 0px 0px 10px 10px  var(--accentColor); */
+        border-radius: 10px;
+} 
 
 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .onHover{
@@ -30,19 +33,21 @@ img {
     left:0;
     top:0;
     height: 10%;
-    width: 99.9%;
+    width: 100%;
     opacity: 1;
     transition: 0.5s ease;
     margin:0px;
     background-color: var(--primaryColor);
     color: transparent; /* make the text invisible */
     user-select: none; /* prevent selection of the text */
+    border-radius: 10px 10px 0 0;
 }
 
 .slide:hover .onHover{
     font-size: 18px;
     height: 100%;
     color: var(--textColor);
+    border-radius: 10px;
 }
 
 .cc{

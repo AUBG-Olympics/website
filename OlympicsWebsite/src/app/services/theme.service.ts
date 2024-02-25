@@ -10,11 +10,11 @@ export class ThemeService {
   public setDarkTheme(){
     const root = document.documentElement.style;
 
-    root.setProperty('--textColor', '#0120d1');
-    root.setProperty('--backgroundColor', '#ea935d');
-    root.setProperty('--primaryColor', '#2289d3');
-    root.setProperty('--secondaryColor', '#e8cbb9');
-    root.setProperty('--accentColor', '#0b1c45');
+    root.setProperty('--textColor', '#F5c033');
+    root.setProperty('--backgroundColor', '#dd762c');
+    root.setProperty('--primaryColor', ' #07567F');
+    root.setProperty('--secondaryColor', '#173446');
+    root.setProperty('--accentColor', '#F4E3BA');
 
     sessionStorage.removeItem("theme");
     sessionStorage.setItem('theme', 'dark');
@@ -23,8 +23,8 @@ export class ThemeService {
   public setLightTheme(){
     const root = document.documentElement.style;
 
-    root.setProperty('--textColor', '#fedf2e');
-    root.setProperty('--backgroundColor', '#156ca2');
+    root.setProperty('--textColor', '#F5c033');
+    root.setProperty('--backgroundColor', '#07567F');
     root.setProperty('--primaryColor', '#dd762c');
     root.setProperty('--secondaryColor', '#173446');
     root.setProperty('--accentColor', '#F4E3BA');
