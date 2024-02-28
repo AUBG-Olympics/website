@@ -46,6 +46,7 @@ export class CarouselComponent {
           },
           mode:'free-snap',
           loop:true,
+          drag:this.arrows,
           renderMode:'performance',
           initial: this.currentSlide,
             slideChanged: (s) => {
