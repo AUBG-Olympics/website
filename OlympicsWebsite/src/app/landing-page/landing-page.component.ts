@@ -11,7 +11,7 @@ import { Image } from '../models/image';
   imports: [NavigationComponent,CarouselComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
-  encapsulation: ViewEncapsulation.ShadowDom
+  encapsulation: ViewEncapsulation.None
 })
 
 export class LandingPageComponent {
