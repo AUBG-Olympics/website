@@ -1,11 +1,11 @@
-body{
-    background-color:var(--backgroundColor);
+body {
+    background-color: var(--backgroundColor);
     overflow-x: hidden;
-    font-family:  "Luckiest Guy", cursive;
+    font-family: "Luckiest Guy", cursive;
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     display: flex;
     text-align: center;
     align-items: center;
@@ -14,23 +14,19 @@ h1{
     font-size: 4vw;
 }
 
-.h1{
-    font-size: 6vw !important;
-}
-
-iframe{
+iframe {
     width: 50%;
 }
 
-.info{
+.info {
     display: flex;
     justify-content: space-around;
-   height: auto;
-   width:80%;
-   margin: auto;
+    height: auto;
+    width: 80%;
+    margin: auto;
 }
 
-.contacts{
+.contacts {
     color: var(--textColor);
     display: flex;
     flex-direction: column;
@@ -39,54 +35,57 @@ iframe{
     height: 100% !important;
 }
 
-@media screen and (max-width:1000px){
-    .contacts{
+@media screen and (max-width:1000px) {
+    .contacts {
         font-size: 2vw;
     }
-    p{
+
+    p {
         font-size: 3.5vw !important;
     }
-    button{
+
+    button {
         font-size: 4vw !important;
     }
 
-    iframe{
+    iframe {
         width: 100%;
-    }   
-    .h1{
+    }
+
+    .h1 {
         font-size: 3em !important;
     }
 }
 
-.form{
+.form {
     background-color: var(--accentColor);
     width: 80%;
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     margin: 2vw 0;
     padding: 2vw 0;
 }
 
-.data{
+.data {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.field{
+.field {
     width: 90%;
 }
 
 
-button{
+button {
     display: block;
     width: 100%;
     height: 4vw;
 }
 
-input{
+input {
     width: 100%;
     min-height: 30px;
     padding: 0 !important;
@@ -95,21 +94,23 @@ input{
 
 textarea {
     resize: none;
-    width:100%;
-    height:15vw;
+    width: 100%;
+    height: 15vw;
     padding: 0 !important;
     border: 0 !important;
- }
+}
 
- button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: var(--textColor);
-	border: 0.5px solid var(--secondaryColor);
-	padding: 2px;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    width:100%;
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: var(--textColor);
+    border: 0.5px solid var(--secondaryColor);
+    padding: 2px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 100%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -120,30 +121,30 @@ textarea {
     font-size: 2vw;
 }
 
-.email{
-    color:var(--primaryColor)
+.email {
+    color: var(--primaryColor)
 }
 
-p{
+p {
     color: var(--primaryColor);
     font-size: 1.5vw;
 }
 
-.error{
-    color:red;
+.error {
+    color: red;
 }
 
 @media only screen and (max-width : 992px) {
-    .info{
+    .info {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
     }
-    
+
 }
 
-@media screen and (max-width:500px){
-    .contacts{
+@media screen and (max-width:500px) {
+    .contacts {
         font-size: 4vw;
     }
 }

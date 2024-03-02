@@ -1,0 +1,61 @@
+body{
+    background-color: var(--backgroundColor);
+}
+
+.header{
+    font-family:  "Luckiest Guy", cursive;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    color: var(--textColor);
+    font-size: 8vh;
+    margin: 3vh 0;
+    text-align: center;
+}
+
+.subheader{
+    color: var(--textColor);
+    font-size: 6vh;
+    font-family:  "Luckiest Guy", cursive;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: 1.5vh 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive {
+    width: 95%;
+    height: auto;
+}
+
+@media (width <= 1367px) {
+    .container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        font-size: 6vh;
+    }
+
+    .day > h3{
+        font-size: 4.5vh;
+    }
+}
