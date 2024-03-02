@@ -4,11 +4,12 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { ThemeService } from '../services/theme.service';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @Component({
   selector: 'app-contact-us-page',
   standalone: true,
-  imports: [FormsModule,ReactiveFormsModule,CommonModule,NavigationComponent],
+  imports: [FormsModule,ReactiveFormsModule,CommonModule,NavigationComponent, FooterComponent],
   providers: [ThemeService],
   templateUrl: './contact-us-page.component.html',
   styleUrl: './contact-us-page.component.css',

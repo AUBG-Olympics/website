@@ -1,0 +1,33 @@
+.footer-wrapper {
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 1.2vh;
+}
+
+.copywright-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.copywright{
+    color: var(--backgroundColor);
+    font-family:  "Luckiest Guy", cursive;
+}
+
+.icon{
+    color: var(--backgroundColor);
+    font-size: 4.5vh;
+}
+
+.social-media-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vh;
+}

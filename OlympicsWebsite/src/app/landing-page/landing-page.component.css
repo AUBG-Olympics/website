@@ -42,3 +42,7 @@ h1{
 .time{
     font-size: 6vw;
 }
+
+.footer-wrapper{
+    display: none!important;
+}
