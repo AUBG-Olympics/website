@@ -31,6 +31,7 @@ export class CarouselComponent {
   constructor(private ngZone: NgZone){}
 
   ngAfterViewInit() {
+    console.log(this.numOfslides)
     this.ngZone.onStable
       .asObservable()
       .pipe(take(1))
@@ -40,6 +41,23 @@ export class CarouselComponent {
             perView: this.numOfslides,
             spacing:this.spacing,
             origin:'center'
+          },breakpoints:{
+            '(max-width:1200px)':{
+              slides:{
+                perView:this.numOfslides==1?1:3,            
+                spacing:this.spacing,
+                origin:'center'},
+            },'(max-width:900px)':{
+              slides:{
+                perView:this.numOfslides==1?1:2,            
+                spacing:this.spacing,
+                origin:'center'}
+            },'(max-width:600px)':{
+              slides:{
+                perView:1,     
+                spacing:this.spacing,
+                origin:'center'}
+            }
           },
           range:{
             align:true

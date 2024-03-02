@@ -35,7 +35,7 @@ h1{
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.5s ease;
-    font-size: 10vh;
+    font-size: 9vh;
     color: var(--textColor);
 }
 
@@ -66,12 +66,27 @@ img{
 }
 
 @media only screen and (max-width : 992px) {
+    h1{
+        font-size: 15vw;
+        margin: 5vw 0;
+    }
+
     .posters{
         height: auto;
         position: relative;
         display: flex;
         bottom: 0;
         flex-direction: column;
-        gap:6vw;
+        gap:10vh;
+    }
+
+    .hover{
+        font-size: 15vw;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width : 1250px){
+    .hover{
+        font-size: 3.5vw;
     }
 }

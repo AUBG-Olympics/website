@@ -11,15 +11,23 @@ h1{
     align-items: center;
     justify-content: center;
     color: var(--textColor);
+    font-size: 4vw;
+}
+
+.h1{
+    font-size: 6vw !important;
 }
 
 iframe{
-    width: 100%;
+    width: 50%;
 }
 
 .info{
     display: flex;
     justify-content: space-around;
+   height: auto;
+   width:80%;
+   margin: auto;
 }
 
 .contacts{
@@ -27,18 +35,26 @@ iframe{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
+    height: 100% !important;
 }
 
 @media screen and (max-width:1000px){
     .contacts{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     p{
-        font-size: 3vw !important;
+        font-size: 3.5vw !important;
     }
     button{
         font-size: 4vw !important;
+    }
+
+    iframe{
+        width: 100%;
+    }   
+    .h1{
+        font-size: 3em !important;
     }
 }
 
@@ -124,4 +140,10 @@ p{
         flex-direction: column;
     }
     
+}
+
+@media screen and (max-width:500px){
+    .contacts{
+        font-size: 4vw;
+    }
 }

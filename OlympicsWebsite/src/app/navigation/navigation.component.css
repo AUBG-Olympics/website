@@ -178,7 +178,7 @@ height: 100%;
 
     .hidden-menu{
         position:fixed;
-        width: 60vw;
+        width: 100vw;
         height: 90vh;
         right:0;
         bottom: 0;
