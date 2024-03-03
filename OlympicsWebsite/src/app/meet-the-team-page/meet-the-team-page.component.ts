@@ -1,18 +1,62 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { SearchWidgetComponent } from '../components/search-widget/search-widget.component';
+import { MemberWidgetComponent } from '../components/member-widget/member-widget.component';
+import { Member } from '../models/member';
+import { olympicsMembers } from '../data/members';
 
 @Component({
   selector: 'app-meet-the-team-page',
   standalone: true,
-  imports: [CommonModule, NavigationComponent, SearchWidgetComponent],
+  imports: [CommonModule, NavigationComponent, SearchWidgetComponent, MemberWidgetComponent],
   templateUrl: './meet-the-team-page.component.html',
   styleUrl: './meet-the-team-page.component.css',
   encapsulation: ViewEncapsulation.None
 })
-export class MeetTheTeamPageComponent {
+export class MeetTheTeamPageComponent{
+
+  public title: string = "Olympics Team";
+
   public onUserFilter(department: string){
-    console.log(department);
+    if(department === 'All'){
+      this.membersOlympics = this.members;
+      this.title = "Olympics Team";
+    } else if(department === 'Board'){
+      this.membersOlympics = this.members.filter((member) => member.Board == true);
+      this.title = "Olympics Board";
+    } else if(department === 'Challenge'){
+      this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      this.title = "Olympics Challenge Organizers";
+    } else if(department === 'Logistics'){
+      this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      this.title = "Olympics Logistics";
+    } else if(department === 'Marketing'){
+      this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      this.title = "Olympics Marketing";
+    } else if(department === 'Sponsorship'){
+      this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      this.title = "Olympics Sponsorship";
+    } else if(department === 'IT'){
+      this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      this.title = "Olympics IT";
+    } else if(department === 'PR'){
+      this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      this.title = "Olympics PR";
+    } else if(department === 'Video'){
+      this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      this.title = "Olympics Video";
+    } else if(department === 'BBQ'){
+      this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      this.title = "Olympics BBQ";
+    }
   }
+
+  constructor(){
+    this.membersOlympics = this.members;
+  }
+
+  public members: Member[] = olympicsMembers;
+  public membersOlympics: Member[] = [];
+
 }

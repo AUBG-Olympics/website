@@ -1,4 +1,11 @@
 <app-navigation></app-navigation>
 <app-search-widget (filter)="onUserFilter($event)"></app-search-widget>
-
+<div class="member-container">
+    <h1 class="header">{{title}}</h1>
+    <div class="member-wrapper">
+        <div class="container" *ngFor="let person of membersOlympics">
+            <app-member-widget [member]="person"></app-member-widget>
+        </div>
+    </div>
+</div>
 

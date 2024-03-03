@@ -1,1 +1,22 @@
-<p>member-widget works!</p>
+<div appHover class="member-container">
+    <div class="img-wrapper">
+        <img [src]="getImage()" alt="Member Name"class="responsive"/>
+        <ng-container *ngIf="isHovered">
+            <div class="overlay"></div>
+            <div class="text-on-overlay">
+                <div class="member-header">
+                    <h1 class="text">{{getFullName()}}</h1>
+                </div>
+                <div class="member-position">
+                    <p class="position-text">{{getPosition()}}</p>
+                </div>
+                <div class="member-contact">
+                    <a href="https://www.facebook.com/AUBGOlympics" target="_blank"><fa-icon [icon]="faFacebookIcon" class="icon"></fa-icon></a>
+                    <a href="https://www.instagram.com/aubg_olympics/" target="_blank"><fa-icon [icon]="faInstragramIcon" class="icon"></fa-icon></a>
+                    <a href="https://www.linkedin.com/company/aubg-olympics/mycompany/" target="_blank"><fa-icon [icon]="faLinkedInIcon" class="icon"></fa-icon></a>
+                </div>
+            </div>  
+        </ng-container>
+    </div>
+    
+</div>

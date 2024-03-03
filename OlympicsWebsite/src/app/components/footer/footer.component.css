@@ -19,6 +19,7 @@
 .copywright{
     color: var(--textColor);
     font-family:  "Luckiest Guy", cursive;
+    margin: 0;
 }
 
 .icon{
