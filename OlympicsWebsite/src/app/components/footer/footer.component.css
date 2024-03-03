@@ -17,17 +17,17 @@
 }
 
 .copywright{
-    color: var(--backgroundColor);
+    color: var(--textColor);
     font-family:  "Luckiest Guy", cursive;
 }
 
 .icon{
-    color: var(--backgroundColor);
+    color: var(--textColor);
     font-size: 4.5vh;
 }
 
 .social-media-wrapper{
     display: flex;
     flex-direction: row;
-    gap: 0.5vh;
+    gap: 0.75vh;
 }
