@@ -51,6 +51,15 @@
     text-align: center;
 }
 
+.option:has(.selected){
+    background-color: var(--accentColor);
+    border-color: var(--backgroundColor);
+}
+
+.selected .option-title{
+    color: var(--backgroundColor);
+}
+
 @media (width <= 414px) {
     .option-title{
         font-size: 0.95em;

@@ -31,7 +31,6 @@ export class CarouselComponent {
   constructor(private ngZone: NgZone){}
 
   ngAfterViewInit() {
-    console.log(this.numOfslides)
     this.ngZone.onStable
       .asObservable()
       .pipe(take(1))
