@@ -1,0 +1,80 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    font-family: "Luckiest Guy", cursive;
+    border-radius: 15px;
+}
+
+.member-container {
+    position: relative;
+    width: 160px;
+    height: 240px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-wrapper {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.responsive {
+   width: 100%;
+   height: auto;
+   border-radius: inherit;
+   display: block;
+   filter: drop-shadow(6px 2px 2px var(--backgroundColor));
+}
+
+.overlay {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 1; 
+    background-color: #000000;
+    border-radius: inherit;
+}
+
+.text-on-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text{
+    font-size: 1.25rem;
+    color: var(--textColor);
+}
+
+.position-text{
+    font-size: 1rem;
+    color: var(--textColor);
+    padding: 0 1%;
+}
+
+.member-contact{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
