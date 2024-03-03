@@ -29,9 +29,11 @@ export class SearchWidgetComponent {
           if (button.classList.contains('selected')) {
             button.classList.remove('selected')
           }
-        })
+        });
 
-        target.parentElement?.classList.add('selected');
+        if(target.parentElement){
+          target.parentElement?.classList.add('selected');
+        }
       });
   }
 }
