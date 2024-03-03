@@ -1,14 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Luckiest+Guy&display=swap');
 
-body{
+body {
     width: 100%;
     height: 100%;
 }
 
-:root{
-    --textColor:#F5C334;
-    --backgroundColor:#156ca2;
-    --primaryColor:#dd762c;
-    --secondaryColor:#173446;
-    --accentColor:#F4E3BA;
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Use a flex container to hold the content and footer */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make the content flexible to push the footer to the bottom */
+router-outlet+ * {
+    flex: 1;
+}
+
+:root {
+    --textColor: #F5C334;
+    --backgroundColor: #156ca2;
+    --primaryColor: #dd762c;
+    --secondaryColor: #173446;
+    --accentColor: #F4E3BA;
 }
