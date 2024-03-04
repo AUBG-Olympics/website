@@ -7,7 +7,7 @@ html, body{
     letter-spacing: 2px;
 }
 
-h1{
+.events-header{
     display: flex;
     align-items: center;
     text-align: center;
@@ -68,9 +68,9 @@ img{
 }
 
 @media only screen and (max-width : 992px) {
-    h1{
+    .events-header{
         font-size: 15vw;
-        margin: 5vw 0;
+        margin: 10vh 0;
     }
 
     .posters{

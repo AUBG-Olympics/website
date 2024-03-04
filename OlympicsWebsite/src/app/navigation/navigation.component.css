@@ -180,8 +180,8 @@ height: 100%;
         position:fixed;
         width: 100vw;
         height: 90vh;
-        right:0;
-        bottom: 0;
+        left:0;
+        top: 10vh;
         background-color: var(--accentColor);
         z-index: 1;
     }
@@ -204,7 +204,7 @@ height: 100%;
         filter: invert(75%) sepia(69%) saturate(514%) hue-rotate(347deg) brightness(99%) contrast(94%);
     }
 
-    .mobile-items h1{
+    .mobile-items .nav-header{
         color: var(--primaryColor)
     }
 
@@ -217,5 +217,14 @@ height: 100%;
         border-top: 2px solid var(--primaryColor);
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-height : 400px) {
+    .mobile-items {
+        margin-top: 10px !important;
+        display: flex;
+        flex-direction: column;
+        gap:12px !important;
     }
 }

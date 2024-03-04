@@ -13,6 +13,7 @@ body{
 .header{
     color: var(--textColor);
     font-family: "Luckiest Guy", cursive;
+    text-align: center;
 }
 
 .member-wrapper{

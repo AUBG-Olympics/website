@@ -27,7 +27,6 @@ h1{
 body{
     background-color:var(--backgroundColor);
     overflow-x: hidden;
-    
 }
 
 .preload{
@@ -49,8 +48,8 @@ body{
 
 }
 
- .slide{
-         box-shadow: 10px 8px 5px 5px  #000; 
+.slide{
+        box-shadow: 10px 8px 5px 5px  #000; 
         border-radius: 10px;
 } 
 
@@ -167,7 +166,7 @@ body{
         transform: translate(-50%,0);
     }
     .slide{
-        box-shadow: none; 
+        box-shadow: none !important; 
     }
 
     .arrow {
