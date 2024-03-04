@@ -11,7 +11,7 @@
 
 /* Dropdown button */
 .language-dropbtn {
-    background-color: var(--accentColor);
+    background-color: var(--primaryColor);
     color: var(--backgroundColor);
     padding: 16px;
     font-size: 16px;
@@ -19,6 +19,9 @@
     cursor: pointer;
     border-radius: inherit;
     font-family: inherit;
+    border-left: 1px solid var(--backgroundColor);
+    border-right: 1px solid var(--backgroundColor);
+    border-top: 1px solid var(--backgroundColor);
 }
 
 .language-dropdown-content {

@@ -37,8 +37,12 @@
 }
 
 .dropdown-content a:hover {
-    background-color: var(--primaryColor);
+    background-color: var(--accentColor);
     cursor: pointer;
+}
+
+.theme-selected{
+    background-color: var(--primaryColor)!important;
 }
 
 

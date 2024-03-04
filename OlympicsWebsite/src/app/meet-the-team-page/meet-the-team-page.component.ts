@@ -5,6 +5,7 @@ import { SearchWidgetComponent } from '../components/search-widget/search-widget
 import { MemberWidgetComponent } from '../components/member-widget/member-widget.component';
 import { Member } from '../models/member';
 import { olympicsMembers } from '../data/members';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-meet-the-team-page',
@@ -15,6 +16,21 @@ import { olympicsMembers } from '../data/members';
   encapsulation: ViewEncapsulation.None
 })
 export class MeetTheTeamPageComponent{
+
+  constructor(private themeService: ThemeService){}
+
+  ngOnInit(){
+    this.membersOlympics = this.members;
+    const themePreference = sessionStorage.getItem('theme');
+
+    if(themePreference === 'dark'){
+      this.themeService.setDarkTheme();
+    } else if(themePreference === 'light'){
+      this.themeService.setLightTheme();
+    } else if(themePreference === 'dday'){
+      this.themeService.setDDayTheme();
+    }
+  }
 
   public title: string = "Olympics Team";
 
@@ -52,9 +68,6 @@ export class MeetTheTeamPageComponent{
     }
   }
 
-  constructor(){
-    this.membersOlympics = this.members;
-  }
 
   public members: Member[] = olympicsMembers;
   public membersOlympics: Member[] = [];
