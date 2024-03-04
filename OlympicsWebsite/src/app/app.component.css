@@ -25,9 +25,8 @@ router-outlet+ * {
 
 :root {
     --textColor: #F5C334;
-    --backgroundColor: #07567F;
+    --backgroundColor: #156ca2;
     --primaryColor: #dd762c;
     --secondaryColor: #173446;
     --accentColor: #F4E3BA;
-    
 }
