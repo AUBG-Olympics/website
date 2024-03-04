@@ -1,6 +1,5 @@
 .arrow {
     width: 30px;
-    height: 30px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -19,6 +18,23 @@
 
   .keen-slider__slide.slide.number-slide{
     box-shadow: 0px 12px 24px #000000;
+  }
+  
+  .arrow-container-left{
+    width:100px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  .arrow-container-right{
+    width:100px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
   }
   
   

@@ -10,9 +10,9 @@
       <div class="subnav">
       <a class="item side" id="events-link">Events</a>
       <div class="subnav-content">
-        <a class="sbnav" href="events/fall">FALL23</a>
-        <a class="sbnav"href="events/spring">SPRING23</a>
-        <a class="sbnav dday"href="events/dday">D-DAY23</a>
+        <a class="sbnav" href="events/fall">FALL 23</a>
+        <a class="sbnav"href="events/spring">SPRING 24</a>
+        <a class="sbnav dday"href="events/dday">D-DAY 23</a>
       </div>
     </div>
     <div>
@@ -51,19 +51,12 @@
       <div class="mobile-items">
         <div class="mobile-items" *ngIf="!ddayStatus&&!eventsStatus">
         <a href="who-are-we">Who are we</a>
-        <hr>
-        <a (click)="changeMenu('events')">&#11164; Events</a>
-        <hr>
-        <a href="sponsors">Sponsors</a>
-        <hr>
-        <a href="contact-us">Contact us</a>
-        <hr>
         <a (click)="changeMenu('dday')" >&#11164; D-Day</a>
-        <hr>
+        <a (click)="changeMenu('events')">&#11164; Events</a>
+        <a href="sponsors">Sponsors</a>
         <a href="meet-the-team">Meet the team</a>
-        <hr>
+        <a href="contact-us">Contact us</a>
         <a href="charity">Charity</a>
-        <hr>
       </div>
         <div *ngIf="ddayStatus" class="mobile-items"> 
           <img (click)="changeMenu('dday')" src="../../assets/arrow-computer-icons-encapsulated-postscript-back-ba07455b568a908a3e32aa57a0501d18.png">

@@ -13,6 +13,9 @@ body{
 .header{
     color: var(--textColor);
     font-family: "Luckiest Guy", cursive;
+    text-shadow: 10px 10px 1px black;
+    font-size: 3.5rem;
+    text-align: center;
 }
 
 .member-wrapper{
@@ -37,6 +40,10 @@ body{
     .member-wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .header{
+        font-size: 2.5rem;
     }
 }
 

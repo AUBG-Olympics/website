@@ -44,18 +44,22 @@ export class MemberWidgetComponent {
     let position = this.member.Position + ' ';
     let deps = departments.split(', ');
     let memberDeps = '';
-    deps.forEach((dep, index) => {
-      if(index < deps.length - 2){
-        memberDeps += dep;
-        memberDeps +=', '
-      } else if(index == deps.length - 2){
-        memberDeps += dep;
-      }
-      else {
-        memberDeps += ' & ';
-        memberDeps += dep;
-      }
-    })
+    if(deps.length > 1){
+      deps.forEach((dep, index) => {
+        if(index < deps.length - 2){
+          memberDeps += dep;
+          memberDeps +=', '
+        } else if(index == deps.length - 2){
+          memberDeps += dep;
+        }
+        else {
+          memberDeps += ' & ';
+          memberDeps += dep;
+        }
+      })
+    } else {
+      position += deps[0]
+    }
     return position += memberDeps;
   }
 }

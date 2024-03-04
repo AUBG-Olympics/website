@@ -110,7 +110,7 @@ export const olympicsMembers = [
         Head: false,
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490026/MemberPhotos/ZoyaPetrova_ixotuu.png',
-        Department: 'Video, Sponsorship',
+        Department: 'Sponsorship',
         FacebookURL: '',
         InstragramURL: '',
         LinkedInURL: ''
@@ -290,7 +290,7 @@ export const olympicsMembers = [
         Head: false,
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490033/MemberPhotos/MarioBoyanov_q34o8s.png',
-        Department: 'Challenge Organizers, IT',
+        Department: 'Challenge Organizers, IT, Sponsorship',
         FacebookURL: '',
         InstragramURL: '',
         LinkedInURL: ''
@@ -338,7 +338,7 @@ export const olympicsMembers = [
         Head: false,
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490027/MemberPhotos/KonstantinStrashnikov_py9qpr.png',
-        Department: 'PR',
+        Department: 'Video, PR',
         FacebookURL: '',
         InstragramURL: '',
         LinkedInURL: ''

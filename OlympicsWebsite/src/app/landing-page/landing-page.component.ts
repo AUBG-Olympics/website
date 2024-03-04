@@ -1,4 +1,4 @@
-import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation, HostListener } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ThemeService } from '../services/theme.service';
@@ -8,61 +8,120 @@ import { Image } from '../models/image';
   selector: 'app-landing-page',
   standalone: true,
   providers: [ThemeService],
-  imports: [NavigationComponent,CarouselComponent],
+  imports: [NavigationComponent, CarouselComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 
 export class LandingPageComponent {
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
-  @ViewChild(CarouselComponent) car?:CarouselComponent;
-  photos:Image[]=[];
-  endDate=new Date('April 21, 2024 09:00:00').getTime();
+  @ViewChild(CarouselComponent) car?: CarouselComponent;
+  photos: Image[] = [];
+  endDate = new Date('April 21, 2024 09:00:00').getTime();
+  public innerWidth: any;
+  desktop:boolean=true;
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.innerWidth = window.innerWidth;
+    if(this.innerWidth>window.innerHeight){
+      if(!this.desktop){this.desktop=!this.desktop; this.getPhotos();}
+      }else{
+        if(this.desktop){this.desktop=!this.desktop;this.getPhotos();}
+      }
+    }
+    
 
-  constructor(private themeService: ThemeService){}
-
-  getPhotos(){
-    this.photos=[{src:"https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/407350386_757418879749858_5087436530491221890_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=3635dc&_nc_ohc=fZtR02CcY4sAX8RROqy&_nc_ht=scontent.fsof11-1.fna&oh=00_AfCufkHkd9js_GkUR2D_XcGfgoHFvs21SJLMQFRAVoJxbg&oe=65BC61BE", description:''},{src:'https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/406263529_757418919749854_4016185538037317152_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=UG8qCTpnaOkAX-MtIE-&_nc_ht=scontent.fsof11-1.fna&oh=00_AfCnyhIbbyMAhkM-FXMyEeoB6dVF19dXDBoeHQ2sIYVNbw&oe=65BBF9AA',description:''},{src:'https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/406261675_757419016416511_1611717665302417932_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=y3kP-3zdSnAAX80DDQs&_nc_ht=scontent.fsof11-1.fna&oh=00_AfC04GPylJhHA3uLXWxjPVpRjPjGdL0Os9VgrqBvLnEBTQ&oe=65BC251B',description:''}];
+  constructor(private themeService: ThemeService) { }
+  getPhotos() {
+    if(this.innerWidth>window.innerHeight){
+    this.photos = [
+      {
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709549488/CarouselPhotos/425254669_810443281114084_2978768452918607329_n_u264qs.jpg",
+        description: ''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549486/CarouselPhotos/428502175_810441871114225_4628992403078249897_n_gdnfw4.jpg',
+        description: ''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549485/CarouselPhotos/428491293_813861317438947_2298361993371666072_n_plgzly.jpg',
+        description: ''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549483/CarouselPhotos/428508360_813861040772308_3018515262349797840_n_zy7lto.jpg',
+        description: ''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549483/CarouselPhotos/431059903_813858507439228_6567449649785649249_n_aqmv9j.jpg',
+        description: ''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549478/CarouselPhotos/424972233_810440724447673_9217132925745596085_n_k7zae2.jpg',
+        description: ''
+      }
+    ];}
+    else{
+      this.photos = [
+        {
+          src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709550920/CarouselPhotos/image3_azvijg.png",
+          description: ''
+        },
+        {
+          src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709550288/CarouselPhotos/425330340_810440677781011_8222974675471495997_n_ynkadr.jpg',
+          description: ''
+        },
+        {
+          src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709550291/CarouselPhotos/image_u5ytqp.png',
+          description: ''
+        },
+        {
+          src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709550741/CarouselPhotos/image2_n4wm57.png',
+          description: ''
+        }
+      ]
+    }
+    console.log(this.photos)
   }
-  ngOnInit(){
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
     this.getPhotos();
     const themePreference = sessionStorage.getItem('theme');
 
-    if(themePreference === 'dark'){
+    if (themePreference === 'dark') {
       this.themeService.setDarkTheme();
-    } else if(themePreference === 'light'){
+    } else if (themePreference === 'light') {
       this.themeService.setLightTheme();
-    } else if(themePreference === 'dday'){
+    } else if (themePreference === 'dday') {
       this.themeService.setDDayTheme();
     }
   }
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     setInterval(() => {
-      this.getSeconds() 
+      this.getSeconds()
     }, 1000);
   }
-  getDays(){
-    let now=new Date().getTime();
-    let remaining=this.endDate-now;
-    return String(Math.floor(remaining/ (1000 * 3600 * 24))).padStart(2,"0");
+  getDays() {
+    let now = new Date().getTime();
+    let remaining = this.endDate - now;
+    return String(Math.floor(remaining / (1000 * 3600 * 24))).padStart(2, "0");
   }
-  getHours(){
-    let endDate=new Date('April 20, 2024 00:00:00').getTime();
-    let now=new Date().getTime();
-    let remaining=this.endDate-now;
-    return String(Math.floor(remaining% (1000 * 3600 * 24)/(1000 * 3600 ))).padStart(2,"0");
+  getHours() {
+    let endDate = new Date('April 20, 2024 00:00:00').getTime();
+    let now = new Date().getTime();
+    let remaining = this.endDate - now;
+    return String(Math.floor(remaining % (1000 * 3600 * 24) / (1000 * 3600))).padStart(2, "0");
   }
 
-  getMinutes(){
-    let now=new Date().getTime();
-    let remaining=this.endDate-now;
-    return String(Math.floor(remaining% (1000 * 3600)/(1000 * 60 ))).padStart(2,"0");
+  getMinutes() {
+    let now = new Date().getTime();
+    let remaining = this.endDate - now;
+    return String(Math.floor(remaining % (1000 * 3600) / (1000 * 60))).padStart(2, "0");
   }
-  
-  getSeconds(){
-    let now=new Date().getTime();
-    let remaining=this.endDate-now;
-    return String(Math.floor(remaining% (1000 * 60)/(1000))).padStart(2,"0");
+
+  getSeconds() {
+    let now = new Date().getTime();
+    let remaining = this.endDate - now;
+    return String(Math.floor(remaining % (1000 * 60) / (1000))).padStart(2, "0");
   }
 }

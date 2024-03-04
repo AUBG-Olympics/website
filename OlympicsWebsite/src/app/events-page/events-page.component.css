@@ -15,12 +15,14 @@ h1{
     justify-content: center;
     height: 10vh;
     color: var(--textColor);
+    font-size: 50px;
+    text-shadow: 10px 10px 1px black;
 }
 
 .posters{
     display: flex;
     flex-direction: row;
-    gap:3vw;
+    gap:8vw;
     align-items: center;
     height: 74vh;
     min-width: 100%;
