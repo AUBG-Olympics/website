@@ -1,0 +1,17 @@
+<div class="language-dropdown">
+    <button class="language-dropbtn" (click)="toggleDropdown()">Languages</button>
+    <div id="myDropdown" class="language-dropdown-content" [class.show]="dropdownOpen">
+        <div class="language-wrapper">
+            <div class="option-wrapper" id="english">
+                <a (click)="changeLanguage('en')" class="language-text">
+                    English
+                </a>
+            </div>
+            <div class="option-wrapper">
+                <a (click)="changeLanguage('bg')" class="language-text">
+                    Български
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
