@@ -25,7 +25,8 @@ body {
     font-size: 1.3vw;
     display: flex;
     align-items: center;
-    gap: 10vw
+    gap: 10vw;
+    font-family:  "Luckiest Guy", cursive;
 }
 
 .hours .minutes .days .seconds h1{

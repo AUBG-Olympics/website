@@ -1,6 +1,5 @@
 .arrow {
     width: 30px;
-    height: 30px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -15,6 +14,23 @@
   
   .arrow--right {
     right: 5px;
+  }
+  
+  .arrow-container-left{
+    width:100px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  .arrow-container-right{
+    width:100px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
   }
   
   
