@@ -24,16 +24,17 @@ export class LandingPageComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.innerWidth = window.innerWidth;
-    if(this.innerWidth>900){
+    if(this.innerWidth>window.innerHeight){
       if(!this.desktop){this.desktop=!this.desktop; this.getPhotos();}
-    }else{
-      if(this.desktop){this.desktop=!this.desktop;this.getPhotos();}
+      }else{
+        if(this.desktop){this.desktop=!this.desktop;this.getPhotos();}
+      }
     }
-  }
+    
 
   constructor(private themeService: ThemeService) { }
   getPhotos() {
-    if(this.innerWidth>900){
+    if(this.innerWidth>window.innerHeight){
     this.photos = [
       {
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709549488/CarouselPhotos/425254669_810443281114084_2978768452918607329_n_u264qs.jpg",
