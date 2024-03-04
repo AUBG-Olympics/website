@@ -12,7 +12,7 @@ h1{
    padding: 10px 40px;
    width: fit-content;
    transform: translate(-50%,0);
-   text-shadow: 10px 10px 2px black;
+   /* text-shadow: 10px 10px 2px black; */
 }
 
 .lightning{

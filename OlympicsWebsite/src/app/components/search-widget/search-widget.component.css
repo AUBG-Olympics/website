@@ -53,11 +53,11 @@
 
 .option:has(.selected){
     background-color: var(--accentColor);
-    border-color: var(--backgroundColor);
+    border-color: var(--textColor);
 }
 
 .selected .option-title{
-    color: var(--backgroundColor);
+    color: var(--textColor);
 }
 
 @media (width <= 414px) {

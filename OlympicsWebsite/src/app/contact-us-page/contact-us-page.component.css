@@ -14,13 +14,13 @@ h1 {
     font-size: 4vw;
 }
 
-.h1{
+/* .h1{
     text-shadow: 10px 10px 1px black;
 }
 
 h2{
     text-shadow: 10px 10px 1px black;
-}
+} */
 
 iframe {
     width: 50%;
@@ -131,7 +131,7 @@ input[type="reset"] {
 
 .email {
     color: var(--primaryColor);
-    text-shadow: 10px 10px 1px black;
+    /* text-shadow: 10px 10px 1px black; */
 }
 
 p {
