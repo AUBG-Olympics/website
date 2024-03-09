@@ -19,7 +19,7 @@ body{
 }
 
 .member-wrapper{
-    width: 80%;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--primaryColor);
