@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild,Input, NgZone } from '@angular/core';
+import { Component, ElementRef, ViewChild,Input, NgZone,ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import 'keen-slider/keen-slider.min.css';
 import KeenSlider, { KeenSliderInstance } from "keen-slider";
@@ -28,16 +28,29 @@ export class CarouselComponent {
   currentSlide: number = 1;
   slider: KeenSliderInstance|null = null;
 
-  constructor(private ngZone: NgZone){}
+  ngOnChanges(changes: any) {
+    console.log(this.photos);
+    let s=this.slider;
+    setTimeout(function() {
+      s?.update();
+    }, 1);
+}
+
+  constructor(private ngZone: NgZone,private cdRef: ChangeDetectorRef){}
+  ngOnInit() {
+    window.dispatchEvent(new Event('resize'));
+  }
 
   ngAfterViewInit() {
+    console.log(this.photos);
+    let options=
     this.ngZone.onStable
-      .asObservable()
-      .pipe(take(1))
-      .subscribe(() => {
-        this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-          slides: {
-            perView: this.numOfslides,
+    .asObservable()
+    .pipe(take(1))
+    .subscribe(() => {
+      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+        slides: {
+          perView:this.numOfslides,
             spacing:this.spacing,
             origin:'center'
           },breakpoints:{
@@ -46,28 +59,28 @@ export class CarouselComponent {
                 perView:this.numOfslides==1?1:3,            
                 spacing:this.spacing,
                 origin:'center'},
-            },'(max-width:900px)':{
-              slides:{
-                perView:this.numOfslides==1?1:2,            
-                spacing:this.spacing,
-                origin:'center'}
-            },'(max-width:600px)':{
-              slides:{
-                perView:1,     
-                spacing:this.spacing,
-                origin:'center'}
-            }
-          },
-          range:{
-            align:true
-          },
+              },'(max-width:900px)':{
+                slides:{
+                  perView:this.numOfslides==1?1:2,            
+                  spacing:this.spacing,
+                  origin:'center'}
+                },'(max-width:600px)':{
+                  slides:{
+                    perView:1,     
+                    spacing:this.spacing,
+                    origin:'center'}
+                  }
+                },
+                range:{
+                  align:true
+                },
           mode:'free-snap',
           loop:true,
           drag:this.arrows,
           renderMode:'performance',
           initial: this.currentSlide,
-            slideChanged: (s) => {
-              this.currentSlide = s.track.details.rel
+          slideChanged: (s) => {
+            this.currentSlide = s.track.details.rel
             }
         },
         [
@@ -102,9 +115,10 @@ export class CarouselComponent {
         ],
         )  
       });
-  }
 
-  ngOnDestroy() {
-    if (this.slider) this.slider.destroy()
-  }
+    }
+    
+    ngOnDestroy() {
+      if (this.slider) this.slider.destroy()
+    }
 }
