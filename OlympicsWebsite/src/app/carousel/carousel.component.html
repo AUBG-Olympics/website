@@ -1,6 +1,10 @@
 <div class="keen-slider" #sliderRef>
   <div *ngFor="let photo of photos" class="keen-slider__slide slide number-slide"><img src={{photo.src}}>
-    <p *ngIf="hover" class="onHover">{{photo.description}}</p>
+    <div class="hoverPanel" *ngIf="hover" >
+    <p class="onHover">{{photo.description}}</p>
+    <a class="onHover seeMore" href={{photo.link}}>see more</a>
+  </div>
+    
   </div>
   <div *ngIf="arrows">
     <div class="arrow-container-left">

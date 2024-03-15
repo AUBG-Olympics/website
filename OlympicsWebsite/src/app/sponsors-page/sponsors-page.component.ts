@@ -53,19 +53,19 @@ export class SponsorsPageComponent {
     for(let i=0;i<10;i++){
     this.photosTier1.push({
       src:picturesInfo[i].src,
-    description:picturesInfo[i].description});
+    description:picturesInfo[i].description,link:picturesInfo[i].link},);
     this.photosTier2.push({
       src:picturesInfo[9-i].src,
-      description:picturesInfo[9-i].description});
+      description:picturesInfo[9-i].description,link:picturesInfo[i].link});
       this.photosTier3.push({
         src:picturesInfo[9-i].src,
-        description:picturesInfo[9-i].description});
+        description:picturesInfo[9-i].description,link:picturesInfo[i].link});
         this.photosTier4.push({
           src:picturesInfo[9-i].src,
-          description:picturesInfo[9-i].description});
+          description:picturesInfo[9-i].description,link:picturesInfo[i].link});
           this.photosTier5.push({
             src:picturesInfo[9-i].src,
-            description:picturesInfo[9-i].description});
+            description:picturesInfo[9-i].description,link:picturesInfo[i].link});
     }
     this.shuffle(this.photosTier1);
     this.shuffle(this.photosTier2);

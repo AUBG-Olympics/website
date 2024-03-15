@@ -45,7 +45,7 @@ export class EventsPageComponent {
       for(let i=0;i<3;i++){
         this.pictures.push({
           src:'https://z-p3-scontent.fsof11-1.fna.fbcdn.net/v/t1.15752-9/423147414_7033076963484805_8497623959281473128_n.png?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=82hpWeENdd4AX_-KcQA&_nc_ht=z-p3-scontent.fsof11-1.fna&oh=03_AdR7TxobxexmTAnFesqf-F1ibzKRtxTC2lVt9tZl39yzSA&oe=65EB65A9',
-          description:'Basketball'
+          description:'Basketball',link:''
         })
       }
     }
@@ -54,7 +54,7 @@ export class EventsPageComponent {
       for(let i=0;i<3;i++){
         this.pictures.push({
           src:'https://z-p3-scontent.fsof11-1.fna.fbcdn.net/v/t1.15752-9/423147414_7033076963484805_8497623959281473128_n.png?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=82hpWeENdd4AX_-KcQA&_nc_ht=z-p3-scontent.fsof11-1.fna&oh=03_AdR7TxobxexmTAnFesqf-F1ibzKRtxTC2lVt9tZl39yzSA&oe=65EB65A9',
-          description:'Basketball'
+          description:'Basketball',link:''
         })
       }
     }
