@@ -18,18 +18,19 @@
     <div class="data">
         <div class="field">
     <p>Name</p><p class="error" *ngIf="nameError">{{this.nameError}}</p>
-    <input type="text" formControlName="name"/>
+    <input [(ngModel)]="name" type="text" formControlName="name"/>
 </div>
 <div class="field">
         <p>Email</p><p class="error" *ngIf="emailError">{{this.emailError}}</p>
-    <input type="email" formControlName="email"/>
+    <input [(ngModel)]="email" type="email" formControlName="email"/>
 </div>
 <div class="field message">
     <p>Message</p><p class="error" *ngIf="textError">{{this.textError}}</p>
-    <textarea class='text' type="text" formControlName="text"></textarea>
+    <textarea [(ngModel)]="text"  class='text' type="text" formControlName="text"></textarea>
 </div>
 <div class="field">
 <button>Submit</button>
+<p class="error" id="thankYou" *ngIf="thankYou">Thank you for contacting us</p>
 </div>
 </div>
 </form>
