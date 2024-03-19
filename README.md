@@ -35,7 +35,7 @@ This is the official repository which we will use for the development of the web
     git pull
     ```
 
-3. Create a new branch:
+3. Create a new branch: 
 
     ```bash 
     git checkout -b (branch-name)
