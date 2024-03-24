@@ -15,7 +15,7 @@
                 <h3 class="sport-header">{{sport.Headline}}</h3>
                 <p class="description">{{sport.Description}}</p>
                 <div class="action-buttons">
-                    <a href="{{sport.RulesUrl}}" target="_blank" class="button">Rules</a>
+                    <a href="{{sport.RulesUrl}}" target="_blank" class="button" *ngIf="sport.RulesUrl">Rules</a>
                     <a href="{{sport.SignUpUrl}}" target="_blank" class="button">Sign-Up</a>
                 </div>
             </div>
