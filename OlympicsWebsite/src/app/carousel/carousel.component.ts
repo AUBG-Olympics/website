@@ -29,7 +29,7 @@ export class CarouselComponent {
   slider: KeenSliderInstance|null = null;
 
   ngOnChanges(changes: any) {
-    console.log(this.photos);
+    console.log("changed");
     let s=this.slider;
     setTimeout(function() {
       s?.update();
