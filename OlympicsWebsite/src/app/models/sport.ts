@@ -3,6 +3,6 @@ export class Sport {
     Icon: string = '';
     Headline: string = '';
     Description: string = '';
-    RulesUrl: string = '';
+    RulesUrl: string | null = '';
     SignUpUrl: string = '';
 }
