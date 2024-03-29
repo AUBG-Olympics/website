@@ -119,13 +119,13 @@ a:active {
     1px -1px 0 black,
     1px 1px 0 black,
     4px 4px 1px black;
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width:100%;
     display: flex;
     position: relative;
-    left:50%;
-    top:50% !important;
-    transform: translate(-50%,-50%) !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -143,6 +143,19 @@ h1 {
 }
 
 @media (width <=700px) {
+
+    .everything{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+    }
+
+    .time {
+        font-size: 10vw;
+    }
+
     .header {
         font-size: 10vw;
         text-shadow:    -1px -1px 0 black,
@@ -150,6 +163,7 @@ h1 {
         1px -1px 0 black,
         1px 1px 0 black,
         3px 3px 1px black; 
+        top:10%;
     }
 
     .timer {
@@ -158,13 +172,16 @@ h1 {
         1px -1px 0 black,
         1px 1px 0 black,
         3px 3px 1px black;
-        font-size: 2vw;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
     }
 
     .signup{
-        top:70%;
-        width:25vw;
-        height: 10vw;
+        position: static;
+        width:40vw;
+        height: 15vw;
         padding: 0%;
     }
 
