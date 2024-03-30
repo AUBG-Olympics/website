@@ -3,80 +3,208 @@ body {
     padding: 0 !important;
 }
 
-.slide img{
+.slide img {
     width: 100%;
     height: 100% !important;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.header{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family:  "Luckiest Guy", cursive;
-    text-shadow: 10px 10px 1px black;
-    color: var(--primaryColor);
-    font-size: 6vw;
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+.header {
+    font-family: inherit;
+    text-shadow: -1px -1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        1px 1px 0 black,
+        4px 4px 1px black;
+
+    color: var(--textColor);
+    font-size: 5.5vw;
     letter-spacing: 20px;
-    width:100%;
+    text-align: center;
 }
 
-.images{
+.images {
     width: 100%;
     height: 90vh;
     position: absolute;
-    top:10vh;
-    left:0;
+    top: 10vh;
+    left: 0;
 }
 
-.carousel{
+.carousel {
     width: 100%;
     height: 100%;
 }
 
- .slide{
+.slide {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.keen-slider{
+.keen-slider {
     width: 100%;
     height: 100%;
 }
 
-.timer{
+.everything {
+    /* Sets display to flex */
+    display: flex;
+    flex-direction: column;
+    gap: 7.5vh;
+
+    /* Positions in the middle: */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--primaryColor);
-    font-size: 1.3vw;
+    width: 100%;
+
+    /* Sets font */
+    font-family: "Luckiest Guy", cursive;
+}
+
+.timer {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10vw;
-    font-family:  "Luckiest Guy", cursive;
-    text-shadow: 10px 10px 1px black;
-    letter-spacing: 1px;
+    font-family: inherit;
+    color: var(--textColor);
+    text-shadow: -1px -1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        1px 1px 0 black,
+        4px 4px 1px black;
 }
 
-.hours .minutes .days .seconds h1{
+.hours, .minutes, .days, .seconds, .time-indicator {
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-
+    font-size: 2.5vw;
 }
 
-h1{
+.signup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    background-color: var(--primaryColor);
+    width: 20vw;
+    height: 5vw;
+    border-radius: 13px;
+    text-align: center;
+    display: flex;
+    font-family: inherit;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5vw;
+    height: 100%;
+    width: 100%;
+    text-shadow:
+        -1px -1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        1px 1px 0 black,
+        4px 4px 1px black;
+    color: var(--textColor) !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: inherit;
+}
+
+
+h1 {
     text-align: center;
     margin: 0;
 }
 
-.time{
-    font-size: 6vw;
+
+.footer-wrapper {
+    display: none !important;
 }
 
-.footer-wrapper{
-    display: none!important;
+@media screen and (max-width: 666px) {
+
+    .everything {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup {
+        width: 30vw;
+        height: 10vw;
+    }
+
+    .signup a{
+        font-size: 5vw;
+    }
+
+    .header {
+        text-shadow: -1px -1px 0 black,
+            -1px 1px 0 black,
+            1px -1px 0 black,
+            1px 1px 0 black,
+            3px 3px 1px black;
+        font-size: 10vw;
+    }
+
+    .hours, .minutes, .days, .seconds, .time-indicator {
+        font-size: 4.5vw;
+    }
+
+    .timer {
+        text-shadow: -1px -1px 0 black,
+            -1px 1px 0 black,
+            1px -1px 0 black,
+            1px 1px 0 black,
+            3px 3px 1px black;
+
+    }
+
+    .signup a {
+        text-shadow: -1px -1px 0 black,
+            -1px 1px 0 black,
+            1px -1px 0 black,
+            1px 1px 0 black,
+            3px 3px 1px black;
+    }
+
+}
+
+@media (width <=700px) {
+
+    
 }

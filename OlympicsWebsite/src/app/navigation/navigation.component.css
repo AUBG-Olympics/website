@@ -3,11 +3,11 @@
     display: flex;
     justify-content: space-evenly;
     height: 10vh;
-    font-family:  "Luckiest Guy", cursive;
+    font-family: "Luckiest Guy", cursive;
     width: 100%;
 }
 
-.desktop-menu{
+.desktop-menu {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -43,8 +43,8 @@
 
 .item.title {
     position: relative;
-    top:48%;
-    transform: translate(0,-50%);
+    top: 48%;
+    transform: translate(0, -50%);
 }
 
 .item:hover {
@@ -90,7 +90,7 @@ a:active {
     flex-direction: column;
 }
 
-.subnav:hover{
+.subnav:hover {
     font-weight: bolder;
 }
 
@@ -100,14 +100,14 @@ a:active {
     position: absolute;
     background-color: var(--primaryColor);
     width: 100%;
-    top:90%;
+    top: 90%;
     left: 0;
     z-index: 1;
     box-shadow: 0px 0px 10px 1px black;
 }
 
-.dday-tab{
-    width:15vh;
+.dday-tab {
+    width: 15vh;
 }
 
 .sbnav {
@@ -122,97 +122,100 @@ a:active {
     width: 100%;
 }
 
-.theme{
+.theme {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 1%;
     text-align: center;
 }
-.hamburger-menu{
-display: none;
-width: 100%;
-height: 100%;
+
+.hamburger-menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
+
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1400px) {
-    .menu-bar{
+@media only screen and (max-width : 1513px) {
+    .menu-bar {
         position: sticky;
-        top:0;
+        top: 0;
         z-index: 1;
     }
 
-    .desktop-menu{
+    .desktop-menu {
         display: none;
     }
 
-    .hamburger-menu{
+    .hamburger-menu {
         display: flex;
         position: relative;
-        font-size: 20px;
+        font-size: 2%;
     }
 
-    .mobile-title{
+    .mobile-title {
         position: relative;
-        left:0;
-        width: 70vw;
+        left: 0;
+        width: 40vw;
         height: 100%;
     }
 
-    .mobile-title img{
+    .mobile-title img {
         width: 100%;
         height: 100%;
     }
 
-    .hamburger{
+    .hamburger {
         height: 50%;
         position: absolute;
         right: 15px;
-        top:50%;
-        transform: translate(0,-50%);
+        top: 50%;
+        transform: translate(0, -50%);
     }
 
-    .hamburger img{
+    .hamburger img {
         filter: invert(75%) sepia(69%) saturate(514%) hue-rotate(347deg) brightness(99%) contrast(94%);
     }
 
-    .hidden-menu{
-        position:fixed;
+    .hidden-menu {
+        position: fixed;
         width: 100vw;
         height: 90vh;
-        right:0;
+        right: 0;
         bottom: 0;
         background-color: var(--accentColor);
         z-index: 1;
     }
 
-    .mobile-items{
+    .mobile-items {
         margin-top: 15px;
         display: flex;
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
         justify-content: center;
         align-items: center;
     }
 
-    .mobile-items img{
+    .mobile-items img {
         width: 20px;
         height: 20px;
         position: absolute;
-        left:10px;
-        top:10px;
+        left: 10px;
+        top: 10px;
         filter: invert(75%) sepia(69%) saturate(514%) hue-rotate(347deg) brightness(99%) contrast(94%);
     }
 
-    .mobile-items h1{
+    .mobile-items h1 {
         color: var(--primaryColor)
     }
 
-    .mobile-items a{
-        color:var(--textColor) !important;
+    .mobile-items a {
+        color: var(--textColor) !important;
     }
 
-    hr{
+    hr {
         width: 100% !important;
         border-top: 2px solid var(--primaryColor);
         margin-top: 0px;
