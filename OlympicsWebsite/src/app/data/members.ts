@@ -6,9 +6,9 @@ export const olympicsMembers = [
         Position: 'President of Olympics & Member of Challenge Organizers',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711311667/MemberPhotos/ZdravkoRashkov_ztwisj.png',
         Department: 'Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/zdravko.rashkov.9',
+        InstragramURL: 'https://www.instagram.com/zdravko_rashkov/',
+        LinkedInURL: 'https://www.linkedin.com/in/zdravko-rashkov-63a24923b/'
     },
     {
         FirstName: 'Nikolay',
@@ -17,9 +17,9 @@ export const olympicsMembers = [
         Position: 'Vice-President & Head of Logistics',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711311892/MemberPhotos/NikolayPavlov_xc3n58.png',
         Department: 'Logistics',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/niko.pavlov.773',
+        InstragramURL: 'https://www.instagram.com/goalsolo14?igsh=cXJoeWZrc3hodWJm&utm_source=qr',
+        LinkedInURL: 'https://www.linkedin.com/in/nikolay-pavlov-95094227b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
         FirstName: 'Brigita',
@@ -28,20 +28,20 @@ export const olympicsMembers = [
         Position: 'Head of Sponsorship',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490036/MemberPhotos/BrigitaAndonova_jv6szu.png',
         Department: 'Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/brigita.andonova',
+        InstragramURL: 'https://www.instagram.com/brie.lliance/?hl=bg',
+        LinkedInURL: 'https://www.linkedin.com/in/brigita-andonova-6a148720a/'
     },
     {
         FirstName: 'Hana',
         LastName: 'Egikyan',
         Board: true,
-        Position: 'Head of Marketing',
+        Position: 'Head of Marketing & Member of Video and PR',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711306796/MemberPhotos/HanaEgikyan_xylcln.png',
-        Department: 'Marketing',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        Department: 'Marketing, Video, PR',
+        FacebookURL: 'https://www.facebook.com/hana.egikian',
+        InstragramURL: 'https://www.instagram.com/h_egikyan?igsh=MTNmYzN5NGV2cTkwcw%3D%3D&utm_source=qr',
+        LinkedInURL: 'https://www.linkedin.com/in/hana-egikyan-0694371b4/'
     },
     {
         FirstName: 'Ilian',
@@ -51,9 +51,9 @@ export const olympicsMembers = [
         Position: 'Head of Challenge Organizers & Member of Sponsorship',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490029/MemberPhotos/IlianIvanov_ftte5x.png',
         Department: 'Challenge Organizers, Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/ilian.ivanov.1422',
+        InstragramURL: 'https://www.instagram.com/ilian_ivanov32?igsh=MXc5ZGF0ZmxlNjJjcQ==',
+        LinkedInURL: 'https://www.linkedin.com/in/ilian-ivanov-56b9b7254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         FirstName: 'Georgi',
@@ -63,9 +63,9 @@ export const olympicsMembers = [
         Position: 'Head of IT & Member of Challenge Organizers',
         Department: 'IT, Challenge Organizers',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711312351/MemberPhotos/GeorgiSlavov_dohvka.png',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100004160407162',
+        InstragramURL: 'https://www.instagram.com/georgi__slavov/',
+        LinkedInURL: 'https://www.linkedin.com/in/georgi-slavov-19006723b/'
     },
     {
         FirstName: 'Diana',
@@ -75,9 +75,9 @@ export const olympicsMembers = [
         Position: 'Head of PR & Member of Sponsorship',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711311985/MemberPhotos/DianaEvtimova_trzo0a.png',
         Department: 'PR, Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/diana.evtimova.3/',
+        InstragramURL: 'https://www.instagram.com/devtimovaa/',
+        LinkedInURL: 'https://www.linkedin.com/in/diana-evtimova-840b77241/'
     },
     {
         FirstName: 'Nurmukhammed',
@@ -87,9 +87,9 @@ export const olympicsMembers = [
         Position: 'Head of BBQ & Member of Logistics',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490042/MemberPhotos/NurmukhammedTashbolotov_qjex6i.png',
         Department: 'BBQ, Logistics',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: null,
+        InstragramURL: 'https://www.instagram.com/j.u.s.t_nur?igsh=MWtkeTlieTY5ZWNwMg%3D%3D&utm_source=qr',
+        LinkedInURL: null
     },
     {
         FirstName: 'Tiya',
@@ -99,9 +99,9 @@ export const olympicsMembers = [
         Position: 'Head of Video & Member of Marketing',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490052/MemberPhotos/TiyaKaisheva_yq1pjf.png',
         Department: 'Video, Marketing',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/tia.kaisheva',
+        InstragramURL: 'https://www.instagram.com/tia.kaisheva?igsh=bDNzNmc3enZjZDUw',
+        LinkedInURL: 'https://www.linkedin.com/in/tiya-kaisheva-11a737235'
     },
     {
         FirstName: 'Zoya',
@@ -111,9 +111,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490026/MemberPhotos/ZoyaPetrova_ixotuu.png',
         Department: 'Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100070016661091',
+        InstragramURL: 'https://www.instagram.com/kalua.zoya?igsh=MWo2d2t3Ynp0aDFxcg%3D%3D&utm_source=qr',
+        LinkedInURL: 'https://www.linkedin.com/in/zoya-petrova-1b2301213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
         FirstName: 'Alexander',
@@ -123,9 +123,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711312267/MemberPhotos/AlexPeev_kq1hpm.png',
         Department: 'Challenge Organizers, Logistics, BBQ',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/AlexPeew',
+        InstragramURL: 'https://www.instagram.com/alexpeew?igsh=MW56NGIzdTBhengwaA%3D%3D&utm_source=qr',
+        LinkedInURL: 'https://www.linkedin.com/in/aleksandar-peev-945532222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
         FirstName: 'Teodor',
@@ -135,9 +135,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490050/MemberPhotos/TeodorKovachev_vatahh.png',
         Department: 'Logistics, IT',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/teodor.kovachev.12',
+        InstragramURL: 'https://www.instagram.com/teodor.kovachev.12?igsh=ejRjajd0Nm94Mzh5',
+        LinkedInURL: 'https://www.linkedin.com/in/teodor-kovachev-5820a0282?trk=contact-info'
     },
     {
         FirstName: 'Teodora',
@@ -147,9 +147,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711312061/MemberPhotos/TeodoraNedeva_vgdtub.png',
         Department: 'Logistics, Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100070385360857',
+        InstragramURL: 'https://www.instagram.com/teodoranedeva2?igsh=eDRoeWFvaWRvd2ph&utm_source=qr',
+        LinkedInURL: null
     },
     {
         FirstName: 'Kiril',
@@ -159,9 +159,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490031/MemberPhotos/KirilKambitov_nurrwa.png',
         Department: 'Logistics, Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/kiril.kambitov/',
+        InstragramURL: 'https://www.instagram.com/kirilkambitov/',
+        LinkedInURL: null
     },
     {
         FirstName: 'Aleksandra',
@@ -171,9 +171,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490046/MemberPhotos/AleksandraMihaylova_yk7p8q.png',
         Department: 'Challenge Organizers, Logistics',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/aleksandra.mihaylova.549',
+        InstragramURL: 'https://www.instagram.com/alexandra.mmihaylova/',
+        LinkedInURL: 'https://www.linkedin.com/in/aleksandra-mihaylova-a90910294/'
     },
     {
         FirstName: 'Aleks',
@@ -183,9 +183,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490038/MemberPhotos/AleksAtanasov_pfu35u.png',
         Department: 'Logistics, Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/alex.atanasov.9041',
+        InstragramURL: 'https://www.instagram.com/alex_atanasov25/',
+        LinkedInURL: 'https://www.linkedin.com/in/aleks-atanasov/'
     },
     {
         FirstName: 'Simona',
@@ -195,9 +195,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490034/MemberPhotos/SimonaTrendafilova_htwzxe.png',
         Department: 'PR, Video, Marketing, Logistics',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/simona.trend04/',
+        InstragramURL: 'https://www.instagram.com/mangoes_are_my_life?igsh=MWhubHA0enp3cjgwbg==',
+        LinkedInURL: null
     },
     {
         FirstName: 'Spasiela',
@@ -207,9 +207,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490047/MemberPhotos/SpasielaGizdova_qnidts.png',
         Department: 'PR, Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/spasiela.gizdova',
+        InstragramURL: 'https://www.instagram.com/spasielkaaa?igsh=MWlzMHZsdHVva2ZzNA%3D%3D&utm_source=qr',
+        LinkedInURL: 'https://www.linkedin.com/in/spasiela-gizdova-7448812bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
         FirstName: 'Stefan',
@@ -219,9 +219,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490044/MemberPhotos/StefanTosunov_gwknzd.png',
         Department: 'Sponsorship, Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/stefan.tosunov',
+        InstragramURL: 'https://www.instagram.com/stefan_tosunov/',
+        LinkedInURL: 'https://www.linkedin.com/in/stefan-tosunov-b70539234/'
     },
     {
         FirstName: 'Teodora',
@@ -231,9 +231,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490027/MemberPhotos/TeodoraNikolova_fjegd2.png',
         Department: 'Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/tedka.nikolova6',
+        InstragramURL: 'https://www.instagram.com/tedka.nikolova?igsh=ZXp4NWdyb3cwaWdz&utm_source=qr',
+        LinkedInURL: 'https://www.linkedin.com/in/teodora-nikolova-97117026a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
         FirstName: 'Nia',
@@ -243,9 +243,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490054/MemberPhotos/NiaHristova_dw4gr4.png',
         Department: 'Challenge Organizers, Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/ni.hristova',
+        InstragramURL: 'https://www.instagram.com/niiahristova?igsh=MTQzdWw2OHBvYWIwcQ==',
+        LinkedInURL: 'https://www.linkedin.com/in/nia-hristova-178a8b269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
         FirstName: 'Anni',
@@ -255,9 +255,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490027/MemberPhotos/AnniDineva_yaxuyg.png',
         Department: 'Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/anni.dineva.5',
+        InstragramURL: 'https://www.instagram.com/a_dineva/?hl=en',
+        LinkedInURL: 'https://www.linkedin.com/in/anna-dineva-5aa8942a2/'
     },
     {
         FirstName: 'David',
@@ -267,9 +267,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490051/MemberPhotos/DavidMitov_lkr222.png',
         Department: 'Challenge Organizers',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100086147155347',
+        InstragramURL: 'https://www.instagram.com/d_m_43?igsh=eXFsb25jb2gzajJ1&utm_source=qr',
+        LinkedInURL: null
     },
     {
         FirstName: 'Dzhan',
@@ -279,9 +279,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490041/MemberPhotos/DzhanHyusein_hokqzq.png',
         Department: 'Challenge Organizers, Marketing, Video',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100010024385312',
+        InstragramURL: 'https://www.instagram.com/dzhan_hyusein/',
+        LinkedInURL: 'https://www.linkedin.com/in/dzhan-hyusein-3b897a274/'
     },
     {
         FirstName: 'Mario',
@@ -291,9 +291,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490033/MemberPhotos/MarioBoyanov_q34o8s.png',
         Department: 'Challenge Organizers, IT, Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/jorocosa',
+        InstragramURL: 'https://www.instagram.com/marioboyanov?igsh=M2toMDY3Zzd0YXVt&utm_source=qr',
+        LinkedInURL: 'https://www.linkedin.com/in/mario-boyanov-344083278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
         FirstName: 'Marko',
@@ -303,9 +303,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711312177/MemberPhotos/MarkoMilanov_v82bmt.png',
         Department: 'Challenge Organizers, BBQ',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/marko.milanov.501',
+        InstragramURL: 'https://www.instagram.com/marko_milanov45/',
+        LinkedInURL: 'https://www.linkedin.com/in/marko-milanov-5299182b9/'
     },
     {
         FirstName: 'Raya',
@@ -315,9 +315,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490045/MemberPhotos/RayaZasheva_yiculg.png',
         Department: 'PR',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100085828025741&locale=bg_BG',
+        InstragramURL: 'https://www.instagram.com/raya_zasheva/',
+        LinkedInURL: null
     },
     {
         FirstName: 'Nikol',
@@ -327,9 +327,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490040/MemberPhotos/NikolTileva_dd8ooa.png',
         Department: 'PR',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100008686486534',
+        InstragramURL: 'https://www.instagram.com/nikoltileva/',
+        LinkedInURL: 'https://www.linkedin.com/in/nikol-tileva-6944b5252/'
     },
     {
         FirstName: 'Konstantin',
@@ -339,9 +339,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490027/MemberPhotos/KonstantinStrashnikov_py9qpr.png',
         Department: 'Marketing, Video',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100014176747892',
+        InstragramURL: 'https://www.instagram.com/konstantin_strashnikov?igsh=MXZmdXduMzdsNG1wdQ%3D%3D&utm_source=qr',
+        LinkedInURL: null
     },
     {
         FirstName: 'Iren',
@@ -351,9 +351,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711311810/MemberPhotos/IrenDimitrova_iciuvi.png',
         Department: 'Marketing',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100071125059145',
+        InstragramURL: 'https://www.instagram.com/irdimitrova?igsh=MW00azlwZTVpa2hlOA%3D%3D&utm_source=qr',
+        LinkedInURL: 'https://www.linkedin.com/in/iren-dimitrova?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
         FirstName: 'Gergana',
@@ -363,9 +363,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490039/MemberPhotos/GerganaBangeeva_r4fy0b.png',
         Department: 'Marketing, Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/gergana.bangeeva?locale=bg_BG',
+        InstragramURL: 'https://www.instagram.com/gerganabangeeva/',
+        LinkedInURL: 'https://www.linkedin.com/in/gergana-bangeeva-757062277/'
     },
     {
         FirstName: 'Mila',
@@ -375,9 +375,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490053/MemberPhotos/MilaBalkandzhieva_okxidu.png',
         Department: 'Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/profile.php?id=100007015937863',
+        InstragramURL: 'https://www.instagram.com/milaa.dimitrova/',
+        LinkedInURL: 'https://www.linkedin.com/in/mila-balkandzhieva-a940952b9/'
     },
     {
         FirstName: 'Neda',
@@ -387,9 +387,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490043/MemberPhotos/DSC_0387-removebg-preview-removebg-preview_onyq4i.png',
         Department: 'Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: null,
+        InstragramURL: null,
+        LinkedInURL: null
     },
     {
         FirstName: 'Stephani',
@@ -399,9 +399,9 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490032/MemberPhotos/StephanieEvtimova_qcxjj8.png',
         Department: 'Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/steephaaannie',
+        InstragramURL: 'https://www.instagram.com/steephaaannie?igsh=YXVtbzE5c3dpeXQ4&utm_source=qr',
+        LinkedInURL: 'http://linkedin.com/in/stephanie-evtimova-bb9019189'
     },
     {
         FirstName: 'Stiliyan',
@@ -411,8 +411,8 @@ export const olympicsMembers = [
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490031/MemberPhotos/StiliyanStoychev_aqsdxk.png',
         Department: 'Sponsorship',
-        FacebookURL: '',
-        InstragramURL: '',
-        LinkedInURL: ''
+        FacebookURL: 'https://www.facebook.com/stenli.stoychev',
+        InstragramURL: 'https://www.instagram.com/stenli.stoychev/',
+        LinkedInURL: 'https://www.linkedin.com/in/stiliyan-stoychev-a7134022b/'
     },
 ]

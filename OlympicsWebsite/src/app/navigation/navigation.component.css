@@ -202,7 +202,7 @@ a:active {
         width: 20px;
         height: 20px;
         position: absolute;
-        left: 10px;
+        left: 3%;
         top: 10px;
         filter: invert(75%) sepia(69%) saturate(514%) hue-rotate(347deg) brightness(99%) contrast(94%);
     }

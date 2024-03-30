@@ -29,7 +29,8 @@
    height: auto;
    border-radius: inherit;
    display: block;
-   filter: drop-shadow(6px 2px 2px var(--backgroundColor));
+   /* filter: drop-shadow(6px 2px 2px var(--backgroundColor)); */
+   /* filter: drop-shadow(0 8px 10px blue); */
 }
 
 .overlay {

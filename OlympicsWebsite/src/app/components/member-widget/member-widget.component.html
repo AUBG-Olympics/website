@@ -14,11 +14,11 @@
                 <p class="position-text">{{getPosition()}}</p>
             </div>
             <div class="member-contact">
-                <a href="https://www.facebook.com/AUBGOlympics" target="_blank"><fa-icon [icon]="faFacebookIcon"
+                <a href="{{member.FacebookURL}}" target="_blank" *ngIf="member.FacebookURL"><fa-icon [icon]="faFacebookIcon"
                         class="icon"></fa-icon></a>
-                <a href="https://www.instagram.com/aubg_olympics/" target="_blank"><fa-icon
+                <a href="{{member.InstragramURL}}" target="_blank" *ngIf="member.InstragramURL"><fa-icon
                         [icon]="faInstragramIcon" class="icon"></fa-icon></a>
-                <a href="https://www.linkedin.com/company/aubg-olympics/mycompany/" target="_blank"><fa-icon
+                <a href="{{member.LinkedInURL}}" target="_blank" *ngIf="member.LinkedInURL"><fa-icon
                         [icon]="faLinkedInIcon" class="icon"></fa-icon></a>
             </div>
         </div>
