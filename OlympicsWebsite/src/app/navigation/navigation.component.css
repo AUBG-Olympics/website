@@ -152,7 +152,7 @@ a:active {
     .hamburger-menu {
         display: flex;
         position: relative;
-        font-size: 2%;
+        font-size: 2rem;
     }
 
     .mobile-title {
@@ -190,7 +190,7 @@ a:active {
     }
 
     .mobile-items {
-        margin-top: 15px;
+        margin-top: 25px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -202,7 +202,7 @@ a:active {
         width: 20px;
         height: 20px;
         position: absolute;
-        left: 10px;
+        left: 3%;
         top: 10px;
         filter: invert(75%) sepia(69%) saturate(514%) hue-rotate(347deg) brightness(99%) contrast(94%);
     }

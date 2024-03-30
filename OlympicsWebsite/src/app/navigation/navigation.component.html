@@ -49,7 +49,7 @@
       </div>
       <div class="hidden-menu" *ngIf="this.menuStatus">
       <div class="mobile-items">
-        <div class="mobile-items" *ngIf="!ddayStatus&&!eventsStatus">
+        <div class="mobile-items" *ngIf="!ddayStatus && !eventsStatus && !themeStatus">
         <a href="who-are-we">Who we are</a>
         <a (click)="changeMenu('dday')" >&#11164; D-Day</a>
         <a (click)="changeMenu('events')">&#11164; Events</a>
@@ -57,6 +57,7 @@
         <a href="meet-the-team">Meet the team</a>
         <a href="contact-us">Contact us</a>
         <a href="charity">Charity</a>
+        <a (click)="changeMenu('theme')">&#11164; Theme</a>
       </div>
         <div *ngIf="ddayStatus" class="mobile-items"> 
           <img (click)="changeMenu('dday')" src="../../assets/arrow-computer-icons-encapsulated-postscript-back-ba07455b568a908a3e32aa57a0501d18.png">
@@ -70,6 +71,13 @@
           <a href="events/fall">FALL23</a>
           <a href="events/spring">SPRING 24</a>
           <a href="events/dday">D-DAY 23</a>
+        </div>
+        <div *ngIf="themeStatus" class="mobile-items"> 
+          <img (click)="changeMenu('theme')" src="../../assets/arrow-computer-icons-encapsulated-postscript-back-ba07455b568a908a3e32aa57a0501d18.png">
+          <h1>Themes</h1>
+          <a (click)="onThemeChange('traditional')">Traditional</a>
+          <a (click)="onThemeChange('reversed')">Reversed</a>
+          <a (click)="onThemeChange('dday')">D-DAY</a>
         </div>
       </div>
     </div>

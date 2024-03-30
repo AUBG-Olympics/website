@@ -29,7 +29,8 @@
    height: auto;
    border-radius: inherit;
    display: block;
-   filter: drop-shadow(6px 2px 2px var(--backgroundColor));
+   /* filter: drop-shadow(6px 2px 2px var(--backgroundColor)); */
+   /* filter: drop-shadow(0 8px 10px blue); */
 }
 
 .overlay {
@@ -44,6 +45,7 @@
     z-index: 1; 
     background-color: var(--backgroundColor);
     border-radius: inherit;
+    cursor: pointer;
 }
 
 .text-on-overlay {
@@ -57,6 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .text{
