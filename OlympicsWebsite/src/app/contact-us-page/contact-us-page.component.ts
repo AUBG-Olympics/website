@@ -24,6 +24,12 @@ export class ContactUsPageComponent {
     text:''
   });
 
+  name='';
+  email='';
+  text=''
+
+  thankYou=false;
+
   nameError='';
   emailError='';
   textError='';
@@ -50,6 +56,11 @@ export class ContactUsPageComponent {
     if(this.emailForm.value.name!=""&&this.emailForm.value.text!=""&&match)
     {
       this.sendEmail(String(this.emailForm.value.name),String(this.emailForm.value.email),String(this.emailForm.value.text));
+     this.name='';
+     this.email='';
+     this.text='';
+     this.thankYou=true;
+     setTimeout(()=>this.thankYou=false,10000);
     }
     else {
       if(this.emailForm.value.name=="")
