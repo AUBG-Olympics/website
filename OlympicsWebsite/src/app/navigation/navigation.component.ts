@@ -1,27 +1,53 @@
 import { Component } from '@angular/core';
 import { ThemeComponent } from '../components/theme/theme.component';
 import { CommonModule } from '@angular/common';
+import { ThemeService } from '../services/theme.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [ThemeComponent,CommonModule],
+  imports: [ThemeComponent, CommonModule],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css'
 })
 export class NavigationComponent {
-  menuStatus=false;
-  ddayStatus=false;
-  eventsStatus=false;
+  menuStatus = false;
+  ddayStatus = false;
+  eventsStatus = false;
+  public themeStatus: boolean = false;
+  private currentPage: any = '';
 
-  showMenu(){
-    this.menuStatus=!this.menuStatus
+  constructor(private themeService: ThemeService, private currRoute: ActivatedRoute, private router: Router) { }
+
+  showMenu() {
+    this.menuStatus = !this.menuStatus
   }
 
-  changeMenu(menu:string){
-    if(menu=="dday")
-    this.ddayStatus=!this.ddayStatus;
-    else if(menu="events")
-    this.eventsStatus=!this.eventsStatus;
+  changeMenu(menu: string) {
+    if (menu == "dday") {
+      this.ddayStatus = !this.ddayStatus;
+    } else if (menu == "events") {
+      this.eventsStatus = !this.eventsStatus;
+    } else if (menu == 'theme') {
+      this.themeStatus = !this.themeStatus;
+    }
+  }
+
+  public onThemeChange(theme: string) {
+    switch (theme) {
+      case 'traditional':
+        this.themeService.setLightTheme();
+        break;
+      case 'reversed':
+        this.themeService.setDarkTheme();
+        break;
+      case 'dday':
+        this.themeService.setDDayTheme();
+    }
+
+
+    this.menuStatus = false;
+    this.themeStatus = false;
   }
 }
