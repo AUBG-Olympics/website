@@ -154,6 +154,7 @@ input[type="reset"] {
 
 .email {
     color: var(--primaryColor);
+    text-shadow: -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black, 1px 1px 0 black, 4px 4px 1px black;
     /* text-shadow: 10px 10px 1px black; */
 }
 
