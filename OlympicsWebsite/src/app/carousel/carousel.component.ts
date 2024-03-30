@@ -29,7 +29,6 @@ export class CarouselComponent {
   slider: KeenSliderInstance|null = null;
 
   ngOnChanges(changes: any) {
-    console.log("changed");
     let s=this.slider;
     setTimeout(function() {
       s?.update();
@@ -42,8 +41,6 @@ export class CarouselComponent {
   }
 
   ngAfterViewInit() {
-    console.log(this.photos);
-    let options=
     this.ngZone.onStable
     .asObservable()
     .pipe(take(1))

@@ -2,27 +2,29 @@
 <div class="images">
     <app-carousel class="carousel" [numOfslides]='1' [photos]='photos' [arrows]="false"></app-carousel>
     <div class="everything">
-    <h1 class="header">D-DAY IN</h1>
-    <div class="timer">
-        <div class="days">
-            <h1 class="time">{{getDays()}}</h1>
-            <h1>DAYS</h1>
+        <h1 class="header">D-DAY IN:</h1>
+        <div class="timer">
+            <div class="days">
+                <h1 class="time">{{getDays()}}</h1>
+                <h1 class="time-indicator">DAYS</h1>
+            </div>
+            <div class="hours">
+                <h1 class="time">{{getHours()}}</h1>
+                <h1 class="time-indicator">HOURS</h1>
+            </div>
+            <div class="minutes">
+                <h1 class="time">{{getMinutes()}}</h1>
+                <h1 class="time-indicator">MINUTES</h1>
+            </div>
+            <div class="seconds">
+                <h1 class="time">{{getSeconds()}}</h1>
+                <h1 class="time-indicator">SECONDS</h1>
+            </div>
         </div>
-        <div class="hours">
-            <h1 class="time">{{getHours()}}</h1>
-            <h1>HOURS</h1>
-        </div>
-        <div class="minutes">
-            <h1 class="time">{{getMinutes()}}</h1>
-            <h1>MINUTES</h1>
-        </div>
-        <div class="seconds">
-            <h1 class="time">{{getSeconds()}}</h1>
-            <h1>SECONDS</h1>
+        <div class="signup-wrapper">
+            <div href="dday/sports" class="signup">
+                <a href="dday/sports">SIGN UP</a>
+            </div>
         </div>
     </div>
-    <div href="dday/sports" class="signup">
-        <a href="dday/sports">SIGN UP</a>
-    </div>
-</div>
 </div>
