@@ -182,7 +182,7 @@ h1 {
     }
 
     .hours, .minutes, .days, .seconds, .time-indicator {
-        font-size: 4.5vw;
+        font-size: 3.5vw;
     }
 
     .timer {
