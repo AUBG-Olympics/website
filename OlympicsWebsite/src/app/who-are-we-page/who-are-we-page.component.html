@@ -1,10 +1,32 @@
 <app-navigation></app-navigation>
-<h1>WHO WE ARE</h1>
+<h1 class="header">WHO WE ARE</h1>
 <div class="page">
-    <div class="test" *ngFor="let tab of tabs">
-        <div class="tab" class={{tab.position}}>
-        <img class={{tab.position}} src={{tab.src}}>
-        <div class="text">{{tab.text}}</div>
+    <div class="tab-wrapper">
+        <div class="tab" *ngFor="let tab of tabs">
+            <div class="img-wrapper">
+                <img class="responsive" src={{tab.ImageUrl}}>
+            </div>
+            <div class="text-wrapper">
+                <div class="text">{{tab.Content}}</div>
+            </div>
+        </div>
     </div>
+
+    <div class="dday-wrapper">
+        <h2 class="header-dday">D-Day</h2>
+        <div class="dday">
+            <div class="dday-data">
+                <span class="number">35</span>
+                <span class="desciption">Organizers</span>
+            </div>
+            <div class="dday-data">
+                <span class="number">1000</span>
+                <span class="desciption">Pariticipants</span>
+            </div>
+            <div class="dday-data">
+                <span class="number">211</span>
+                <span class="desciption">Medalists</span>
+            </div>
+        </div>
     </div>
 </div>

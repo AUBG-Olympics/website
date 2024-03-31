@@ -1,54 +1,102 @@
 @import '../app.component.css';
 
 
-html, body{
-    background-color:var(--backgroundColor) !important;
+html,
+body {
+    background-color: var(--backgroundColor) !important;
     overflow-x: hidden;
     overflow-y: visible;
     margin: 0;
     padding: 0;
-}
-
-h1{
-    text-align: center;
-}
-
-.tab{
-    display: flex;
-    height: 100%;
-    overflow-y:hidden;
-}
-
-.text{
-    width: 33%;
-}
-
-.left{
-    position: relative;
-    left:0;
-    display: flex;
-    justify-content: left;
-    margin-left: 2%;
-}
-
-.right{
-    display: flex;
-    position: relative;
-    right:0;
-    justify-content: right;
-    flex-direction: row-reverse;
-    margin-right: 2%;
-}
-
-.img{
-    height: 100%;
-}
-
-.test{
-    height: 25%;
-    margin-top: 5%;
+    font-family: var(--fontFamily);
+    color: var(--textColor);
 }
 
 .page{
-    height:90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.tab-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3%;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.img-wrapper{
+    width: 85%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrapper{
+    width: 80%;
+    height: 25%;
+    display: flex;
+      
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.text{
+    font-size: 1em;
+}
+
+.dday-wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.header-dday{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.dday{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dday-data{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+.number{
+    text-align: center;
 }
