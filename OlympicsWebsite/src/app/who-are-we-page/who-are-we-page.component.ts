@@ -2,13 +2,8 @@ import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { CommonModule } from '@angular/common';
 import { ThemeService } from '../services/theme.service';
-
-
-type Tab={
-  src:String,
-  text:String,
-  position:String
-}
+import { Tab } from '../models/tab';
+import { whoWeAreTabsBg, whoWeAreTabsEn } from '../data/who-we-are-tabs';
 
 @Component({
   selector: 'app-who-are-we-page',
@@ -22,13 +17,11 @@ type Tab={
 
 export class WhoAreWePageComponent {
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
-  tabs:Tab[]=[];
+  public tabs:Tab[] = whoWeAreTabsEn;
 
   constructor(private themeService: ThemeService){}
 
   ngOnInit(){
-    this.getTabs();
-
     const themePreference = sessionStorage.getItem('theme');
 
     if(themePreference === 'dark'){
@@ -39,13 +32,5 @@ export class WhoAreWePageComponent {
       this.themeService.setDDayTheme();
     }
   }
-  getTabs(){
-    for(let i=0;i<3;i++){
-      this.tabs.push({
-        src:'https://aubgolympics.com/wp-content/uploads/2021/05/maybe.jpg',
-        text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        position:i%2==0?'left':'right'
-      })
-    }
-  }
+  
 }

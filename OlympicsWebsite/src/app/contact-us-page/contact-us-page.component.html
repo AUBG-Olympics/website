@@ -1,37 +1,43 @@
 <app-navigation></app-navigation>
 <div class="contact">
-<h1 class="h1">Contact info</h1>
-<div class="info">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.458806284522!2d23.092151711550965!3d42.01188897110732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aaf5ffcfdc92f1%3A0x56e11ee6ecb544!2z0JDQvNC10YDQuNC60LDQvdGB0LrQuCDQo9C90LjQstC10YDRgdC40YLQtdGCINCyINCR0YrQu9Cz0LDRgNC40Y8!5e0!3m2!1sbg!2sbg!4v1708733633027!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<ul class="contacts">
-    <h2>You can find us here</h2>
-    <li>12 Svoboda Bachvarova Str., Blagoevgrad, Bulgaria, ZIP: 2700</li>
-    <li>President – Zdravko Rashkov: +359 886 659 576</li>
-    <li>Vice President – Nikolay Pavlov: +359 895 057 090</li>
-    <li>Head of Marketing – Hana Egikyan: +359 882 051 111</li>
-    <li>Head of Sponsorship & Treasurer – Brigita Andonova: +359 896 717 610</li>
-    <li>aubgolympicscommittee&#64;gmail.com</li>
-</ul>
-</div>
-<form class='form' [formGroup]="emailForm" (ngSubmit)="validate()">
-    <h1 class="email">SEND US AN EMAIL</h1>
-    <div class="data">
-        <div class="field">
-    <p>Name</p><p class="error" *ngIf="nameError">{{this.nameError}}</p>
-    <input [(ngModel)]="name" type="text" formControlName="name"/>
-</div>
-<div class="field">
-        <p>Email</p><p class="error" *ngIf="emailError">{{this.emailError}}</p>
-    <input [(ngModel)]="email" type="email" formControlName="email"/>
-</div>
-<div class="field message">
-    <p>Message</p><p class="error" *ngIf="textError">{{this.textError}}</p>
-    <textarea [(ngModel)]="text"  class='text' type="text" formControlName="text"></textarea>
-</div>
-<div class="field">
-<button>Submit</button>
-<p class="error" id="thankYou" *ngIf="thankYou">Thank you for contacting us</p>
-</div>
-</div>
-</form>
+    <h1 class="h1">Contact info</h1>
+    <div class="info">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.458806284522!2d23.092151711550965!3d42.01188897110732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aaf5ffcfdc92f1%3A0x56e11ee6ecb544!2z0JDQvNC10YDQuNC60LDQvdGB0LrQuCDQo9C90LjQstC10YDRgdC40YLQtdGCINCyINCR0YrQu9Cz0LDRgNC40Y8!5e0!3m2!1sbg!2sbg!4v1708733633027!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ul class="contacts">
+            <h2>You can find us here</h2>
+            <li>12 Svoboda Bachvarova Str., Blagoevgrad, Bulgaria, ZIP: 2700</li>
+            <li>President – Zdravko Rashkov: +359 886 659 576</li>
+            <li>Vice President – Nikolay Pavlov: +359 895 057 090</li>
+            <li>Head of Marketing – Hana Egikyan: +359 882 051 111</li>
+            <li>Head of Sponsorship & Treasurer – Brigita Andonova: +359 896 717 610</li>
+            <li>aubgolympicscommittee&#64;gmail.com</li>
+        </ul>
+    </div>
+    <form class='form' [formGroup]="emailForm" (ngSubmit)="validate()">
+        <h1 class="email">SEND US AN EMAIL</h1>
+        <div class="data">
+            <div class="field">
+                <p>Name</p>
+                <p class="error" *ngIf="nameError">{{this.nameError}}</p>
+                <input [(ngModel)]="name" type="text" formControlName="name" />
+            </div>
+            <div class="field">
+                <p>Email</p>
+                <p class="error" *ngIf="emailError">{{this.emailError}}</p>
+                <input [(ngModel)]="email" type="email" formControlName="email" />
+            </div>
+            <div class="field message">
+                <p>Message</p>
+                <p class="error" *ngIf="textError">{{this.textError}}</p>
+                <textarea [(ngModel)]="text" class='text' type="text" formControlName="text"></textarea>
+            </div>
+            <div class="field">
+                <button>Submit</button>
+                <p class="error" id="thankYou" *ngIf="thankYou">Thank you for contacting us</p>
+            </div>
+        </div>
+    </form>
 </div>

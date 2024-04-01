@@ -15,6 +15,7 @@ export class ThemeService {
     root.setProperty('--primaryColor', ' #07567F');
     root.setProperty('--secondaryColor', '#173446');
     root.setProperty('--accentColor', '#F4E3BA');
+    root.setProperty('--shadowColor', '#000000');
 
     sessionStorage.removeItem("theme");
     sessionStorage.setItem('theme', 'dark');
@@ -28,6 +29,7 @@ export class ThemeService {
     root.setProperty('--primaryColor', '#dd762c');
     root.setProperty('--secondaryColor', '#173446');
     root.setProperty('--accentColor', '#F4E3BA');
+    root.setProperty('--shadowColor', '#000000');
 
     sessionStorage.removeItem("theme");
     sessionStorage.setItem('theme', 'light');
@@ -41,6 +43,7 @@ export class ThemeService {
     root.setProperty('--primaryColor', '#552583');
     root.setProperty('--secondaryColor', '#686868');
     root.setProperty('--accentColor', '#c7c0eb');
+    root.setProperty('--shadowColor', '#552583');
 
     sessionStorage.removeItem("theme");
     sessionStorage.setItem('theme', 'dday');

@@ -13,6 +13,11 @@ body{
     margin: 3vh 0;
     text-align: center;
     /* text-shadow: 10px 10px 1px black; */
+    text-shadow: -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        4px 4px 1px var(--shadowColor);
 }
 
 .subheader{
@@ -24,6 +29,11 @@ body{
     display: flex;
     width: 100%;
     margin: 1.5vh 0;
+    text-shadow: -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        4px 4px 1px var(--shadowColor);
     /* text-shadow: 10px 10px 1px black; */
 }
 

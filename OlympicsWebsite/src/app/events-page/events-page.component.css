@@ -16,7 +16,11 @@ h1{
     height: 10vh;
     color: var(--textColor);
     font-size: 50px;
-    text-shadow: 10px 10px 1px black;
+    text-shadow: -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        4px 4px 1px var(--shadowColor);
 }
 
 .posters{

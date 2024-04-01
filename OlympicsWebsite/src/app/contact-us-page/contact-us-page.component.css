@@ -16,20 +16,20 @@ h1 {
 
  .h1{
     text-shadow:     
-    -1px -1px 0 black,
-    -1px 1px 0 black,
-    1px -1px 0 black,
-    1px 1px 0 black,
-    4px 4px 1px black;
+    -1px -1px 0 var(--shadowColor),
+    -1px 1px 0 var(--shadowColor),
+    1px -1px 0 var(--shadowColor),
+    1px 1px 0 var(--shadowColor),
+    4px 4px 1px var(--shadowColor);
 }
 
 h2{
     text-shadow:     
-    -1px -1px 0 black,
-    -1px 1px 0 black,
-    1px -1px 0 black,
-    1px 1px 0 black,
-    4px 4px 1px black;
+    -1px -1px 0 var(--shadowColor),
+    -1px 1px 0 var(--shadowColor),
+    1px -1px 0 var(--shadowColor),
+    1px 1px 0 var(--shadowColor),
+    4px 4px 1px var(--shadowColor);
 } 
 
 iframe {
@@ -58,11 +58,6 @@ iframe {
     justify-content: space-evenly;
     font-size: 1.5vw;
     height: 100% !important;
-    text-shadow:     
-    -1px -1px 0 black,
-    -1px 1px 0 black,
-    1px -1px 0 black,
-    1px 1px 0 black;
 }
 
 @media screen and (max-width:1000px) {
@@ -153,8 +148,8 @@ input[type="reset"] {
 }
 
 .email {
-    color: var(--primaryColor);
-    text-shadow: -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black, 1px 1px 0 black, 4px 4px 1px black;
+    color: var(--textColor);
+    text-shadow: -1px -1px 0 var(--shadowColor), -1px 1px 0 var(--shadowColor), 1px -1px 0 var(--shadowColor), 1px 1px 0 var(--shadowColor), 4px 4px 1px var(--shadowColor);
     /* text-shadow: 10px 10px 1px black; */
 }
 
