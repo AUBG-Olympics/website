@@ -32,6 +32,19 @@ h1{
     min-width: 100%;
     position: relative;
     justify-content: center;
+    margin-bottom: 10vh;
+}
+
+a.nostyle:link {
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer !important;
+}
+
+a.nostyle:visited {
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer !important;
 }
 
 .hover{
@@ -41,7 +54,7 @@ h1{
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.5s ease;
-    font-size: 9vh;
+    font-size: 8.5vh;
     color: var(--textColor);
 }
 
