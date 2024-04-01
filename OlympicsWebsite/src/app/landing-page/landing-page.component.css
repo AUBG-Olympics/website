@@ -27,11 +27,11 @@ a:active {
 
 .header {
     font-family: inherit;
-    text-shadow: -1px -1px 0 black,
-        -1px 1px 0 black,
-        1px -1px 0 black,
-        1px 1px 0 black,
-        4px 4px 1px black;
+    text-shadow: -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        4px 4px 1px var(--shadowColor);
 
     color: var(--textColor);
     font-size: 5.5vw;
@@ -88,11 +88,11 @@ a:active {
     gap: 10vw;
     font-family: inherit;
     color: var(--textColor);
-    text-shadow: -1px -1px 0 black,
-        -1px 1px 0 black,
-        1px -1px 0 black,
-        1px 1px 0 black,
-        4px 4px 1px black;
+    text-shadow: -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        4px 4px 1px var(--shadowColor);
 }
 
 .hours, .minutes, .days, .seconds, .time-indicator {
@@ -132,11 +132,11 @@ a:active {
     height: 100%;
     width: 100%;
     text-shadow:
-        -1px -1px 0 black,
-        -1px 1px 0 black,
-        1px -1px 0 black,
-        1px 1px 0 black,
-        4px 4px 1px black;
+        -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        4px 4px 1px var(--shadowColor);
     color: var(--textColor) !important;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -173,11 +173,11 @@ h1 {
     }
 
     .header {
-        text-shadow: -1px -1px 0 black,
-            -1px 1px 0 black,
-            1px -1px 0 black,
-            1px 1px 0 black,
-            3px 3px 1px black;
+        text-shadow: -1px -1px 0 var(--shadowColor),
+            -1px 1px 0 var(--shadowColor),
+            1px -1px 0 var(--shadowColor),
+            1px 1px 0 var(--shadowColor),
+            3px 3px 1px var(--shadowColor);
         font-size: 10vw;
     }
 
@@ -186,20 +186,20 @@ h1 {
     }
 
     .timer {
-        text-shadow: -1px -1px 0 black,
-            -1px 1px 0 black,
-            1px -1px 0 black,
-            1px 1px 0 black,
-            3px 3px 1px black;
+        text-shadow: -1px -1px 0 var(--shadowColor),
+            -1px 1px 0 var(--shadowColor),
+            1px -1px 0 var(--shadowColor),
+            1px 1px 0 var(--shadowColor),
+            3px 3px 1px var(--shadowColor);
 
     }
 
     .signup a {
-        text-shadow: -1px -1px 0 black,
-            -1px 1px 0 black,
-            1px -1px 0 black,
-            1px 1px 0 black,
-            3px 3px 1px black;
+        text-shadow: -1px -1px 0 var(--shadowColor),
+            -1px 1px 0 var(--shadowColor),
+            1px -1px 0 var(--shadowColor),
+            1px 1px 0 var(--shadowColor),
+            3px 3px 1px var(--shadowColor);
     }
 
 }
