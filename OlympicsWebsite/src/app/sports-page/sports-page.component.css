@@ -35,6 +35,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-shadow: -1px -1px 0 var(--shadowColor), -1px 1px 0 var(--shadowColor), 1px -1px 0 var(--shadowColor), 1px 1px 0 var(--shadowColor), 4px 4px 1px var(--shadowColor);
 }
 
 @media (width <= 1196px) {
