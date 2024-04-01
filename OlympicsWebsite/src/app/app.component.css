@@ -30,4 +30,5 @@ router-outlet+ * {
     --secondaryColor: #173446;
     --accentColor: #F4E3BA;
     --fontFamily: "Luckiest Guy", cursive;
+    --shadowColor: #000000;
 }
