@@ -157,7 +157,7 @@ a:active {
     }
 
     .mobile-title {
-        position: relative;
+        position: absolute;
         left: 0;
         height: 100%;
         width: 80%;
@@ -226,7 +226,7 @@ a:active {
     }
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 650px) {
     .mobile-title img {
         width: 70%;
         height: 100%;

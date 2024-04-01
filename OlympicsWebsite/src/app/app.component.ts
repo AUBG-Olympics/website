@@ -12,5 +12,5 @@ import { TranslateComponent } from './components/translate/translate.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'OlympicsWebsite';
+  title = 'AUBG Olympics';
 }

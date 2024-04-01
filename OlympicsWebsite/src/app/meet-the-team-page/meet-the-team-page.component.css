@@ -16,6 +16,11 @@ body{
     /* text-shadow: 10px 10px 1px black; */
     font-size: 3.5rem;
     text-align: center;
+    text-shadow: -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        4px 4px 1px var(--shadowColor);
 }
 
 .member-wrapper{
