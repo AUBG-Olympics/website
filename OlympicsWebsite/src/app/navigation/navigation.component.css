@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     height: 10vh;
     font-family: "Luckiest Guy", cursive;
-    width: 100%;
+    width: 100;
 }
 
 .desktop-menu {
@@ -138,11 +138,11 @@ a:active {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1513px) {
+@media only screen and (max-width : 1792px) {
     .menu-bar {
         position: sticky;
         top: 0;
-        z-index: 1;
+        z-index: 2;
     }
 
     .desktop-menu {
@@ -153,18 +153,14 @@ a:active {
         display: flex;
         position: relative;
         font-size: 2rem;
+        width: 100%;
     }
 
     .mobile-title {
         position: relative;
         left: 0;
-        width: 40vw;
         height: 100%;
-    }
-
-    .mobile-title img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
     }
 
     .hamburger {
@@ -220,5 +216,19 @@ a:active {
         border-top: 2px solid var(--primaryColor);
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1513px) {
+    .mobile-title img {
+        width: 30%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .mobile-title img {
+        width: 70%;
+        height: 100%;
     }
 }
