@@ -4,7 +4,7 @@
 <div class="posters">
     <div class="poster" *ngFor="let poster of pictures">
     <img src={{poster.src}}>
-    <div class="hover">{{poster.description}}</div>
+    <div class="hover"><a class="nostyle" target="_blank" href={{poster.url}}>{{poster.description}}</a></div>
     </div>
 </div>
 </div>
