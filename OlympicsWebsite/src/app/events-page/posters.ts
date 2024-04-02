@@ -14,7 +14,7 @@ export const postersFall23: Event[] = [
     {
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709552789/Posters/4_xcbyqw.png",
         description: "Skills challenge",
-        url:"https://www.instagram.com/reel/C0Rx4F1JDtb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        url:"https://youtube.com/shorts/svsyrXUNfUo?si=sMyiYV7E9xNBs7eS"
     }
 ]
 
