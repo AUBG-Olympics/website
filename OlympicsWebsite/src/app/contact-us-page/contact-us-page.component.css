@@ -24,6 +24,7 @@ h1 {
 }
 
 h2{
+    text-align: center;
     text-shadow:     
     -1px -1px 0 var(--shadowColor),
     -1px 1px 0 var(--shadowColor),
