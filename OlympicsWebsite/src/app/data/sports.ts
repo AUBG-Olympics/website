@@ -40,10 +40,10 @@ export const ddaySports = [
         SignUpUrl: 'https://forms.gle/qAvyXVSvL1Avb6wp7'
     },
     {
-        Title: 'Giant Beer Bong',
+        Title: 'Giant Beer Pong',
         Icon: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711295454/SportsIcons/GiantBeerPong.png',
-        Headline: "READY, STEADY, GO!",
-        Description: "100 Meter Dash is the shortest outdoor running distance in track and field competitions. The champion from this competition is usually named “the fastest man/woman on Earth.” Men’s 100-meter dash has been an official Olympics sport since 1896; the women's discipline - since 1928.",
+        Headline: "AIM, TOSS, CHEER! ",
+        Description: "The classic party game returns with a larger excitement in the form of a sport. Get ready to experience an epic rally with twists all the way to the win.",
         RulesUrl: 'https://docs.google.com/document/d/1_6tmWdCNK5t2GRhbxVo1DMe9gdO_CbZ3/view',
         SignUpUrl: 'https://forms.gle/zKmPob2Q1E2a9YHM6'
     },
@@ -69,7 +69,7 @@ export const ddaySports = [
         Headline: "BRO, DO YOU EVEN LIFT?",
         Description: "Challenge yourself in this form of competitive weightlifting, where contestants attempt three types of exercises in a set sequence. The result is calculated according to the Wilks calculator, which takes into consideration the contestant's weight and the kilograms lifted.",
         RulesUrl: 'https://docs.google.com/document/d/1E4m3GndrtekVDugi3tJ7WmRzO41zyg_q/view',
-        SignUpUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1712080039/983B69A6-2F2C-4AF3-BC37-3DF6CE4BC328_mbd1fn.jpg'
+        SignUpUrl: 'https://forms.gle/VpF46kgfozqtb3769'
     },
 
     {
@@ -133,7 +133,7 @@ export const ddaySports = [
         Icon: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711236088/SportsIcons/TugOfWar.png',
         Headline: "FOR ROPE-HANDLING AND STRENGTH GODS ONLY.",
         Description: "As the sport with the most spectators on our event, it is also the most competitive one. A contest in which two teams pull at opposite ends of a rope until one drags the other over a central line. There are 5 people per team and their joint efforts create the emotion of the game.",
-        RulesUrl: 'https://docs.google.com/document/d/1xzssy_XuyUVsK_Mz0OE1WHwCY3Z_Yoip/view',
+        RulesUrl: 'https://docs.google.com/document/d/1KEyaid2iEauYDdh4SuV3SMUtoUMwx9k1/edit?usp=sharing&ouid=107519412797175181479&rtpof=true&sd=true',
         SignUpUrl: 'https://forms.gle/d21QgQwtcN7wkYcPA'
     },
     {

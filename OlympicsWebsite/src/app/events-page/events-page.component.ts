@@ -45,7 +45,7 @@ export class EventsPageComponent {
       this.pictures=postersSpring24;
     }
     else if(this.event=='dday'){
-      this.title='D-DAY 23';
+      this.title='D-DAY 24';
       this.pictures=postersDDay24;
     }
   }

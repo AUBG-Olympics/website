@@ -4,7 +4,7 @@
         <div class="container-wrapper" *ngIf="hide">
             <div class="sport-data" [ngClass]="isHidden? '' : 'hidden'">
                 <div class="img-wrapper">
-                    <img src="{{sport.Icon}}" class="responsive" alt="Sport Icon" [ngClass]="{'responsive-image': sport.Title == 'Tug of War' || sport.Title == 'Volleyball'}"/>
+                    <img src="{{sport.Icon}}" class="responsive" alt="Sport Icon" [ngClass]="{'responsive-image': sport.Title == 'Tug of War'}"/>
                 </div>
                 <div class="header-wrapper">
                     <h3 class="sport-header">{{sport.Title}}</h3>

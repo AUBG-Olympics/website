@@ -122,7 +122,7 @@ export const olympicsMembers = [
         Head: false,
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711312267/MemberPhotos/AlexPeev_kq1hpm.png',
-        Department: 'Challenge Organizers, Logistics, BBQ',
+        Department: 'Challenge Organizers, Logistics',
         FacebookURL: 'https://www.facebook.com/AlexPeew',
         InstragramURL: 'https://www.instagram.com/alexpeew?igsh=MW56NGIzdTBhengwaA%3D%3D&utm_source=qr',
         LinkedInURL: 'https://www.linkedin.com/in/aleksandar-peev-945532222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
@@ -158,7 +158,7 @@ export const olympicsMembers = [
         Head: false,
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490031/MemberPhotos/KirilKambitov_nurrwa.png',
-        Department: 'Logistics, Challenge Organizers',
+        Department: 'Logistics, Challenge Organizers, BBQ',
         FacebookURL: 'https://www.facebook.com/kiril.kambitov/',
         InstragramURL: 'https://www.instagram.com/kirilkambitov/',
         LinkedInURL: null
@@ -248,7 +248,7 @@ export const olympicsMembers = [
         LinkedInURL: 'https://www.linkedin.com/in/nia-hristova-178a8b269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     },
     {
-        FirstName: 'Anni',
+        FirstName: 'Anna',
         LastName: 'Dineva',
         Board: false,
         Head: false,

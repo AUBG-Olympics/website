@@ -21,7 +21,18 @@ export class NavigationComponent {
   constructor(private themeService: ThemeService, private currRoute: ActivatedRoute, private router: Router) { }
 
   showMenu() {
-    this.menuStatus = !this.menuStatus
+    this.menuStatus = !this.menuStatus;
+    let body: HTMLBodyElement | null = document.querySelector('body');
+
+    if(this.menuStatus){
+      if(body){
+        body.style.overflow = 'hidden';
+      }
+    } else{
+      if(body){
+        body.style.overflow = 'auto';
+      }
+    }
   }
 
   changeMenu(menu: string) {

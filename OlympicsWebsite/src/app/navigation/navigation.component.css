@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     height: 10vh;
     font-family: "Luckiest Guy", cursive;
-    width: 100;
+    width: 100%;
 }
 
 .desktop-menu {
@@ -51,7 +51,7 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-img {
+.nav-img {
     height: 100%;
 }
 
@@ -78,6 +78,11 @@ a:active {
     text-decoration: none;
 }
 
+.back-arrow{
+    width: 3vw;
+    height: 3vw;
+}
+
 .subnav {
     float: left;
     height: 100% !important;
@@ -88,6 +93,18 @@ a:active {
 .subnav:hover .subnav-content {
     display: flex;
     flex-direction: column;
+}
+
+a{
+    position: relative;
+
+}
+
+.expand-arrow{
+    height: 30px;
+    filter: invert(75%) sepia(69%) saturate(514%) hue-rotate(347deg) brightness(99%) contrast(94%);
+    position: absolute;
+    left:-40px;
 }
 
 .subnav:hover {
@@ -138,7 +155,7 @@ a:active {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1792px) {
+@media only screen and (max-width : 2050px) {
     .menu-bar {
         position: sticky;
         top: 0;
@@ -177,8 +194,9 @@ a:active {
 
     .hidden-menu {
         position: fixed;
-        width: 100vw;
-        height: 90vh;
+        width: 100%;
+        height: calc(100% - 10vh);
+        top: 10%;
         right: 0;
         bottom: 0;
         background-color: var(--accentColor);
@@ -194,9 +212,7 @@ a:active {
         align-items: center;
     }
 
-    .mobile-items img {
-        width: 20px;
-        height: 20px;
+    .mobile-items .back-arrow {
         position: absolute;
         left: 3%;
         top: 10px;
@@ -204,11 +220,15 @@ a:active {
     }
 
     .mobile-items h1 {
-        color: var(--primaryColor)
+        color: var(--primaryColor);
+        font-size:2.5rem;
     }
 
     .mobile-items a {
         color: var(--textColor) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     hr {
@@ -224,11 +244,19 @@ a:active {
         width: 30%;
         height: 100%;
     }
+    .back-arrow{
+        width: 4vw !important;
+        height: 4vw !important;
+    }
 }
 
 @media only screen and (max-width : 650px) {
     .mobile-title img {
         width: 70%;
         height: 100%;
+    }
+    .back-arrow{
+        width: 8vw !important;
+        height: 8vw !important;
     }
 }

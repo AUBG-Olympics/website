@@ -1,7 +1,7 @@
 <nav class="menu-bar">
   <div class="desktop-menu">
     <div class="group">
-      <a href="/" class="item title"><img src="../../assets/Screenshot_2024-02-25_at_11.56.13-removebg-preview.png"></a>
+      <a href="/" class="item title"><img class="nav-img" src="../../assets/Screenshot_2024-02-25_at_11.56.13-removebg-preview.png"></a>
     </div>
     <div class="group">
       <div>
@@ -12,7 +12,7 @@
         <div class="subnav-content">
           <a class="sbnav" href="events/fall">FALL 23</a>
           <a class="sbnav" href="events/spring">SPRING 24</a>
-          <a class="sbnav dday" href="events/dday">D-DAY 23</a>
+          <a class="sbnav dday" href="events/dday">D-DAY 24</a>
         </div>
       </div>
       <div>
@@ -41,42 +41,42 @@
   </div>
   <div class="hamburger-menu">
     <div class="mobile-title">
-      <a href="/" class="mobile-item mobile-title"><img
+      <a href="/" class="mobile-item mobile-title"><img class="nav-img"
           src="../../assets/Screenshot_2024-02-25_at_11.56.13-removebg-preview.png"></a>
     </div>
 
     <div class="hamburger">
-      <img (click)="showMenu()" src="../../assets/hamburger-menu.png">
+      <img class="nav-img" (click)="showMenu()" src="../../assets/hamburger-menu.png">
     </div>
-    <div class="hidden-menu" *ngIf="this.menuStatus">
+    <div class="hidden-menu" *ngIf="menuStatus">
       <div class="mobile-items">
         <div class="mobile-items" *ngIf="!ddayStatus && !eventsStatus && !themeStatus">
           <a href="who-are-we">Who we are</a>
-          <a (click)="changeMenu('events')">&#11164; Events</a>
+          <a (click)="changeMenu('events')"><img class="expand-arrow" src="../../assets/expand-arrow.png"> Events</a>
           <a href="meet-the-team">Meet the team</a>
           <a href="sponsors">Sponsors</a>
-          <a (click)="changeMenu('dday')">&#11164; D-Day</a>
+          <a (click)="changeMenu('dday')"><img class="expand-arrow" src="../../assets/expand-arrow.png"> D-Day</a>
           <a href="contact-us">Contact us</a>
           <!-- Hiding it for now: <a href="charity">Charity</a> -->
-          <a (click)="changeMenu('theme')">&#11164; Theme</a>
+          <a (click)="changeMenu('theme')"><img class="expand-arrow" src="../../assets/expand-arrow.png"> Theme</a>
         </div>
         <div *ngIf="ddayStatus" class="mobile-items">
-          <img (click)="changeMenu('dday')"
+          <img class="back-arrow" (click)="changeMenu('dday')"
             src="../../assets/arrow-computer-icons-encapsulated-postscript-back-ba07455b568a908a3e32aa57a0501d18.png">
           <h1>D-DAY</h1>
           <a href="dday/schedule">Schedule</a>
           <a href="dday/sports">Sports & Sign-Up</a>
         </div>
         <div *ngIf="eventsStatus" class="mobile-items">
-          <img (click)="changeMenu('events')"
+          <img class="back-arrow" (click)="changeMenu('events')"
             src="../../assets/arrow-computer-icons-encapsulated-postscript-back-ba07455b568a908a3e32aa57a0501d18.png">
           <h1>EVENTS</h1>
-          <a href="events/fall">FALL23</a>
+          <a href="events/fall">FALL 23</a>
           <a href="events/spring">SPRING 24</a>
-          <a href="events/dday">D-DAY 23</a>
+          <a href="events/dday">D-DAY 24</a>
         </div>
         <div *ngIf="themeStatus" class="mobile-items">
-          <img (click)="changeMenu('theme')"
+          <img class="back-arrow" (click)="changeMenu('theme')"
             src="../../assets/arrow-computer-icons-encapsulated-postscript-back-ba07455b568a908a3e32aa57a0501d18.png">
           <h1>Themes</h1>
           <a (click)="onThemeChange('traditional')">Traditional</a>
