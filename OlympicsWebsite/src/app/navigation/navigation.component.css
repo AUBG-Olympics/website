@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     height: 10vh;
     font-family: "Luckiest Guy", cursive;
-    width: 100;
+    width: 100%;
 }
 
 .desktop-menu {
@@ -155,7 +155,7 @@ a{
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1792px) {
+@media only screen and (max-width : 2050px) {
     .menu-bar {
         position: sticky;
         top: 0;
@@ -194,8 +194,9 @@ a{
 
     .hidden-menu {
         position: fixed;
-        width: 100vw;
-        height: 90vh;
+        width: 100%;
+        height: calc(100% - 10vh);
+        top: 10%;
         right: 0;
         bottom: 0;
         background-color: var(--accentColor);

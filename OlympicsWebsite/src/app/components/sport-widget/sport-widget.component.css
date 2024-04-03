@@ -96,12 +96,12 @@
 }
 
 .responsive {
-    width: 55%;
-    height: 100%;
+    height: 8vw;
+    width: 9vw;
 }
 
 .responsive-image{
-    width: 90%!important;
+    width: 255px!important;
     height: 80%!important;
 }
 
@@ -158,6 +158,20 @@
 
     .action-buttons{
         width: 80%;
+    }
+}
+
+@media screen and (min-width: 752px) and (max-width: 1296px) {
+    .responsive{
+        width: 15vw;
+        height: 12vw;
+    }
+}
+
+@media screen and (min-width: 591px) and (max-width: 751px) {
+    .responsive{
+        width: 20vw;
+        height: 16vw;
     }
 }
 

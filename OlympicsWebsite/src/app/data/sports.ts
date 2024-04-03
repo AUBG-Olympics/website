@@ -69,7 +69,7 @@ export const ddaySports = [
         Headline: "BRO, DO YOU EVEN LIFT?",
         Description: "Challenge yourself in this form of competitive weightlifting, where contestants attempt three types of exercises in a set sequence. The result is calculated according to the Wilks calculator, which takes into consideration the contestant's weight and the kilograms lifted.",
         RulesUrl: 'https://docs.google.com/document/d/1E4m3GndrtekVDugi3tJ7WmRzO41zyg_q/view',
-        SignUpUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1712080039/983B69A6-2F2C-4AF3-BC37-3DF6CE4BC328_mbd1fn.jpg'
+        SignUpUrl: 'https://forms.gle/VpF46kgfozqtb3769'
     },
 
     {

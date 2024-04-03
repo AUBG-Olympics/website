@@ -48,7 +48,7 @@
     <div class="hamburger">
       <img class="nav-img" (click)="showMenu()" src="../../assets/hamburger-menu.png">
     </div>
-    <div class="hidden-menu" *ngIf="this.menuStatus">
+    <div class="hidden-menu" *ngIf="menuStatus">
       <div class="mobile-items">
         <div class="mobile-items" *ngIf="!ddayStatus && !eventsStatus && !themeStatus">
           <a href="who-are-we">Who we are</a>
