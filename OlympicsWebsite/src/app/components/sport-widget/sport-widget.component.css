@@ -101,7 +101,7 @@
 }
 
 .responsive-image{
-    width: 255px!important;
+    width: 100%!important;
     height: 80%!important;
 }
 
@@ -158,6 +158,31 @@
 
     .action-buttons{
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .description{
+        font-size: 0.75em;
+    }
+
+    .sport-header{
+        font-size: 1.5em;
+    }
+
+    .action-buttons{
+        width: 80%;
+    }
+
+    .responsive-image{
+        width: 130%!important;
+    }
+}
+
+
+@media screen and (max-width: 374px) {
+    .responsive-image{
+        width: 160%!important;
     }
 }
 
