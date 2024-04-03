@@ -43,6 +43,8 @@ export class MeetTheTeamPageComponent{
       this.title = "Olympics Board";
     } else if(department === 'Challenge'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
+      let Ilian=this.membersOlympics.splice(1,1);
+      this.membersOlympics.splice(0,0,Ilian[0]);
       this.title = "Olympics Challenge Organizers";
     } else if(department === 'Logistics'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
