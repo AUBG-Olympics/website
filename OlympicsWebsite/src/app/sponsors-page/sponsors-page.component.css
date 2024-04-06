@@ -3,7 +3,7 @@
     --color:transparent;
 }
 
-h1{
+.heading{
     font-family:  "Luckiest Guy", cursive;
     color:var(--textColor);
     font-size: 40px;

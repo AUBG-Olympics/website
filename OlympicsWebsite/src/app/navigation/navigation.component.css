@@ -53,6 +53,7 @@
 
 .nav-img {
     height: 100%;
+    cursor: pointer;
 }
 
 .item {
@@ -151,7 +152,7 @@ a{
     display: none;
     width: 100%;
     height: 100%;
-    cursor: pointer;
+
 }
 
 /* Medium Devices, Desktops */
@@ -177,7 +178,7 @@ a{
         position: absolute;
         left: 0;
         height: 100%;
-        width: 80%;
+        width: 40%;
     }
 
     .hamburger {
