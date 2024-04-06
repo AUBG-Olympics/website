@@ -5,7 +5,7 @@ export const ddaySports = [
         Headline: 'Are You The Next Gladiator?',
         Description: "Test yourself in this trial of strength. Two opponents sit opposite each other with one elbow resting on a table, clasp each other's hands, and try to force each other's arm down on to the table. Your position, way of clasping, and posture are all constituents of a successful play.",
         RulesUrl: 'https://docs.google.com/document/d/1chY0bvbnglPwto46b9V7-CaTo1MUd-Dg/view',
-        SignUpUrl: 'https://forms.gle/CmWaE8p2jMEQyZVx7'
+        SignUpUrl: 'https://forms.gle/sxD85Bp8AmGFbWEE7'
     },
     {
         Title: 'Basketball',
