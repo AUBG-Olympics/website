@@ -43,8 +43,8 @@ body{
     justify-content: center;
     align-items:center;
     width: fit-content;
-    height: 200px;
-    max-height: 200px;
+    height: 280px;
+    max-height: 280px;
     cursor: pointer;
 
 }
@@ -62,8 +62,18 @@ body{
     background-color: white;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.onHover:hover a{
+    margin-top: 5px;
+    background-color: var(--secondaryColor);
+    padding: 5px;
+}
+
 .onHover{
-    position: absolute;
     position: absolute;
     top:0;
     left:50%;
@@ -82,6 +92,8 @@ body{
     text-align: justify;
     box-sizing: border-box;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .slide:hover .onHover{
@@ -108,7 +120,7 @@ body{
 }
 
 .keen-slider{
-    padding: 15px 0;
+    padding: 40px 0;
 }
 
 @keyframes hoverA {

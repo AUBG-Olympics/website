@@ -4,11 +4,12 @@ import { NavigationComponent } from '../navigation/navigation.component';
 import { ThemeService } from '../services/theme.service';
 import {zeusSponsors,poseidonSponsors,artemisSponsors,athenaSponsors,hephaestusSponsors} from './sponsorsInfo';
 import {Image} from '../models/image';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-sponsors-page',
   standalone: true,
-  imports: [CarouselComponent,NavigationComponent],
+  imports: [CarouselComponent,NavigationComponent,CommonModule],
   templateUrl: './sponsors-page.component.html',
   styleUrl: './sponsors-page.component.css',
   providers: [ThemeService],

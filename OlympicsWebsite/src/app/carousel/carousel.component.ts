@@ -25,6 +25,8 @@ export class CarouselComponent {
   hover:boolean = false;
   @Input()
   arrows:boolean=false;
+  @Input()
+  url:boolean=false;
   currentSlide: number = 1;
   slider: KeenSliderInstance|null = null;
 
@@ -38,6 +40,7 @@ export class CarouselComponent {
   constructor(private ngZone: NgZone,private cdRef: ChangeDetectorRef){}
   ngOnInit() {
     window.dispatchEvent(new Event('resize'));
+    if(this.photos.length<this.numOfslides){this.numOfslides=this.photos.length;}
   }
 
   ngAfterViewInit() {
