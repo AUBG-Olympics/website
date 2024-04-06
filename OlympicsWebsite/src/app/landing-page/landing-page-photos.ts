@@ -29,7 +29,7 @@ export const horizontalPhotos:Image[]=[
 
 export const verticalPhotos:Image[]=[
     {
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709550920/CarouselPhotos/image3_azvijg.png",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712441308/CarouselPhotos/output-onlinetools_3_cgo7uw.png",
         description: '', descriptionBg:'', pageUrl:''
       },
       {
@@ -37,11 +37,11 @@ export const verticalPhotos:Image[]=[
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709551691/CarouselPhotos/image_rccszt.png',
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1712441121/CarouselPhotos/output-onlinetools_vmvaip.png',
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709550741/CarouselPhotos/image2_n4wm57.png',
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1712441249/CarouselPhotos/output-onlinetools_1_ubmnyq.png',
         description: '', descriptionBg:'', pageUrl:''
       }
 ]
