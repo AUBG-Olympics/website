@@ -24,6 +24,12 @@ export class NavigationComponent {
     this.menuStatus = !this.menuStatus;
     let body: HTMLBodyElement | null = document.querySelector('body');
 
+    let html = document.querySelector('html');
+
+    if(html){
+      html.style.overflow = 'hidden';
+    }
+
     if(this.menuStatus){
       if(body){
         body.style.overflow = 'hidden';
@@ -60,5 +66,11 @@ export class NavigationComponent {
 
     this.menuStatus = false;
     this.themeStatus = false;
+
+    let body: HTMLBodyElement | null = document.querySelector('body');
+
+    if(body){
+      body.style.overflow = 'auto';
+    }
   }
 }
