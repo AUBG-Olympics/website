@@ -2,7 +2,7 @@ import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { ThemeService } from '../services/theme.service';
-import {picturesInfo} from './sponsorsInfo';
+import {zeusSponsors,poseidonSponsors,artemisSponsors,athenaSponsors,hephaestusSponsors} from './sponsorsInfo';
 import {Image} from '../models/image';
 
 @Component({
@@ -17,8 +17,8 @@ import {Image} from '../models/image';
 export class SponsorsPageComponent {
   @ViewChild(CarouselComponent) car?:CarouselComponent;
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
-  photosTier1:Image[]=[];
   photosTier2:Image[]=[];
+  photosTier1:Image[]=[];
   photosTier3:Image[]=[];
   photosTier4:Image[]=[];
   photosTier5:Image[]=[];
@@ -50,28 +50,11 @@ export class SponsorsPageComponent {
   }
 
   getPhotos(){
-    for(let i=0;i<10;i++){
-    this.photosTier1.push({
-      src:picturesInfo[i].src,
-    description:picturesInfo[i].description});
-    this.photosTier2.push({
-      src:picturesInfo[9-i].src,
-      description:picturesInfo[9-i].description});
-      this.photosTier3.push({
-        src:picturesInfo[9-i].src,
-        description:picturesInfo[9-i].description});
-        this.photosTier4.push({
-          src:picturesInfo[9-i].src,
-          description:picturesInfo[9-i].description});
-          this.photosTier5.push({
-            src:picturesInfo[9-i].src,
-            description:picturesInfo[9-i].description});
-    }
-    this.shuffle(this.photosTier1);
-    this.shuffle(this.photosTier2);
-    this.shuffle(this.photosTier3);
-    this.shuffle(this.photosTier4);
-    this.shuffle(this.photosTier5);
+   this.photosTier1=zeusSponsors;
+   this.photosTier2=poseidonSponsors;
+   this.photosTier3=athenaSponsors;
+   this.photosTier4=hephaestusSponsors;
+   this.photosTier5=artemisSponsors;
   }
 
 
