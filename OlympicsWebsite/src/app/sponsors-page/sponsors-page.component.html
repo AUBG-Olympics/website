@@ -7,7 +7,14 @@
 </div>
 <h1 class="posseidon heading">POSEIDON</h1>
 <div class="cc">
-<app-carousel  [numOfslides]='numOfSlides' [photos]='photosTier2' [spacing]=150 [hover]="true" [arrows]="true" [url]="true"></app-carousel>
+    <div>
+    <div class="poseidon-temp">
+    <div *ngFor="let photo of photosTier2" class="keen-slider__slide slide number-slide"><img src={{photo.src}}>
+        <p class="onHover">{{photo.description}} <a  href={{photo.pageUrl}} target="_blank">Visit site</a></p>
+      </div>
+    </div>
+</div>
+<!-- <app-carousel  [numOfslides]='numOfSlides' [photos]='photosTier2' [spacing]=150 [hover]="true" [arrows]="true" [url]="true"></app-carousel> -->
 </div>
 <h1 class="athena heading">ATHENA</h1>
 <div class="cc">
