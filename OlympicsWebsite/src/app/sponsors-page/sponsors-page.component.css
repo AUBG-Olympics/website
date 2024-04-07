@@ -90,10 +90,11 @@ a:active {
     position: relative;
 }
 
-.onHover:hover a {
+.onHover:hover > .see-more {
     margin-top: 5px;
     background-color: var(--secondaryColor);
     padding: 5px;
+    border-radius: 7px;
 }
 
 .onHover {

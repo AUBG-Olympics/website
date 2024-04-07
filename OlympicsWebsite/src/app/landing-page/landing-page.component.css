@@ -124,7 +124,7 @@ a:active {
     justify-content: center;
 }
 
-.signup a {
+.signup .sign-up-dday {
     display: flex;
     justify-content: center;
     align-items: center;
