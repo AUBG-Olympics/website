@@ -15,14 +15,14 @@
    /* text-shadow: 10px 10px 2px black; */
 }
 
-.lightning{
+/* .lightning{
     position: absolute;
     height: 150px;
     left:70%;
     top:10%;
     filter: brightness(0) saturate(100%) invert(65%) sepia(81%) saturate(405%) hue-rotate(1deg) brightness(105%) contrast(92%);
     filter:drop-shadow(3px 3px 2px black);
-}
+} */
 
 body{
     background-color:var(--backgroundColor);
@@ -43,8 +43,8 @@ body{
     justify-content: center;
     align-items:center;
     width: fit-content;
-    height: 200px;
-    max-height: 200px;
+    height: 280px;
+    max-height: 280px;
     cursor: pointer;
 
 }
@@ -62,8 +62,37 @@ body{
     background-color: white;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.poseidon-temp{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    gap:150px;
+}
+
+
+
+.poseidon-temp .slide{
+    width: fit-content;
+    width: 400px;
+    display: block;
+    position: relative;
+}
+
+.onHover:hover a{
+    margin-top: 5px;
+    background-color: var(--secondaryColor);
+    padding: 5px;
+}
+
 .onHover{
-    position: absolute;
     position: absolute;
     top:0;
     left:50%;
@@ -82,6 +111,8 @@ body{
     text-align: justify;
     box-sizing: border-box;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .slide:hover .onHover{
@@ -108,7 +139,7 @@ body{
 }
 
 .keen-slider{
-    padding: 15px 0;
+    padding: 40px 0;
 }
 
 @keyframes hoverA {
@@ -141,6 +172,29 @@ body{
 
 
 @media (width <= 600px) {
+
+    .poseidon-temp{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        gap:150px;
+    }
+
+    .poseidon-temp img{
+        width: 100% !important;
+    }
+
+    .poseidon-temp .onHover{
+        width: 100% !important;
+    }
+
+    .poseidon-temp .slide{
+        width:80vw;
+    }
+
     .arrow-container-left{
         width: 30px !important;
     }
@@ -166,6 +220,7 @@ body{
         left:50%;
         transform: translate(-50%,0);
     }
+
     .slide{
         box-shadow: none; 
     }

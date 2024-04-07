@@ -15,6 +15,7 @@ import { ThemeService } from '../services/theme.service';
   styleUrl: './meet-the-team-page.component.css',
   encapsulation: ViewEncapsulation.None
 })
+
 export class MeetTheTeamPageComponent{
 
   constructor(private themeService: ThemeService){}

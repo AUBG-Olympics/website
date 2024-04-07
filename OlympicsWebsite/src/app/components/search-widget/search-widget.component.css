@@ -20,7 +20,7 @@
 
 .option{
     background-color: var(--backgroundColor);
-    width: 12%;
+    width: 15%;
     height: 30%;
     border-radius: 5px;
     font-size: small;
@@ -75,7 +75,7 @@
 
 @media (width <= 1196px) {
     .option{
-        width: 25%;
+        width: 35%;
         height: 35%;
     }
 

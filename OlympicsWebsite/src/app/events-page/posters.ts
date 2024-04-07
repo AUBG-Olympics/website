@@ -38,8 +38,8 @@ export const postersSpring24: Event[]=[
 
 export const postersDDay24: Event[]=[
     {
-        src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1711998073/Posters/20_days_till_dday_d4de9b.png",
+        src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712440231/Posters/20_days_till_dday_1_vkavmt.png",
         description:"D-DAY-21.04",
-        url:"https://www.instagram.com/reel/C5OoJECoaDZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        url:"https://www.instagram.com/aubg_olympics/"
     }
 ]

@@ -1,17 +1,41 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, IMAGE_LOADER, NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { HoverDirective } from '../../directives/hover.directive';
 import { faInstagram, faLinkedin, faYoutube, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Member } from '../../models/member';
 
+export function customCloudinaryLoader(): any {
+  return (urlObj: any) => {
+    // Modify the URL to remove or adjust the automatic transformations
+    // For example, removing the redundant part
+    let url = urlObj.src;
+    const baseUrl = 'https://res.cloudinary.com/dq9gemegi/image/upload/';
+    const transformationSegment = '/f_auto,q_auto,w_1920/';
+    if (url.includes(transformationSegment)) {
+      url = url.replace(transformationSegment, '/');
+    }
+    // Ensure the base URL is correctly included
+    if (!url.startsWith(baseUrl)) {
+      url = baseUrl + url;
+    }
+    return url;
+  };
+}
+
 @Component({
   selector: 'app-member-widget',
   standalone: true,
-  imports: [CommonModule, HoverDirective, FontAwesomeModule],
+  imports: [CommonModule, HoverDirective, FontAwesomeModule, NgOptimizedImage],
   templateUrl: './member-widget.component.html',
-  styleUrl: './member-widget.component.css'
+  styleUrl: './member-widget.component.css',
+  providers: [{
+    provide: IMAGE_LOADER,
+    useFactory: customCloudinaryLoader,
+    deps: [],
+  },]
 })
+
 export class MemberWidgetComponent {
   public isHovered: boolean = false;
 

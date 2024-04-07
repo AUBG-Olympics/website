@@ -24,6 +24,7 @@ body{
     color: var(--textColor);
     font-size: 6vh;
     font-family:  "Luckiest Guy", cursive;
+    text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
