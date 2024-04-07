@@ -7,7 +7,7 @@ export const horizontalPhotos:Image[]=[
       },
       {
         src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549486/CarouselPhotos/428502175_810441871114225_4628992403078249897_n_gdnfw4.jpg',
-        description: '', descriptionBg:'', pageUrl:''
+        description: '', descriptionBg:'', pageUrl:'', priority: 1
       },
       {
         src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549485/CarouselPhotos/428491293_813861317438947_2298361993371666072_n_plgzly.jpg',

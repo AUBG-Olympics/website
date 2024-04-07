@@ -6,14 +6,12 @@ export const zeusSponsors: Image[] = [
         descriptionBg: "FitSpo е бранд на иновативен, бързо разрастващ се европейски производител на високопротеинови и високоенергийни продукти, без соя, транс мазнини, палмови мазнини и добавена захар. Успехите не се измерват само в медали и секунди, а истинската победя е пътят към нея - пътят, който FitSpo ще извърви с теб, за да надскочиш отвъд собствените си граници и повярваш, че можеш!",
         pageUrl: "https://fitspo.zone",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429342/SponsorsLogos/Fitspo-Logo_m73ypo.png",
-        priority: 1
     },
     {
         description: "Roobar is one of the many brands of the company Smart Organics. Founded in 2009, Smart Organic is a leading producer and distributor of organic products, which focuses on innovative organic food products with additional health benefits. Their goal is to make healthy food affordable and enjoyable for everyone. ",
         descriptionBg: "Roobar е един от многото марки на бранда Smart Organic. Основан през 2009г, Smart Organic е водещ производител и дистрибутор на био продукти  с фокус върху иновативните храни с допълнителни ползи за здраветo. Тяхната основна цел е да направят здравословните храни вкусни и достъпни за всички.",
         pageUrl: "https://smartorganic.bg/roobar/",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429413/SponsorsLogos/Roobar_mdp1tg.jpg",
-        priority: 1
     },
     {
         description: "Zlatna Ribka is a premier destination for high-quality cosmetics in Bulgaria, offering a diverse range of products from renowned brands. With expert advice, competitive pricing, and a commitment to customer satisfaction, Zlatna Ribka strives to be the go-to choice for beauty enthusiasts seeking top-notch products and personalized service",
@@ -27,7 +25,6 @@ export const zeusSponsors: Image[] = [
         descriptionBg: "Rexona, водеща марка в областта на личната хигиена, е специализирана в антиперспирантни дезодоранти с технология Motionsense. С тях, независимо дали изкачвате планина, тичате за автобуса, презентирате пред шефа си или отивате на среща, можете да бъдете уверени, защото имате най-добрата защита от изпотяване.",
         pageUrl: "https://www.facebook.com/RexonaBulgaria/?locale=bg_BG",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429388/SponsorsLogos/Rexona_logo_xbj1ux.png",
-        priority: 1
     },
     {
         description: "For more than 25 years, the company has been producing high-quality bulk perfumes, offering a cost-effective, environmentally friendly and intelligent way of selling: you can buy perfumes for different occasions, in different volumes, in reusable glass bottles and of maximum quality at competitive prices prices.",
