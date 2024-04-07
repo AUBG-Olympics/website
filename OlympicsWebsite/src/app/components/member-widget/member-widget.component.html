@@ -1,7 +1,7 @@
 <div appHover class="wrapper">
     <div  class="member-container">
         <div class="img-wrapper">
-            <img [src]="getImage()" alt="Member Name" class="responsive" />
+            <img [ngSrc]="getImage()" alt="Member Name" class="responsive" fill priority/>
         </div>
     </div>
     <ng-container *ngIf="isHovered">

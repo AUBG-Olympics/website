@@ -1,6 +1,6 @@
 import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ThemeService } from '../services/theme.service';
 import { Tab } from '../models/tab';
 import { whoWeAreTabsBg, whoWeAreTabsEn } from '../data/who-we-are-tabs';

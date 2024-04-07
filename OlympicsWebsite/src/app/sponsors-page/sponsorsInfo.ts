@@ -5,25 +5,29 @@ export const zeusSponsors: Image[] = [
         description: "FitSpo is a brand of an innovative, fast-growing European producer of high-protein and high-energy products, free of soy, trans fat, palm oil and added sugar. Success is not always measured in medals and seconds and the real victory is the path to it - the path that FitSpo will walk with you to jump beyond your own limits and believe that you can!",
         descriptionBg: "FitSpo е бранд на иновативен, бързо разрастващ се европейски производител на високопротеинови и високоенергийни продукти, без соя, транс мазнини, палмови мазнини и добавена захар. Успехите не се измерват само в медали и секунди, а истинската победя е пътят към нея - пътят, който FitSpo ще извърви с теб, за да надскочиш отвъд собствените си граници и повярваш, че можеш!",
         pageUrl: "https://fitspo.zone",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429342/SponsorsLogos/Fitspo-Logo_m73ypo.png"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429342/SponsorsLogos/Fitspo-Logo_m73ypo.png",
+        priority: 1
     },
     {
-        description: "Roobar is one of the many brands of the company Smart Organics. Founded in 2009, Smart Organic is a leading producer and distributor of organic products. which focus on innovative organic food products with additional health benefits. Their goal is to make healthy food affordable and enjoyable for everyone. ",
+        description: "Roobar is one of the many brands of the company Smart Organics. Founded in 2009, Smart Organic is a leading producer and distributor of organic products, which focuses on innovative organic food products with additional health benefits. Their goal is to make healthy food affordable and enjoyable for everyone. ",
         descriptionBg: "Roobar е един от многото марки на бранда Smart Organic. Основан през 2009г, Smart Organic е водещ производител и дистрибутор на био продукти  с фокус върху иновативните храни с допълнителни ползи за здраветo. Тяхната основна цел е да направят здравословните храни вкусни и достъпни за всички.",
         pageUrl: "https://smartorganic.bg/roobar/",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429413/SponsorsLogos/Roobar_mdp1tg.jpg"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429413/SponsorsLogos/Roobar_mdp1tg.jpg",
+        priority: 1
     },
     {
         description: "Zlatna Ribka is a premier destination for high-quality cosmetics in Bulgaria, offering a diverse range of products from renowned brands. With expert advice, competitive pricing, and a commitment to customer satisfaction, Zlatna Ribka strives to be the go-to choice for beauty enthusiasts seeking top-notch products and personalized service",
         descriptionBg: "Златна рибка предлага широка гама висококачествени козметични  продукти. Брандът се стреми да бъде предпочитан избор за любителите на красотата, които търсят висококачествени продукти и персонализирано обслужване.",
         pageUrl: "https://www.zlatnaribka.com",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429408/SponsorsLogos/ZRimage_blxfof.jpg"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429408/SponsorsLogos/ZRimage_blxfof.jpg",
+        priority: 1
     },
     {
         description: "Rexona, a leading brand in personal care, specializes in antiperspirant deodorants with Motionsense technology. With them, whether you're scaling a mountain, running for the bus, presenting to your boss or going on a date, you can be confident because you have the best sweat protection.",
         descriptionBg: "Rexona, водеща марка в областта на личната хигиена, е специализирана в антиперспирантни дезодоранти с технология Motionsense. С тях, независимо дали изкачвате планина, тичате за автобуса, презентирате пред шефа си или отивате на среща, можете да бъдете уверени, защото имате най-добрата защита от изпотяване.",
         pageUrl: "https://www.facebook.com/RexonaBulgaria/?locale=bg_BG",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429388/SponsorsLogos/Rexona_logo_xbj1ux.png"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429388/SponsorsLogos/Rexona_logo_xbj1ux.png",
+        priority: 1
     },
     {
         description: "For more than 25 years, the company has been producing high-quality bulk perfumes, offering a cost-effective, environmentally friendly and intelligent way of selling: you can buy perfumes for different occasions, in different volumes, in reusable glass bottles and of maximum quality at competitive prices prices.",
@@ -50,7 +54,7 @@ export const zeusSponsors: Image[] = [
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429336/SponsorsLogos/Coca-Cola_logo.svg_qchzgo.png"
     },
     {
-        description: "The tech giant Samsung is a general sponsor of the Olympic Games Paris 2024. Because success knows no boundries. ",
+        description: "The tech giant Samsung is a general sponsor of the Olympic Games Paris 2024. Because success knows no boundaries. ",
         descriptionBg: "Технологичният гиганt Samsung e генерален спонсор на Олимпиадата Париж 2024. Защото успехът няма граници.",
         pageUrl: "https://www.samsung.com/bg/?cid=bg_pd_display_google_fold_sustain_fold5_static-image-banner_fold5-performance-max-mix--multi-cold-phase-2024-01-03_other&utm_medium-google&utm_term-fold5&utm_content-long&utm_campaign-sustain-conversions&utm_creative_1080x1080-perf-max&gad_source=1&gclid=CjwKCAjwwr6wBhBcEiwAfMEQsz4THVc5Mdq0kvItRikGub2EqS8Bub3gH8koZctweaGdJEtqbAJalhoC-o4QAvD_BwE",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429418/SponsorsLogos/Samsung_Orig_Lettermark_BLACK_RGB_g5wapw.png"
@@ -86,13 +90,15 @@ export const poseidonSponsors: Image[] = [
         description: "Iced Out is the biggest and most influential online urban and hip-hop jewelry shop in Europe. We are the suppliers of unique designer jewelry and specialize in finding the latest trends in urban and hip-hop street culture.",
         descriptionBg: "Iced Out е най-големият и най-влиятелен онлайн бижутерски магазин за градска и хип-хоп култура в Европа. Те са доставчици на уникални дизайнерски бижута и се специализираме в откриването на най-новите тенденции в хип-хопа и  уличната култура.",
         pageUrl: "https://icedout.bg",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712433935/SponsorsLogos/ICEDOUT_logo_Black_jfzm3i.png"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712433935/SponsorsLogos/ICEDOUT_logo_Black_jfzm3i.png",
+        priority: 1
     },
     {
         description: "Crowe is dedicated to providing exceptional audit, tax, advisory, and consulting services to empower businesses and individuals to achieve their goals with integrity and professionalism.",
         descriptionBg: "Crowe се стреми да осигури изключителни услуги в областта на одита, данъчното обслужване, консултантските и съветни услуги, за да подкрепи бизнесите и физическите лица в постигането на техните цели с интегритет и професионализъм.",
         pageUrl: "https://www.crowe.com/bg",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429338/SponsorsLogos/crowe_logo_ocomv7.png"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429338/SponsorsLogos/crowe_logo_ocomv7.png",
+        priority: 1
     }
 ]
 
@@ -101,19 +107,22 @@ export const athenaSponsors: Image[] = [
         description: "Meligel is a sport gel for endurance perfrormance during exercise. By using honey combined with othersuperfoods they provide athletes with all they need for their focus, stamina and endurance during their workout",
         descriptionBg: "Мелигел е спортен гел за издръжливост при продължително натоварване. Съставките на продукта, мед и други суперхрани, предоставт на един атлет издръжливост, фокус и сила по време на тренировка ",
         pageUrl: "https://www.melligel.bg",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429367/SponsorsLogos/MELLI_GEL__logo_ujrayq.webp"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429367/SponsorsLogos/MELLI_GEL__logo_ujrayq.webp", 
+        priority: 1
     },
     {
         description: "Serena Organics, a Bulgarian producer, is committed to offering only the finest quality dried fruits and vegetables. They meticulously select their produce and utilize a gentle drying process to preserve their natural goodness. ",
         descriptionBg: "Serena Organics е български бранд, който предлага висококачестени сушени плодове и зеленчуци. Плодовете и зеленчуците са внимателно подбрани, като компанията спазва специални техники при направата на крайния продукт, за да запазят уникалния и натуралния вкус",
         pageUrl: "https://www.serenaorganics.com",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429389/SponsorsLogos/SERENA_wvfqhe.png"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429389/SponsorsLogos/SERENA_wvfqhe.png",
+        priority: 1
     },
     {
         description: "Everyone needs more energy at some point in the day. Do it in the most meaningful way - with DOZZA Energy you'll get into a rhythm without going off the rails without harming the body.",
         descriptionBg: "Всеки има нужда от повече енергия по някое време на деня. Вземи си DOZZA-та – продължи със задачите. Направи го по най-смисления начин – с DOZZA Energy ще влезеш в ритъм, без да излизаш от релси. Без да вредиш на организма, без да губиш форма.",
         pageUrl: "https://dozzadrinks.com",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429349/SponsorsLogos/Dozza-logo_rfhzud.svg"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429349/SponsorsLogos/Dozza-logo_rfhzud.svg",
+        priority: 1
     },
     {
         description: "Our mission is to provide a complete solution for cleaning your car. PARTSALKI is a box with quality car care products that will make things easier for you and save you time when cleaning your car.",
@@ -178,19 +187,22 @@ export const hephaestusSponsors: Image[] = [
         description: "The history of the company Arda-Ruse dates back well over 85 years, having established its excellent reputation and success due to the efforts of its team of specialists, the quality of the manufactured products and the company's 50 years of experience in lady’s fashion, produced for our clients throughout Europe like Germany, Italy, Spain and France.",
         descriptionBg: "Арда-Русе е фирма с 85 годишна история, изградила своето име и успех, благодарение на екипа от професионалисти, качеството на произведения продукт и 50-годишения опит в изработването на дамска конфекция за клиенти от Европа, като Германия, Италия, Испания, Франция.",
         pageUrl: "https://www.arda-ruse.com",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712432635/SponsorsLogos/Arda_xsnuub.jpg"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712432635/SponsorsLogos/Arda_xsnuub.jpg",
+        priority: 1
     },
     {
         description: "ASPASIA-92 LTD. is specialized in manufacturing soft drinks. One of the company’s main goals has always been to meet customers’ needs by providing high quality drinks at a good price. The certificate of International Featured Standard (IFS), obtained in 2016 is a proof that quality is their main priority.",
         descriptionBg: "ASPASIA-92 LTD. е специализирана в производството на безалкохолни напитки. Една от основните цели на компанията винаги е била да отговаря на нуждите на клиентите, като предоставя напитки от високо качество на добра цена. Сертификатът за Международен Стандарт за Качество (IFS), получен през 2016 г., е доказателство, че качеството е техен основен приоритет.",
         pageUrl: "https://aspasia.bg",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712432601/SponsorsLogos/Aspasia_kbfyzl.png"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712432601/SponsorsLogos/Aspasia_kbfyzl.png",
+        priority: 1
     },
     {
         description: "Behind the creation and maintenance of Xiro.bg stands the dedication of various professionals, united by one common idea - to help employers and young people meet and continue on a common professional path.",
         descriptionBg: "Зад създаването и поддържането на Xiro.bg стои отдадеността на различни професионалисти, обединени от едната обща идея - да помогне на работодателите и младите хора да се срещнат и продължат по общ професионален път.",
         pageUrl: "https://xiro.bg",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429404/SponsorsLogos/Xiro.bg_logo_zfnob4.png"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429404/SponsorsLogos/Xiro.bg_logo_zfnob4.png",
+        priority: 1
     },
     {
         description: "Baller is a brand for basketball freaks. We aim to provide high-quality products at affordable prices that enable people to express themselves",
@@ -314,19 +326,22 @@ export const artemisSponsors: Image[] = [
         description: "With Love by Peteto is a Bulgarian brand for handmade candles from 100% high quality soy wax. A choice of over 40 rich, pure scents and variety of colors is what you can expect when you decide to get such a candle. What are you waiting for then? A candle always makes things better.",
         descriptionBg: "With Love by Peteto е български бранд за ръчно изработени свещи от 100% висококачествен соев восък. Избор между над 40 наситени, чисти аромати и пъстри цветове е това, което може да очаквате щом решите да се сдобиете с такава свещ. Какво чакате тогава? ",
         pageUrl: "https://www.instagram.com/with.lovebypeteto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429403/SponsorsLogos/WithLoveByPeteto2_lstvqj.jpg"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429403/SponsorsLogos/WithLoveByPeteto2_lstvqj.jpg",
+        priority: 1
     },
     {
         description: "InkCabin is a tattoo studio based in Blagoevgrad. Thanks to them you are just one phone call away from getting that ink you have always wanted!",
         descriptionBg: "InkCabin е татуировъчно студио в Благоевград. Благодарение на тях сте само на един телефонен разговор разстояние от получаването на онази татуировка, която винаги сте искали!",
         pageUrl: "https://www.facebook.com/InkCabinTattooStudio",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429353/SponsorsLogos/InkCabin_Tattoo_Studio_m.arto.n_ozzvd6.jpg"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429353/SponsorsLogos/InkCabin_Tattoo_Studio_m.arto.n_ozzvd6.jpg",
+        priority: 1
     },
     {
         description: "Sport Respect offers a wide variety of original products suitable for over 30 sports, along with services such as branding and online consultations, ensuring a quick and efficient search for all their sports goods in one place.",
         descriptionBg: "Sport Respect предлага голямо разнообразие от оригинални продукти, подходящи за над 30 вида спорт, както и услуги като брандиране и онлайн консултации, гарантирайки на клиента бързо и ефективно намиране на всички спортни стоки на едно място.",
         pageUrl: "https://www.sportrespect.com",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712435202/SponsorsLogos/sportRespect_s9afgm.jpg"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712435202/SponsorsLogos/sportRespect_s9afgm.jpg",
+        priority: 1
     },
     {
         description: "PowerLocus products stand out with a blend of comfort and modern design, aligned with the latest trends. Our company prioritizes quality and customer satisfaction, providing precise craftsmanship and 24/7 communication.",

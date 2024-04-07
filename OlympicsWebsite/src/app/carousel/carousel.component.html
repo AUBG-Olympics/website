@@ -1,6 +1,6 @@
 <div class="keen-slider" #sliderRef>
-  <div *ngFor="let photo of photos" class="keen-slider__slide slide number-slide"><img src={{photo.src}}>
-    <p *ngIf="hover" class="onHover">{{photo.description}} <a *ngIf="url" href={{photo.pageUrl}} target="_blank">Visit site</a></p>
+  <div *ngFor="let photo of photos" class="keen-slider__slide slide number-slide"><img [ngSrc]="photo.src" fill [attr.priority]="photo.priority ? photo.priority : null" /> 
+    <p *ngIf="hover" class="onHover">{{photo.description}} <a *ngIf="url" href={{photo.pageUrl}} target="_blank">See More</a></p>
     
   </div>
   <div *ngIf="arrows">

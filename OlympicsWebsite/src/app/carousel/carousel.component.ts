@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild,Input, NgZone,ChangeDetectorRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import 'keen-slider/keen-slider.min.css';
 import KeenSlider, { KeenSliderInstance } from "keen-slider";
 import { take } from 'rxjs';
@@ -8,7 +8,7 @@ import {Image} from '../models/image'
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css',"../../../node_modules/keen-slider/keen-slider.min.css"],
 })

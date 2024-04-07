@@ -9,8 +9,8 @@
 <div class="cc">
     <div>
     <div class="poseidon-temp">
-    <div *ngFor="let photo of photosTier2" class="keen-slider__slide slide number-slide"><img src={{photo.src}}>
-        <p class="onHover">{{photo.description}} <a  href={{photo.pageUrl}} target="_blank">Visit site</a></p>
+    <div *ngFor="let photo of photosTier2" class="keen-slider__slide slide number-slide"><img [ngSrc]="photo.src" fill priority>
+        <p class="onHover">{{photo.description}} <a  href={{photo.pageUrl}} target="_blank">See More</a></p>
       </div>
     </div>
 </div>
