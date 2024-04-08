@@ -4,5 +4,10 @@ export class Sport {
     Headline: string = '';
     Description: string = '';
     RulesUrl: string | null = '';
-    SignUpUrl: string = '';
+    SignUpUrl?: string = '';
+    SignUpUrlMen?: string | null = '';
+    SignUpUrlWomen?: string | null = '';
+    SignUpUrlMenAboveEighty?: string | null = '';
+    SignUpUrlMenBelowEighty?: string | null = '';
+    SignUrlDoubles?: string | null = '';
 }
