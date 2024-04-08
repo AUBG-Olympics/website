@@ -33,12 +33,6 @@ export const zeusSponsors: Image[] = [
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429385/SponsorsLogos/Refan_1_fyvboh.png"
     },
     {
-        description: "DENTAID is a company whose goal is to improve human health by providing premium, revolutionary oral hygiene products. Every day we manage to offer more and more innovative solutions and improve people's oral health because we keep working with professionals who help us understand the real dental problems that people face.",
-        descriptionBg: "DENTAID е компания, чиято цел е да подобри човешкото здраве като предоставя първокласни, революционни продукти за орална хигиена. Всеки ден ние успяваме да предлагаме все по-иновативни решения и да подобряваме оралното здраве на хората, защото не спираме да работим с професионалисти, които ни помагат да разберем кои са истинските дентални проблеми, с които хората се сблъскват.",
-        pageUrl: "https://dentaid.bg",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429344/SponsorsLogos/Dentaid_knmras.png"
-    },
-    {
         description: "Livity is chips made with a special technology for popping rice. Feel good snacking with Livity, whenever and wherever you want, without any regrets. 😊",
         descriptionBg: "Livity е чипс от „попнат“ ориз – специална технология на изпукване на ориза. Хапвай и се чувствай добре с Livity, когато и където пожелаеш, без угризения. 😊",
         pageUrl: "https://www.facebook.com/LivityWorld/",
@@ -169,6 +163,12 @@ export const athenaSponsors: Image[] = [
         descriptionBg: "NASTOLA e бранд, който издава и разпространява продукти за забавлание и дава добавена стойност на общността със знанията си. Визията им е да създаваме силно тематични и забавни игри, които провокират емоция и достигат сърцата на хората по цял свят.",
         pageUrl: "https://nastola.bg",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429371/SponsorsLogos/nastola_logo_transparent_y47r7t.png"
+    },
+    {
+        description: "DENTAID is a company whose goal is to improve human health by providing premium, revolutionary oral hygiene products. Every day we manage to offer more and more innovative solutions and improve people's oral health because we keep working with professionals who help us understand the real dental problems that people face.",
+        descriptionBg: "DENTAID е компания, чиято цел е да подобри човешкото здраве като предоставя първокласни, революционни продукти за орална хигиена. Всеки ден ние успяваме да предлагаме все по-иновативни решения и да подобряваме оралното здраве на хората, защото не спираме да работим с професионалисти, които ни помагат да разберем кои са истинските дентални проблеми, с които хората се сблъскват.",
+        pageUrl: "https://dentaid.bg",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429344/SponsorsLogos/Dentaid_knmras.png"
     }
 ]
 

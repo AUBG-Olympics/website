@@ -61,6 +61,7 @@ body {
     object-fit: contain;
     border-radius: 10px;
     background-color: white;
+    position: relative !important;
 }
 
 a,
@@ -90,10 +91,14 @@ a:active {
     position: relative;
 }
 
-.onHover:hover a {
-    margin-top: 5px;
+.slide:hover a {
+    color: var(--textColor);
     background-color: var(--secondaryColor);
+    font-size: 15px;
+    margin-top: 5px;
+    background-color: var(--secondaryColor) !important;
     padding: 5px;
+    border-radius: 7px;
 }
 
 .onHover {
@@ -176,7 +181,6 @@ a:active {
     }
 }
 
-
 @media (width <=600px) {
 
     .poseidon-temp {
@@ -189,7 +193,7 @@ a:active {
         gap: 150px;
     }
 
-    .poseidon-temp img {
+    .poseidon-temp .poseidon-photo {
         width: 100% !important;
     }
 
@@ -210,7 +214,8 @@ a:active {
     }
 
     .cc img {
-        width: 80%;
+        width: 80% !important;
+        
         box-shadow: 10px 8px 5px 5px #000;
     }
 
