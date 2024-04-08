@@ -1,7 +1,7 @@
 <div  class="wrapper" >
     <div class="sport-container" appRotateDirective (rotate)="onRotate($event)">
 
-        <div class="container-wrapper" *ngIf="hide">
+        <div class="container-wrapper" *ngIf="hide" [ngClass]="sport.Title == 'Powerlifting' || sport.Title == 'Table Tennis' ? 'special' : ''">
             <div class="sport-data" [ngClass]="isHidden? '' : 'hidden'">
                 <div class="img-wrapper">
                     <img src="{{sport.Icon}}" class="responsive" alt="Sport Icon" [ngClass]="{'responsive-image': sport.Title == 'Tug of War'}"/>
@@ -16,7 +16,12 @@
                 <p class="description">{{sport.Description}}</p>
                 <div class="action-buttons">
                     <a href="{{sport.RulesUrl}}" target="_blank" class="button" *ngIf="sport.RulesUrl">Rules</a>
-                    <a href="{{sport.SignUpUrl}}" target="_blank" class="button">Sign-Up</a>
+                    <a href="{{sport.SignUpUrl}}" target="_blank" class="button" *ngIf="sport.SignUpUrl">Sign-Up</a>
+                    <a href="{{sport.SignUpUrlMen}}" target="_blank" class="button" *ngIf="sport.SignUpUrlMen">Men Sign-Up</a>
+                    <a href="{{sport.SignUpUrlMenAboveEighty}}" target="_blank" class="button" *ngIf="sport.SignUpUrlMenAboveEighty">Men &#8805; 80kg Sign-Up</a>
+                    <a href="{{sport.SignUpUrlMenBelowEighty}}" target="_blank" class="button" *ngIf="sport.SignUpUrlMenBelowEighty">Men &#8804; 80kg Sign-Up</a>
+                    <a href="{{sport.SignUpUrlWomen}}" target="_blank" class="button" *ngIf="sport.SignUpUrlWomen">Women Sign-Up</a>
+                    <a href="{{sport.SignUrlDoubles}}" target="_blank" class="button" *ngIf="sport.SignUrlDoubles">Doubles Sign-Up</a>
                 </div>
             </div>
         </div>
