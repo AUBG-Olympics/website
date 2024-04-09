@@ -101,7 +101,7 @@
 }
 
 .responsive-image{
-    width: 100%!important;
+    width: 150%!important;
     height: 80%!important;
 }
 
@@ -177,7 +177,7 @@
     }
 
     .responsive-image{
-        width: 130%!important;
+        width: 250%!important;
     }
 }
 

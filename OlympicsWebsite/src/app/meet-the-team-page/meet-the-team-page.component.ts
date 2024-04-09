@@ -62,6 +62,8 @@ export class MeetTheTeamPageComponent{
     } else if(department === 'PR'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
       this.title = "Olympics PR";
+      let Didi=this.membersOlympics.splice(1,1);
+      this.membersOlympics.splice(0,0,Didi[0]);
     } else if(department === 'Video'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
       this.title = "Olympics Video";
