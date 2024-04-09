@@ -5,7 +5,8 @@ export const ddaySports = [
         Headline: 'Are You The Next Gladiator?',
         Description: "Test yourself in this trial of strength. Two opponents sit opposite each other with one elbow resting on a table, clasp each other's hands, and try to force each other's arm down on to the table. Your position, way of clasping, and posture are all constituents of a successful play.",
         RulesUrl: 'https://docs.google.com/document/d/1chY0bvbnglPwto46b9V7-CaTo1MUd-Dg/view',
-        SignUpUrl: 'https://forms.gle/sxD85Bp8AmGFbWEE7'
+        SignUpUrlMen: 'https://forms.gle/iBH9nzz1mp7RNUaf9',
+        SignUpUrlWomen: 'https://forms.gle/G4DAm77oExUVUa4y7'
     },
     {
         Title: 'Basketball',
@@ -13,7 +14,8 @@ export const ddaySports = [
         Headline: "Basketball is not just a sport, it's a lifestyle.",
         Description: "The basketball (3v3) challenge is a form of basketball more famous by the name streetball. Although the game has a less formal structure of rules, players follow the basic rules of traditional basketball. The combination of small teams and the dynamics of basketball allow players to showcase both their individual skills and team play.",
         RulesUrl: 'https://docs.google.com/document/d/1Gn8XtAjy0kLzHHKZNzHGnlQ4DPx0xzmX/view',
-        SignUpUrl: 'https://forms.gle/4AHLAwZA5r5dU9gT7'
+        SignUpUrlMen: 'https://forms.gle/o4FgK8wzEDyW8Jt68',
+        SignUpUrlWomen: 'https://forms.gle/HGgrg3yhPMyKqV6N8'
     },
     {
         Title: '3-point shootout',
@@ -29,7 +31,8 @@ export const ddaySports = [
         Headline: "READY, STEADY, GO!",
         Description: "100 Meter Dash is the shortest outdoor running distance in track and field competitions. The champion from this competition is usually named “the fastest man/woman on Earth.” Men’s 100-meter dash has been an official Olympics sport since 1896; the women's discipline - since 1928.",
         RulesUrl: 'https://docs.google.com/document/d/1XDtGxurRLhaNTps37bRrWZSOtdO3tfBX/view',
-        SignUpUrl: 'https://forms.gle/zDY6mQPs4EPRTbAj6'
+        SignUpUrlMen: 'https://forms.gle/Qh5KVABpfFzjVpSZA',
+        SignUpUrlWomen: 'https://forms.gle/VUUWPC5w9C71tXvw6'
     },
     {
         Title: 'Dodgeball',
@@ -53,7 +56,8 @@ export const ddaySports = [
         Headline: "HOW FAR CAN YOU GO?",
         Description: "Standing long jump is a track and field event in which the athlete stands at a line, and then jumps as further from this point as possible.",
         RulesUrl: 'https://docs.google.com/document/d/1VcmyCamnydPeMSJIj1WXLAFw8GjeLIBp/view',
-        SignUpUrl: 'https://forms.gle/X8Z6ntMJwg7kBKye6'
+        SignUpUrlMen: 'https://forms.gle/jCaLMGrKYnGTQMfV6',
+        SignUpUrlWomen: 'https://forms.gle/9NKnKxtcNgZWRQHt8'
     },
     {
         Title: 'Marathon',
@@ -61,7 +65,8 @@ export const ddaySports = [
         Headline: "SERIOUSLY. HOW FAR CAN YOU GO?",
         Description: "This is a 4.5 km distance running event, organized on the day before the AUBG Olympic Games. Participants compete in female and male divisions. Here the ones who win are not the fastest ones, but the ones who endure. Stretch well because good preparation is a sign of potential.",
         RulesUrl: 'https://docs.google.com/document/d/1t3uGTYZaz0FMQTAxMRdBsivkiANu1Nq7/view',
-        SignUpUrl: 'https://forms.gle/AyoSJ6jr1hUqPBv48'
+        SignUpUrlMen: 'https://forms.gle/ABzAsaZn4wia69VS6',
+        SignUpUrlWomen: 'https://forms.gle/7e8jCTsHhiN7Awhu6'
     },
     {
         Title: 'Powerlifting',
@@ -69,7 +74,9 @@ export const ddaySports = [
         Headline: "BRO, DO YOU EVEN LIFT?",
         Description: "Challenge yourself in this form of competitive weightlifting, where contestants attempt three types of exercises in a set sequence. The result is calculated according to the Wilks calculator, which takes into consideration the contestant's weight and the kilograms lifted.",
         RulesUrl: 'https://docs.google.com/document/d/1E4m3GndrtekVDugi3tJ7WmRzO41zyg_q/view',
-        SignUpUrl: 'https://forms.gle/VpF46kgfozqtb3769'
+        SignUpUrlMenAboveEighty: 'https://forms.gle/K5ySkYrrhYBcxjiTA',
+        SignUpUrlMenBelowEighty: 'https://forms.gle/VgHSpXneuRvXQQp98',
+        SignUpUrlWomen: 'https://forms.gle/igmhLUhNkzgRrYaHA'
     },
 
     {
@@ -78,7 +85,8 @@ export const ddaySports = [
         Headline: "IT'S DASH BUT LONGER!",
         Description: "Relay 4x100 meters gets teams of 4 people to compete over a track with length of 400 meters, having each team member run 100 meters of the track. The players pass a baton to each other within a 20m changeover box. The team that first reaches the finish line without dropping the baton or failing to pass it within the 20m changeover box wins.",
         RulesUrl: 'https://docs.google.com/document/d/1_9zNRq3MUj_nSvNPesZEReEJ-1vDCTiL/view',
-        SignUpUrl: 'https://forms.gle/zVgrPyeGWBAGs7bf6'
+        SignUpUrlMen: 'https://forms.gle/q7WZVPZ2tSGgit2fA',
+        SignUpUrlWomen: 'https://forms.gle/xNVAvDJLcz8MXsSm7',
     },
     {
         Title: 'Skills Challenge',
@@ -86,7 +94,8 @@ export const ddaySports = [
         Headline: "GOT SKILLS?",
         Description: "All participants will compete under the same rules. There are men and women brackets. All completion times are recorded. The three best times will be awarded with either Gold, Silver or Bronze medals respectively. The skills track changes every year.",
         RulesUrl: null,
-        SignUpUrl: 'https://forms.gle/PkTf4hbDf1CJnwQG7'
+        SignUpUrlMen: 'https://forms.gle/tpoPqqcvCqyKFxrGA',
+        SignUpUrlWomen: 'https://forms.gle/AVTyF77MxTY4Xw1b9'
     },
     {
         Title: 'Soccer',
@@ -118,7 +127,9 @@ export const ddaySports = [
         Headline: "IT'S TENNIS ON A TABLE. REALLY.",
         Description: "Table tennis is a dynamic sport played on a rectangular table. There are singles and doubles brackets separated in men and women divisions. Similar to tennis, opponents need to pass a lightweight ball across the table using a small round paddle. Remember, it's always better to outwit your opponents than to outhit them.",
         RulesUrl: 'https://docs.google.com/document/d/1xzssy_XuyUVsK_Mz0OE1WHwCY3Z_Yoip/view',
-        SignUpUrl: 'https://forms.gle/m1hMzYeRYgvX77bP6'
+        SignUpUrlMen: 'https://forms.gle/jfKJW95y1yYgUcfq9',
+        SignUpUrlWomen: 'https://forms.gle/yiiopfJAys3mp7wm7',
+        SignUrlDoubles: 'https://forms.gle/KgDMWQE7EY25mNxt7'
     },
     {
         Title: 'Tennis',
@@ -126,7 +137,8 @@ export const ddaySports = [
         Headline: "GRACE, SPEED, STRATEGY.",
         Description: "These are all qualities required by one of the most sophisticated sports - tennis. Each player uses a racket that is strung with cord to strike a rubber ball. The object of the game is to pass the ball into the opponent's court in such a way that he/she cannot make a valid return.",
         RulesUrl: 'https://docs.google.com/document/d/1WsCxHIOhescB6U-XBeg33yu0gLFgHL3Q/view',
-        SignUpUrl: 'https://forms.gle/hyL8xtKcwm5DGHxTA'
+        SignUpUrlMen: 'https://forms.gle/ZWnQtfWFNWN23QQh6',
+        SignUpUrlWomen: 'https://forms.gle/dVG7Av5yzqDJeBDJ9'
     },
     {
         Title: 'Tug of War',
@@ -134,7 +146,8 @@ export const ddaySports = [
         Headline: "FOR ROPE-HANDLING AND STRENGTH GODS ONLY.",
         Description: "As the sport with the most spectators on our event, it is also the most competitive one. A contest in which two teams pull at opposite ends of a rope until one drags the other over a central line. There are 5 people per team and their joint efforts create the emotion of the game.",
         RulesUrl: 'https://docs.google.com/document/d/1KEyaid2iEauYDdh4SuV3SMUtoUMwx9k1/edit?usp=sharing&ouid=107519412797175181479&rtpof=true&sd=true',
-        SignUpUrl: 'https://forms.gle/d21QgQwtcN7wkYcPA'
+        SignUpUrlMen: 'https://forms.gle/WeNvC6zqaPzktHJ66',
+        SignUpUrlWomen: 'https://forms.gle/b7UAM7tH1h52Cz5Y6'
     },
     {
         Title: 'Volleyball',
