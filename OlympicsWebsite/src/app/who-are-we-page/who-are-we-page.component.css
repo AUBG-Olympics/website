@@ -45,15 +45,17 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5%;
+    height: 65vh;
 }
 
 .img-wrapper{
     width: 85%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .text-wrapper{
@@ -63,8 +65,7 @@ body {
 }
 
 .responsive {
-    width: 100%;
-    height: auto;
+    object-fit: contain;
 }
 
 .text{
@@ -125,6 +126,9 @@ body {
     .text{
         font-size: 1.35rem;
     }
+    .tab {
+        height: 80vw !important;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -148,5 +152,18 @@ body {
     .medalists{
         grid-column: 1 / -1;
         grid-row: 2; 
+    }
+}
+
+@media screen and (max-width: 632px){
+    .tab {
+        height: 50vh !important;
+        margin-bottom: 3%;
+        gap: 0%;
+    }
+
+    .text{
+        width: 95vw;
+        text-align: center;
     }
 }
