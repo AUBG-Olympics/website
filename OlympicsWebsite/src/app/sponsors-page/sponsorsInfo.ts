@@ -459,5 +459,11 @@ export const artemisSponsors: Image[] = [
         descriptionBg: "Фрут Юнайтед е  компания, която се занимава с земеделска дейност, изграждане на трайни насаждения, покупка и продажба на малини, вишни и ягоди в натурален, замразен или обработен вид - сокове и пюре. “Татино сокче” е напълно натурален продукт без добавена захар.",
         pageUrl: "http://bgraspberry.com/",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429412/SponsorsLogos/%D0%A4%D1%80%D1%83%D1%82_%D0%AE%D0%BD%D0%B0%D0%B9%D1%82%D0%B5%D0%B4_qg0cky.jpg"
+    },
+    {
+        description: "SuperHosting.BG is the largest and the fastest growing hosting company in Bulgaria. We provide complete hosting solutions, domain registration, online SaaS platforms and other tools that help you easily grow your business online!",
+        descriptionBg: "СуперХостинг.БГ е най-голямата хостинг компания в България. Предлагаме завършени хостинг решения, регистрация на домейни, онлайн базирани платформи за изграждане на сайт и други инструменти, с които лесно да позиционирате Вашия бизнес в интернет!",
+        pageUrl: "https://www.superhosting.bg",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712677144/SponsorsLogos/SH-LogotypeEN-PrintOrange-Three-1_j3a9um.png"
     }
 ]
