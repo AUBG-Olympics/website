@@ -45,15 +45,17 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5%;
+    height: 65vh;
 }
 
 .img-wrapper{
     width: 85%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .text-wrapper{
@@ -63,8 +65,7 @@ body {
 }
 
 .responsive {
-    width: 100%;
-    height: auto;
+    object-fit: contain;
 }
 
 .text{
@@ -124,6 +125,9 @@ body {
 @media screen and (min-width: 632px) and (max-width: 1196px) {
     .text{
         font-size: 1.35rem;
+    }
+    .tab {
+        height: 80vw !important;
     }
 }
 

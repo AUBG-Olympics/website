@@ -8,7 +8,7 @@ import { whoWeAreTabsBg, whoWeAreTabsEn } from '../data/who-we-are-tabs';
 @Component({
   selector: 'app-who-are-we-page',
   standalone: true,
-  imports: [NavigationComponent,CommonModule],
+  imports: [NavigationComponent,CommonModule, NgOptimizedImage ],
   templateUrl: './who-are-we-page.component.html',
   providers: [ThemeService],
   styleUrls: ['./who-are-we-page.component.css','../app.component.css'],
