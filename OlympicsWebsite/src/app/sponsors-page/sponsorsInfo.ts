@@ -73,6 +73,12 @@ export const zeusSponsors: Image[] = [
         descriptionBg: "Laboratorios BABÉ е компания за дермокозметика, основана от двама фармацевти. BABÉ започва своята дейност през 1994 г. във Валенсия и още от самото начало превръща в своя мисия грижата за здрава кожа.",
         pageUrl: "https://www.laboratoriosbabe.bg",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429359/SponsorsLogos/LaboratoriosBab%C3%A9_vjho84.png"
+    },
+    {
+        description: "Our mission is to make a positive experience of beauty accessible to everyone. For over 17 years, Dove has been working to make beauty a source of confidence, not anxiety. Beauty is not defined by shape, size or colour – it’s authentic. Unique. Real.",
+        descriptionBg: "Dove е домът на истинската красота. Вече над 17 години Dove работят, за да превърнат красотата в източник на увереност, а не на тревожност. Красотата не се определя от размер, цвят и форма, Dove помага на всички да осъзнаят своя личен потенциал за красота като създава продукти, които доставят истинска грижа.",
+        pageUrl: "https://www.facebook.com/dovebg/",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712670960/SponsorsLogos/Dove_logo_tiff_ldjq6l.png"
     }
 ]
 
@@ -98,7 +104,7 @@ export const athenaSponsors: Image[] = [
         description: "Meligel is a sport gel for endurance perfrormance during exercise. By using honey combined with othersuperfoods they provide athletes with all they need for their focus, stamina and endurance during their workout",
         descriptionBg: "Мелигел е спортен гел за издръжливост при продължително натоварване. Съставките на продукта, мед и други суперхрани, предоставт на един атлет издръжливост, фокус и сила по време на тренировка ",
         pageUrl: "https://www.melligel.bg",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429367/SponsorsLogos/MELLI_GEL__logo_ujrayq.webp", 
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429367/SponsorsLogos/MELLI_GEL__logo_ujrayq.webp",
         priority: 1
     },
     {
@@ -156,7 +162,7 @@ export const athenaSponsors: Image[] = [
         description: "Shopixx.eu offers a unique selection of home, garden and sport products, DIY tools, decorations, toys, and coffee essentials. With exclusive, high-quality items at the best prices, it's your go-to for unique finds and essentials.",
         descriptionBg: "Shopixx.eu предлага уникална селекция от продукти за дома и градината, спортни принадлежности, декорации, играчки и продукти за кафе. С ексклузивни, висококачествени артикули на най-добрите цени, това е мястото за уникални находки и стоки от първа необходимост.",
         pageUrl: "https://www.shopixx.eu",
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429391/SponsorsLogos/Shoppix_nfw0we.webp"
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712663959/SponsorsLogos/OKOK_ysu5mg.jpg"
     },
     {
         description: "NASTOLA is a brand that creates and distributes entertainment products and adds value to the community with its knowledge. Their vision is to create highly thematic and entertaining games that evoke emotion and reach the hearts of people around the world.",
@@ -309,12 +315,12 @@ export const hephaestusSponsors: Image[] = [
         pageUrl: "https://bgpropolis.com",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429332/SponsorsLogos/BGPropolis_rr2eob.jpg"
     },
-{
-    description:"Metta Space offer salt therapies, flotation, holistic massages, yoga and meditation to help you relieve stress and relax to the fullest",
-    descriptionBg:"Metta Space предлага терапии със сол, плаващи сесии, холистични масажи, йога и медитация, за да ви помогне да облекчите стреса и да се отпуснете напълно",
-    pageUrl:"https://mettaspace.bg",
-    src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712429368/SponsorsLogos/Mettaspace_lxijxu.png"
-}
+    {
+        description: "Metta Space offer salt therapies, flotation, holistic massages, yoga and meditation to help you relieve stress and relax to the fullest",
+        descriptionBg: "Metta Space предлага терапии със сол, плаващи сесии, холистични масажи, йога и медитация, за да ви помогне да облекчите стреса и да се отпуснете напълно",
+        pageUrl: "https://mettaspace.bg",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429368/SponsorsLogos/Mettaspace_lxijxu.png"
+    }
 
 ]
 
