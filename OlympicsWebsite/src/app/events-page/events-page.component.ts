@@ -1,6 +1,6 @@
 import { Component, ViewChild,ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Location,NgOptimizedImage, CommonModule } from '@angular/common';
+import { Location, CommonModule } from '@angular/common';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { ThemeService } from '../services/theme.service';
 import {Event} from '../models/event'
@@ -9,7 +9,7 @@ import { postersDDay24, postersFall23, postersSpring24 } from './posters';
 @Component({
   selector: 'app-events-page',
   standalone: true,
-  imports: [NavigationComponent,CommonModule,NgOptimizedImage],
+  imports: [NavigationComponent,CommonModule],
   providers: [ThemeService],
   templateUrl: './events-page.component.html',
   styleUrl: './events-page.component.css',
