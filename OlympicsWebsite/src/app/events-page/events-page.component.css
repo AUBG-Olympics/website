@@ -77,11 +77,12 @@ a.nostyle:visited {
     height: 100%;
     cursor: pointer;
     transition: .6s ease;
-    width: 1000px;
 }
 
 .poster-img{
-    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
 }
 
 @media only screen and (max-width : 992px) {
@@ -91,8 +92,7 @@ a.nostyle:visited {
     }
 
     .posters{
-        height: 300vh;
-        width: 90vw;
+        height: auto;
         position: relative;
         display: flex;
         bottom: 0;
@@ -108,14 +108,5 @@ a.nostyle:visited {
 @media only screen and (min-width:992px) and (max-width : 1250px){
     .hover{
         font-size: 3.5vw;
-    }
-}
-
-@media only screen and (max-width : 440px){
-    .hover{
-        font-size: 3.5vw;
-    }
-    .posters{
-        height: 200vh !important;
     }
 }
