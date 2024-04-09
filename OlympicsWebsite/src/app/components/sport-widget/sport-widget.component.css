@@ -177,7 +177,7 @@
     }
 
     .responsive-image{
-        width: 130%!important;
+        width: 180%!important;
     }
 }
 
@@ -185,6 +185,7 @@
 @media screen and (max-width: 374px) {
     .responsive-image{
         width: 160%!important;
+        height: 60%!important;
     }
 }
 
