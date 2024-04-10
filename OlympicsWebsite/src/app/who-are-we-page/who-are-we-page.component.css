@@ -44,16 +44,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 2%;
+    height: 63vh;
 }
 
 .img-wrapper{
     width: 85%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    position: relative;
 }
 
 .text-wrapper{
@@ -63,12 +64,12 @@ body {
 }
 
 .responsive {
-    width: 100%;
-    height: auto;
+    object-fit: contain;
 }
 
 .text{
     font-size: 1.05em;
+    text-align: justify;
 }
 
 .dday-wrapper{
@@ -125,6 +126,9 @@ body {
     .text{
         font-size: 1.35rem;
     }
+    .tab {
+        height: 60vw !important;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -149,4 +153,13 @@ body {
         grid-column: 1 / -1;
         grid-row: 2; 
     }
+}
+
+@media screen and (max-width: 632px){
+    .tab {
+        height: 50vh !important;
+        margin-bottom: 2%;
+        gap: 5%;
+    }
+
 }
