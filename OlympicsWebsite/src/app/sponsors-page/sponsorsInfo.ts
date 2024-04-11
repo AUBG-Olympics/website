@@ -320,7 +320,13 @@ export const hephaestusSponsors: Image[] = [
         descriptionBg: "Metta Space предлага терапии със сол, плаващи сесии, холистични масажи, йога и медитация, за да ви помогне да облекчите стреса и да се отпуснете напълно",
         pageUrl: "https://mettaspace.bg",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429368/SponsorsLogos/Mettaspace_lxijxu.png"
-    }
+    },
+    {
+    description:"Bright Eye Dance Performance are a group of professional artists telling a story through fire. With their unique choreographies, music and costumes, they can both make a spectacular performance and bring delicate magic to your event.  Bright Eye are suitable for festivals, weddings, and as a personal gift for your celebration.",
+    descriptionBg:"Танцово представление Bright Eye са група професионални артисти, разказващи история чрез огъня. Със собствена хореография, музика и костюми, те могат както да разтърсят публиката от зрелище, така и да донесат деликатност и нежна магия на вашето събитие. Bright Eye са подходящи за фестивали, сватби, представления и за личен подарък към вашия празник.",
+    pageUrl:"https://www.ognenoshow.com/",
+    src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712848794/SponsorsLogos/image00001_lsvlc5.jpg"
+}
 
 ]
 
