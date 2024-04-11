@@ -38,7 +38,7 @@ export const postersSpring24: Event[]=[
 
 export const postersDDay24: Event[]=[
     {
-        src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712766455/Posters/fb_nqg4qj.png",
+        src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712856248/Posters/Opening_mftgic.png",
         description:"Opening Ceremony",
         url:"https://www.instagram.com/aubg_olympics/"
     },

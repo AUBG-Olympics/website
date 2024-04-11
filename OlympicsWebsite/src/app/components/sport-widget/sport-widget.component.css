@@ -102,7 +102,7 @@
 
 .responsive-image{
     width: 100%!important;
-    height: 80%!important;
+    
 }
 
 .action-buttons{
@@ -176,17 +176,12 @@
         width: 100%;
     }
 
-    .responsive-image{
-        width: 180%!important;
-    }
+    
 }
 
 
 @media screen and (max-width: 374px) {
-    .responsive-image{
-        width: 160%!important;
-        height: 60%!important;
-    }
+    
 }
 
 @media screen and (min-width: 752px) and (max-width: 1296px) {

@@ -110,7 +110,7 @@ export const olympicsMembers = [
         Head: false,
         Position: 'Member of',
         ImageURL: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709490026/MemberPhotos/ZoyaPetrova_ixotuu.png',
-        Department: 'Sponsorship & Logistics',
+        Department: 'Sponsorship, Logistics',
         FacebookURL: 'https://www.facebook.com/profile.php?id=100070016661091',
         InstragramURL: 'https://www.instagram.com/kalua.zoya?igsh=MWo2d2t3Ynp0aDFxcg%3D%3D&utm_source=qr',
         LinkedInURL: 'https://www.linkedin.com/in/zoya-petrova-1b2301213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
