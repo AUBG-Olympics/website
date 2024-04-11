@@ -126,9 +126,6 @@ body {
     .text{
         font-size: 1.35rem;
     }
-    .tab {
-        height: 60vw !important;
-    }
 }
 
 @media screen and (max-width: 440px) {
@@ -153,13 +150,4 @@ body {
         grid-column: 1 / -1;
         grid-row: 2; 
     }
-}
-
-@media screen and (max-width: 632px){
-    .tab {
-        height: 50vh !important;
-        margin-bottom: 2%;
-        gap: 5%;
-    }
-
 }

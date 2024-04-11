@@ -33,8 +33,8 @@ export const zeusSponsors: Image[] = [
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429385/SponsorsLogos/Refan_1_fyvboh.png"
     },
     {
-        description: "Livity is chips made with a special technology for popping rice. Feel good snacking with Livity, whenever and wherever you want, without any regrets. 😊",
-        descriptionBg: "Livity е чипс от „попнат“ ориз – специална технология на изпукване на ориза. Хапвай и се чувствай добре с Livity, когато и където пожелаеш, без угризения. 😊",
+        description: "Livity is chips made with a special technology for popping rice. Feel good snacking with Livity, whenever and wherever you want, without any regrets.",
+        descriptionBg: "Livity е чипс от „попнат“ ориз – специална технология на изпукване на ориза. Хапвай и се чувствай добре с Livity, когато и където пожелаеш, без угризения.",
         pageUrl: "https://www.facebook.com/LivityWorld/",
         src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1712429416/SponsorsLogos/Livity_green_hhgdjn.png"
     },
