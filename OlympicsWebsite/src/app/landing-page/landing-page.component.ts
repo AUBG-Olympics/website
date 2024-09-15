@@ -19,7 +19,7 @@ export class LandingPageComponent {
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
   @ViewChild(CarouselComponent) car?: CarouselComponent;
   photos: Image[] = [];
-  endDate = new Date('April 21, 2024 09:00:00').getTime();
+  endDate = new Date('April 19, 2025 09:00:00').getTime();
   public innerWidth: any;
   public innerHeight:any;
   desktop: boolean = true;
