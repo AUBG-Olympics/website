@@ -4,12 +4,13 @@ import { CarouselComponent } from '../carousel/carousel.component';
 import { ThemeService } from '../services/theme.service';
 import { Image } from '../models/image';
 import { horizontalPhotos, verticalPhotos } from './landing-page-photos';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
   providers: [ThemeService],
-  imports: [NavigationComponent, CarouselComponent],
+  imports: [NavigationComponent, CarouselComponent,CommonModule],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
   encapsulation: ViewEncapsulation.None,
@@ -22,6 +23,7 @@ export class LandingPageComponent {
   endDate = new Date('April 19, 2025 09:00:00').getTime();
   public innerWidth: any;
   public innerHeight:any;
+  public timer:boolean = true;
   desktop: boolean = true;
 
   @HostListener('window:resize', ['$event'])
@@ -71,11 +73,13 @@ export class LandingPageComponent {
   getDays() {
     let now = new Date().getTime();
     let remaining = this.endDate - now;
+    if(remaining<0)this.timer=false;
     return String(Math.floor(remaining / (1000 * 3600 * 24))).padStart(2, "0");
+
   }
 
   getHours() {
-    let endDate = new Date('April 20, 2024 00:00:00').getTime();
+    let endDate = new Date('April 21, 2024 00:00:00').getTime();
     let now = new Date().getTime();
     let remaining = this.endDate - now;
     return String(Math.floor(remaining % (1000 * 3600 * 24) / (1000 * 3600))).padStart(2, "0");

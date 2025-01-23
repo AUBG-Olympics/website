@@ -114,7 +114,7 @@ a:active {
 .signup {
     background-color: var(--primaryColor);
     width: 20vw;
-    height: 5vw;
+    height: 7vw;
     border-radius: 13px;
     text-align: center;
     display: flex;
@@ -166,7 +166,7 @@ h1 {
 
     .signup {
         width: 30vw;
-        height: 10vw;
+        height: 13vw;
     }
 
     .signup a{
