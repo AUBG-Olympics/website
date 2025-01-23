@@ -72,8 +72,6 @@ export class LandingPageComponent {
 
   getDays() {
     let now = new Date().getTime();
-    console.log(this.endDate);
-    console.log(now);
     let remaining = this.endDate - now;
     if(remaining<0)this.timer=false;
     return String(Math.floor(remaining / (1000 * 3600 * 24))).padStart(2, "0");
