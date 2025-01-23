@@ -20,7 +20,7 @@ export class LandingPageComponent {
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
   @ViewChild(CarouselComponent) car?: CarouselComponent;
   photos: Image[] = [];
-  endDate = new Date('April 19, 2025 09:00:00').getTime();
+  endDate = new Date('April 13, 2025 09:00:00').getTime();
   public innerWidth: any;
   public innerHeight:any;
   public timer:boolean = true;
@@ -72,6 +72,8 @@ export class LandingPageComponent {
 
   getDays() {
     let now = new Date().getTime();
+    console.log(this.endDate);
+    console.log(now);
     let remaining = this.endDate - now;
     if(remaining<0)this.timer=false;
     return String(Math.floor(remaining / (1000 * 3600 * 24))).padStart(2, "0");

@@ -57,7 +57,7 @@ a.nostyle:visited {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.5s ease;
-    font-size: 8.5vh;
+    font-size: 8vh;
     color: var(--textColor);
     text-align: center;
 }

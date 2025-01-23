@@ -2,33 +2,101 @@ import {Image} from '../models/image'
 
 export const horizontalPhotos:Image[]=[
     {
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709549488/CarouselPhotos/425254669_810443281114084_2978768452918607329_n_u264qs.jpg",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1737657510/CarouselPhotos/DSC_0388_oeh2ti.jpg",
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549486/CarouselPhotos/428502175_810441871114225_4628992403078249897_n_gdnfw4.jpg',
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657507/CarouselPhotos/DSC_0003_fdjh1o.jpg',
         description: '', descriptionBg:'', pageUrl:'', priority: 1
       },
       {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549485/CarouselPhotos/428491293_813861317438947_2298361993371666072_n_plgzly.jpg',
-        description: '', descriptionBg:'', pageUrl:''
-      },
-      // {
-      //   src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549483/CarouselPhotos/428508360_813861040772308_3018515262349797840_n_zy7lto.jpg',
-      //   description: '', descriptionBg:'', pageUrl:''
-      // },
-      {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549483/CarouselPhotos/431059903_813858507439228_6567449649785649249_n_aqmv9j.jpg',
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657507/CarouselPhotos/DSC_0067_tvp5s8.jpg',
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1709549478/CarouselPhotos/424972233_810440724447673_9217132925745596085_n_k7zae2.jpg',
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657503/CarouselPhotos/DSC_0109_rcpei9.jpg',
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1712516584/CarouselPhotos/DSC_0156_an9anp.jpg',
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657502/CarouselPhotos/DSC_0399_ojegqb.jpg',
         description: '', descriptionBg:'', pageUrl:''
-      }
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657499/CarouselPhotos/DSC_0015_nzzux7.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657489/CarouselPhotos/DSC_0350_tqod5b.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657463/CarouselPhotos/DSC_0004_fvv6zd.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657463/CarouselPhotos/PenevPhotography_28_of_38_t6csrq.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657461/CarouselPhotos/DSC_0271_s9vvg1.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657461/CarouselPhotos/DSC_0254_wwspih.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657445/CarouselPhotos/DSC_0074_sgmk7z.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657432/CarouselPhotos/DSC_0037_hkujdo.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657431/CarouselPhotos/DSC_0295_nbwia5.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657430/CarouselPhotos/DSC_0132_y8cbmi.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657429/CarouselPhotos/DSC_0201_pwllq6.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657420/CarouselPhotos/IMG_9700_fjtelw.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657408/CarouselPhotos/PenevPhotography_36_of_38_nlcd6z.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657399/CarouselPhotos/IMG_3339_qzqkcb.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657389/CarouselPhotos/IMG_7372_odp7q3.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657388/CarouselPhotos/IMG_1357_l6uebx.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657387/CarouselPhotos/IMG_7380_um2nu2.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657387/CarouselPhotos/IMG_7412_l2zai6.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
+      {
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657387/CarouselPhotos/IMG_7417_roteml.jpg',
+        description: '', descriptionBg:'', pageUrl:''
+      },
 ]
 
 export const verticalPhotos:Image[]=[
@@ -41,11 +109,11 @@ export const verticalPhotos:Image[]=[
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1712518755/CarouselPhotos/image00001_fjjmzy.jpg',
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657961/CarouselPhotos/rip_je7et0.jpg',
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1712518749/CarouselPhotos/image00003_yaeosy.jpg',
+        src: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1737657963/CarouselPhotos/rip_2_uqde5v.jpg',
         description: '', descriptionBg:'', pageUrl:''
       },
       {
