@@ -1,20 +1,20 @@
 import { Event } from '../models/event'
 
-export const postersFall23: Event[] = [
+export const postersFall24: Event[] = [
     {
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709552789/Posters/6_dcrtyu.png",
-        description: "Volleyball",
-        url:"https://www.instagram.com/reel/Czt8eZmofmq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    },
-    {
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709552798/Posters/5_pfmw04.png",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1737657142/Posters/CW_Poster_Sponsors.zip_-_1_mz87je.png",
         description: "Table tennis",
-        url:"https://www.instagram.com/reel/Cz_10NAIcE5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        url:"https://www.instagram.com/reel/DCJrW0YoqMT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709552789/Posters/4_xcbyqw.png",
-        description: "Skills challenge",
-        url:"https://www.instagram.com/reel/C0Rx4F1JDtb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1737657143/Posters/CW_Poster_Sponsors.zip_-_3_rivr9p.png",
+        description: "Giant Beer Pong",
+        url:"https://www.instagram.com/reel/DCZjqZNN7Uf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },
+    {
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1737657143/Posters/CW_Poster_Sponsors.zip_-_5_vepzrf.png",
+        description: "Volleyball",
+        url:"https://www.instagram.com/reel/DCrYArboSm6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     }
 ]
 
@@ -40,11 +40,11 @@ export const postersDDay24: Event[]=[
     {
         src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712856248/Posters/Opening_mftgic.png",
         description:"Opening Ceremony",
-        url:"https://www.instagram.com/aubg_olympics/"
+        url:"https://www.instagram.com/reel/C6Rr6zPIV65/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712440231/Posters/20_days_till_dday_1_vkavmt.png",
         description:"D-DAY",
-        url:"https://www.instagram.com/aubg_olympics/"
+        url:"https://www.instagram.com/reel/DACPUyxIj0o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     }
 ]

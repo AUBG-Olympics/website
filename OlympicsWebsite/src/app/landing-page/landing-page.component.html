@@ -1,7 +1,7 @@
 <app-navigation></app-navigation>
 <div class="images">
     <app-carousel class="carousel" [numOfslides]='1' [photos]='photos' [arrows]="false"></app-carousel>
-    <div class="everything" *NgIf="timer; else other">
+    <div class="everything" *ngIf="timer; else other">
         <h1 class="header" >D-DAY IN:</h1>
         <div class="timer">
             <div class="days">
@@ -21,17 +21,22 @@
                 <h1 class="time-indicator">SECONDS</h1>
             </div>
         </div>
-        <div class="signup-wrapper">
+        <!-- <div class="signup-wrapper">
             <div href="dday/sports" class="signup">
                 <a href="dday/sports">SIGN-UP</a>
             </div>
-        </div>
+        </div> -->
     </div>
-    <div class="everything" #other >
+    <ng-template #other>
+    <div class="everything"  >
         <div class="signup-wrapper">
-            <div target="blank" href="https://forms.gle/9ZrCnbM4ijRnd2vH8" class="signup">
-                <a target="blank" href="https://forms.gle/9ZrCnbM4ijRnd2vH8">Challenging Wednesday</a>
+            <div target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe3WmP8GyRHU6JqQ1k4SaG7Jr9zFSOVS3E4900K41uhd9qZEg/viewform" class="signup">    
+                <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe3WmP8GyRHU6JqQ1k4SaG7Jr9zFSOVS3E4900K41uhd9qZEg/viewform">Challenging Wednesday</a>
+            </div>
+            <div target="blank" href="https://docs.google.com/document/d/17xNRXBXC0YyJDCAv7e8ghEIhZwEiHmJzn51soncgN78/edit?usp=sharing" class="rules">    
+                <a target="blank" href="https://docs.google.com/document/d/17xNRXBXC0YyJDCAv7e8ghEIhZwEiHmJzn51soncgN78/edit?usp=sharing">Rules</a>
             </div>
         </div>
     </div>
+</ng-template>
 </div>

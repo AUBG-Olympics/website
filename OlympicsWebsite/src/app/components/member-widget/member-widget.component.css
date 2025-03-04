@@ -10,9 +10,10 @@
 
 .member-container {
     position: relative;
-    width: 160px;
+    width: 240px;
     height: 240px;
-    border-radius: 15px;
+    border-radius: 50px;
+    background-color: none;
     display: flex;
     overflow: hidden;
     cursor: pointer;
@@ -30,6 +31,7 @@
    height: auto;
    border-radius: inherit;
    display: block;
+   object-fit: cover;
    /* filter: drop-shadow(6px 2px 2px var(--backgroundColor)); */
    /* filter: drop-shadow(0 8px 10px blue); */
 }

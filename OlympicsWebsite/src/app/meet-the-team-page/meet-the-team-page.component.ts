@@ -44,8 +44,10 @@ export class MeetTheTeamPageComponent{
       this.title = "Olympics Board";
     } else if(department === 'Challenge'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
-      let Ilian=this.membersOlympics.splice(1,1);
-      this.membersOlympics.splice(0,0,Ilian[0]);
+      let Stefan=this.membersOlympics.splice(1,1);
+      this.membersOlympics.splice(0,0,Stefan[0]);
+      let David=this.membersOlympics.splice(2,1);
+      this.membersOlympics.splice(0,0,David[0]);
       this.title = "Olympics Challenge Organizers";
     } else if(department === 'Logistics'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
@@ -62,11 +64,11 @@ export class MeetTheTeamPageComponent{
     } else if(department === 'PR'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
       this.title = "Olympics PR";
-      let Didi=this.membersOlympics.splice(1,1);
-      this.membersOlympics.splice(0,0,Didi[0]);
     } else if(department === 'Video'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
       this.title = "Olympics Video";
+      let Dzhan=this.membersOlympics.splice(1,1);
+      this.membersOlympics.splice(0,0,Dzhan[0]);
     } else if(department === 'BBQ'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
       this.title = "Olympics BBQ";

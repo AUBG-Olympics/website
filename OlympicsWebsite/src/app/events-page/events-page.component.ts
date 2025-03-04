@@ -4,7 +4,7 @@ import { Location, CommonModule } from '@angular/common';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { ThemeService } from '../services/theme.service';
 import {Event} from '../models/event'
-import { postersDDay24, postersFall23, postersSpring24 } from './posters';
+import { postersDDay24, postersFall24, postersSpring24 } from './posters';
 
 @Component({
   selector: 'app-events-page',
@@ -37,8 +37,8 @@ export class EventsPageComponent {
   }
   getEventInfo(){
     if(this.event=='fall'){
-      this.title='FALL 23'
-      this.pictures=postersFall23;
+      this.title='FALL 24'
+      this.pictures=postersFall24;
     }else if(this.event=='spring'){
       this.title='SPRING 24'
       this.pictures=postersSpring24;

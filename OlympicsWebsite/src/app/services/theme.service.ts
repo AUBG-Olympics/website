@@ -38,12 +38,12 @@ export class ThemeService {
   public setDDayTheme(){
     const root = document.documentElement.style;
 
-    root.setProperty('--textColor', '#1a1a1a');
-    root.setProperty('--backgroundColor', '#fdb927');
-    root.setProperty('--primaryColor', '#552583');
+    root.setProperty('--textColor', '#005F6A');
+    root.setProperty('--backgroundColor', '#94D7CD');
+    root.setProperty('--primaryColor', '#005F6A');
     root.setProperty('--secondaryColor', '#686868');
     root.setProperty('--accentColor', '#c7c0eb');
-    root.setProperty('--shadowColor', '#552583');
+    root.setProperty('--shadowColor', '#1a1a1a');
 
     sessionStorage.removeItem("theme");
     sessionStorage.setItem('theme', 'dday');
