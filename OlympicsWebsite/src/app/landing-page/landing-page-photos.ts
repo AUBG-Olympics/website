@@ -2,11 +2,11 @@ import {Image} from '../models/image'
 
 export const horizontalPhotos:Image[]=[
     {
-        src: "/CarouselPhotos/DSC_0388_oeh2ti.jpg",
+        src:  '/CarouselPhotos/DSC_0003_fdjh1o.jpg',
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: '/CarouselPhotos/DSC_0003_fdjh1o.jpg',
+        src:"/CarouselPhotos/DSC_0388_oeh2ti.jpg",
         description: '', descriptionBg:'', pageUrl:'', priority: 1
       },
       {

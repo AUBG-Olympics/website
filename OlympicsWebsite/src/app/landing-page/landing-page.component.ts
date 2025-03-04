@@ -23,7 +23,7 @@ export class LandingPageComponent {
   endDate = new Date('April 13, 2025 09:00:00').getTime();
   public innerWidth: any;
   public innerHeight:any;
-  public timer:boolean = true;
+  public timer:boolean = false;
   desktop: boolean = true;
 
   @HostListener('window:resize', ['$event'])
