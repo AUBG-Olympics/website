@@ -59,7 +59,9 @@ export class MemberWidgetComponent {
   }
 
   public getImage(): string{
-    return this.member.ImageURL;
+    const themePreference = sessionStorage.getItem('theme');
+    if(themePreference=='dday')return this.member.DDayImageUrl;
+    else return this.member.ImageURL;
   }
 
   private buildPosition(){

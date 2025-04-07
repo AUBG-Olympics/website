@@ -1,0 +1,119 @@
+.page-container {
+    background-color: var(--backgroundColor) !important;
+    padding: 40px 20px;
+    min-height: 80vh;
+    color: white;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.section-title {
+    font-size: 48px;
+    color: var(--textColor);
+    text-shadow: -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        4px 4px 1px var(--shadowColor);
+    margin-bottom: 40px;
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.content-block {
+    max-width: 500px;
+    text-align: center;
+}
+
+.content-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 20vw;
+}
+
+.content-text {
+    color: var(--textColor);
+    font-size: 16px;
+    text-shadow: -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        2px 2px 1px var(--shadowColor);
+    line-height: 1.4;
+}
+
+.button-group {
+    margin-top: 40px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.action-button {
+    background-color: var(--primaryColor);
+    border: none;
+    padding: 18px 40px;
+    /* Increased padding */
+    font-size: 2.5vw;
+    /* Increased font size */
+    color: var(--textColor);
+    text-shadow:
+        -1px -1px 0 var(--shadowColor),
+        -1px 1px 0 var(--shadowColor),
+        1px -1px 0 var(--shadowColor),
+        1px 1px 0 var(--shadowColor),
+        3px 3px 1px var(--shadowColor);
+
+    font-family: inherit;
+    border-radius: 12px;
+    /* Slightly more rounded */
+    margin: 0 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: transform 0.2s ease;
+}
+
+
+.action-button:hover {
+    transform: scale(1.05);
+}
+
+.center-block {
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-top: 2px solid var(--textColor);
+    border-bottom: 2px solid var(--textColor);
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 1196px) {
+    .content-image{
+        width: 100%;
+        height: auto;
+    }
+    .action-button {
+        font-size: 6vw;
+        padding: 18px 10px;
+    }
+}

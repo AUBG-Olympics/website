@@ -17,6 +17,7 @@ export class NavigationComponent {
   eventsStatus = false;
   public themeStatus: boolean = false;
   private currentPage: any = '';
+  public letters:string='../../assets/new-letters.PNG';
 
   constructor(private themeService: ThemeService, private currRoute: ActivatedRoute, private router: Router) { }
 
@@ -40,6 +41,21 @@ export class NavigationComponent {
       }
     }
   }
+  ngOnInit() {
+    const themePreference = sessionStorage.getItem('theme');
+    if(!themePreference)this.letters='../../assets/new-letters.PNG';
+    
+    switch (themePreference) {
+      case 'traditional':
+        this.letters='../../assets/OLYPICS__2_-removebg-preview.png'
+        break;
+      case 'reversed':
+        this.letters='../../assets/OLYPICS__2_-removebg-preview.png'
+        break;
+      case 'dday':
+        this.letters='../../assets/new-letters.PNG'
+    }
+  }
 
   changeMenu(menu: string) {
     if (menu == "dday") {
@@ -55,11 +71,14 @@ export class NavigationComponent {
     switch (theme) {
       case 'traditional':
         this.themeService.setLightTheme();
+        this.letters='../../assets/OLYPICS__2_-removebg-preview.png'
         break;
       case 'reversed':
         this.themeService.setDarkTheme();
+        this.letters='../../assets/OLYPICS__2_-removebg-preview.png'
         break;
       case 'dday':
+        this.letters='../../assets/new-letters.PNG'
         this.themeService.setDDayTheme();
     }
 

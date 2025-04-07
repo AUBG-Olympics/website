@@ -14,20 +14,46 @@ import { ThemeService } from '../services/theme.service';
   templateUrl: './sports-page.component.html',
   styleUrl: './sports-page.component.css',
 })
-export class SportsPageComponent implements OnInit{
+export class SportsPageComponent implements OnInit {
   public sportsData: Sport[] = ddaySports;
 
-  constructor(private themeService: ThemeService){}
+  constructor(private themeService: ThemeService) { }
+  encodedDdaySports:any;
+ 
 
-  ngOnInit(){
+  ngOnInit() {
+     // List of keys to encode (excluding RulesUrl)
+  const urlKeysToEncode = [
+    'SignUpUrl',
+    'SignUpUrlMen',
+    'SignUpUrlWomen',
+    'SignUpUrlMenAboveEighty',
+    'SignUpUrlMenBelowEighty',
+    'SignUrlDoubles'
+  ];
+
+  // Create a deep copy and encode only the specified URLs
+    this.encodedDdaySports = ddaySports.map(sport => {
+    const encodedSport = { ...sport };
+
+    urlKeysToEncode.forEach(key => {
+      if ((encodedSport as any)[key]) {
+        (encodedSport as any)[key] = encodeURIComponent((encodedSport as any)[key]);
+      }
+    });
+
+    return encodedSport;
+  });
     const themePreference = sessionStorage.getItem('theme');
 
-    if(themePreference === 'dark'){
+    if (themePreference === 'dark') {
       this.themeService.setDarkTheme();
-    } else if(themePreference === 'light'){
+    } else if (themePreference === 'light') {
       this.themeService.setLightTheme();
-    } else if(themePreference === 'dday'){
+    } else {
       this.themeService.setDDayTheme();
     }
+
+
   }
 }

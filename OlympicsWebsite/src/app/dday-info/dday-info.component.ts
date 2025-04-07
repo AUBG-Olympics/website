@@ -1,18 +1,16 @@
-import { CommonModule } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
-  selector: 'app-schedule-page',
+  selector: 'app-dday-info',
   standalone: true,
-  imports: [CommonModule, NavigationComponent],
-  templateUrl: './schedule-page.component.html',
-  styleUrl: './schedule-page.component.css',
-  encapsulation: ViewEncapsulation.None
+  imports: [NavigationComponent],
+  templateUrl: './dday-info.component.html',
+  styleUrl: './dday-info.component.css'
 })
-export class SchedulePageComponent {
-  constructor(private themeService: ThemeService){}
+export class DdayInfoComponent {
+  constructor(private themeService: ThemeService){}  
   ngOnInit(){
     const themePreference = sessionStorage.getItem('theme');
 
@@ -20,7 +18,7 @@ export class SchedulePageComponent {
       this.themeService.setDarkTheme();
     } else if(themePreference === 'light'){
       this.themeService.setLightTheme();
-    } else{
+    } else {
       this.themeService.setDDayTheme();
     }
   }

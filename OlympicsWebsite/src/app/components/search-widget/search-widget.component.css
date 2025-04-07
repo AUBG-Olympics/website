@@ -42,7 +42,10 @@
 }
 
 .option-title{
-    font-family:  "Luckiest Guy", cursive;
+    font-family:  "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
     color: var(--textColor);
     font-size: 1em;
     display: flex;

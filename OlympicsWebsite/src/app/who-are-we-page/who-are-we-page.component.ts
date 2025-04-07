@@ -28,7 +28,7 @@ export class WhoAreWePageComponent {
       this.themeService.setDarkTheme();
     } else if(themePreference === 'light'){
       this.themeService.setLightTheme();
-    } else if(themePreference === 'dday'){
+    } else{
       this.themeService.setDDayTheme();
     }
   }

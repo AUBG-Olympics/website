@@ -3,7 +3,10 @@
     display: flex;
     justify-content: space-evenly;
     height: 10vh;
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
     width: 100%;
 }
 
@@ -267,5 +270,8 @@ a{
     .back-arrow{
         width: 8vw !important;
         height: 8vw !important;
+    }
+    .mobile-title {
+        width: 100%;
     }
 }

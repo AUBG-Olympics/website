@@ -28,7 +28,7 @@ export class MeetTheTeamPageComponent{
       this.themeService.setDarkTheme();
     } else if(themePreference === 'light'){
       this.themeService.setLightTheme();
-    } else if(themePreference === 'dday'){
+    } else{
       this.themeService.setDDayTheme();
     }
   }
@@ -44,9 +44,9 @@ export class MeetTheTeamPageComponent{
       this.title = "Olympics Board";
     } else if(department === 'Challenge'){
       this.membersOlympics = this.members.filter((member) => member.Department.includes(department));
-      let Stefan=this.membersOlympics.splice(1,1);
+      let Stefan=this.membersOlympics.splice(3,1);
       this.membersOlympics.splice(0,0,Stefan[0]);
-      let David=this.membersOlympics.splice(2,1);
+      let David=this.membersOlympics.splice(3,1);
       this.membersOlympics.splice(0,0,David[0]);
       this.title = "Olympics Challenge Organizers";
     } else if(department === 'Logistics'){

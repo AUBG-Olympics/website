@@ -1,16 +1,16 @@
 export const whoWeAreTabsEn = [
     {
-        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711839024/WhoWeAre/AlumniCrew.jpg',
+        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1743407440/WhoWeAre/PenevPhotography_2_of_38_1_-min_ijr0si.jpg',
         Content: 'AUBG Olympics is the biggest sports club at the American University in Bulgaria. Our crew organizes many sports challenges and workshops to promote an active lifestyle among young people.',
         Position: 'left'
     },
     {
-        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711838667/WhoWeAre/OpeningCeremony.jpg',
+        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1743407508/WhoWeAre/PenevPhotography_28_of_38_vxx0j1.jpg',
         Content: 'We organize the largest student sports Olympiad in the country, where current and former students, professors, staff, and local residents compete in 18 different sports throughout the weekend.',
         Position: 'right'
     }, 
     {
-        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711843010/WhoWeAre/FireCeremony.png',
+        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1743405382/WhoWeAre/PenevPhotography_36_of_38_j7wnfw.jpg',
         Content: 'To mark the start of the Olympiad, we are also organizing a spectacular opening ceremony where we light the Olympic fire just like the Greek gods of Olympus.',
         Position: 'left'
     }
@@ -18,17 +18,17 @@ export const whoWeAreTabsEn = [
 
 export const whoWeAreTabsBg = [
     {
-        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711839024/WhoWeAre/AlumniCrew.jpg',
+        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1743407440/WhoWeAre/PenevPhotography_2_of_38_1_-min_ijr0si.jpg',
         Content: 'АУБ Олимпикс е най-големият спортен клуб в Американския университет в България. Екипът ни подготвя редица спортни състезания и семинари, за да популяризира активния начин на живот сред младите.',
         Position: 'left'
     },
     {
-        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711838667/WhoWeAre/OpeningCeremony.jpg',
+        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1743407508/WhoWeAre/PenevPhotography_28_of_38_vxx0j1.jpg',
         Content: 'Ние организираме най-голямата студентска спортна олимпиада в страната, в която участват настоящи и бивши студенти, професори, персонал и местни жители и се състезават в 18 различни спортни дисциплини в рамките на един уикенд.',
         Position: 'right'
     }, 
     {
-        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1711843010/WhoWeAre/FireCeremony.png',
+        ImageUrl: 'https://res.cloudinary.com/dq9gemegi/image/upload/v1743405382/WhoWeAre/PenevPhotography_36_of_38_j7wnfw.jpg',
         Content: ' 211 от тях  стават медалисти и биват наградени от специален гост - виден български спортист. За да отбележим началото на олимпиадата, организираме и зрелищна церемония по откриването, на която запалваме олимпийския огън по подобие на гръцките богове на Олимп.',
         Position: 'left'
     }

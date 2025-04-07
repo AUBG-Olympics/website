@@ -4,7 +4,7 @@ import { Location, CommonModule } from '@angular/common';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { ThemeService } from '../services/theme.service';
 import {Event} from '../models/event'
-import { postersDDay24, postersFall24, postersSpring24 } from './posters';
+import { postersDDay25, postersFall24, postersSpring25 } from './posters';
 
 @Component({
   selector: 'app-events-page',
@@ -31,7 +31,7 @@ export class EventsPageComponent {
       this.themeService.setDarkTheme();
     } else if(themePreference === 'light'){
       this.themeService.setLightTheme();
-    } else if(themePreference === 'dday'){
+    } else {
       this.themeService.setDDayTheme();
     }
   }
@@ -40,12 +40,12 @@ export class EventsPageComponent {
       this.title='FALL 24'
       this.pictures=postersFall24;
     }else if(this.event=='spring'){
-      this.title='SPRING 24'
-      this.pictures=postersSpring24;
+      this.title='SPRING 25'
+      this.pictures=postersSpring25;
     }
     else if(this.event=='dday'){
-      this.title='D-DAY 24';
-      this.pictures=postersDDay24;
+      this.title='D-DAY 25';
+      this.pictures=postersDDay25;
     }
   }
 }

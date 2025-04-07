@@ -45,11 +45,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5%;
+    height: auto;
 }
 
 .img-wrapper{
     width: 85%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +65,15 @@ body {
 
 .responsive {
     width: 100%;
-    height: auto;
+    height: 18vw;
 }
 
 .text{
     font-size: 1.05em;
     text-align: justify;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .dday-wrapper{
@@ -120,11 +124,19 @@ body {
         display: grid;
         grid-template-columns: 1fr;
     }
+    .img-wrapper{
+        width: 80%;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 632px) and (max-width: 1196px) {
     .text{
         font-size: 1.35rem;
+    }
+    .responsive {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -150,4 +162,16 @@ body {
         grid-column: 1 / -1;
         grid-row: 2; 
     }
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 441px)
+{
+.responsive {
+    width: 100%;
+    height: auto;
+}
 }

@@ -4,11 +4,15 @@
 }
 
 .heading {
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
     color: var(--textColor);
     font-size: 40px;
     position: relative;
     left: 50%;
+    text-align: center;
     padding: 10px 40px;
     width: fit-content;
     transform: translate(-50%, 0);
@@ -118,7 +122,10 @@ a:active {
     /* prevent selection of the text */
     border-radius: 10px 10px 0 0;
     font-size: 15px;
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
     text-align: justify;
     box-sizing: border-box;
     padding: 0 10px;

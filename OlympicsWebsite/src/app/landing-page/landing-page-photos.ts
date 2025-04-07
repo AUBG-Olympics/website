@@ -100,14 +100,6 @@ export const horizontalPhotos:Image[]=[
 ]
 
 export const verticalPhotos:Image[]=[
-    {
-        src: "/CarouselPhotos/image00002_yslltf.jpg",
-        description: '', descriptionBg:'', pageUrl:''
-      },
-      {
-        src: '/CarouselPhotos/425330340_810440677781011_8222974675471495997_n_ynkadr.jpg',
-        description: '', descriptionBg:'', pageUrl:''
-      },
       {
         src: '/CarouselPhotos/rip_je7et0.jpg',
         description: '', descriptionBg:'', pageUrl:''
@@ -121,7 +113,7 @@ export const verticalPhotos:Image[]=[
         description: '', descriptionBg:'', pageUrl:''
       },
       {
-        src: '/CarouselPhotos/image00005_ps8kzt.jpg',
+        src: '/CarouselPhotos/425330340_810440677781011_8222974675471495997_n_ynkadr.jpg',
         description: '', descriptionBg:'', pageUrl:''
       }
 ]

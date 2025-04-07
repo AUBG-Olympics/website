@@ -6,7 +6,10 @@
     transform: translateX(-50%);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 /* Dropdown button */

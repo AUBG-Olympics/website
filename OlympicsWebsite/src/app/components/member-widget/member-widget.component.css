@@ -1,23 +1,27 @@
 .wrapper{
-    width: 100%;
+    width: 80%;
     height: 100%;
     position:relative;
     display: flex;
     justify-content: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
     border-radius: 15px;
 }
 
 .member-container {
     position: relative;
-    width: 240px;
-    height: 240px;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Keeps it square */
     border-radius: 50px;
-    background-color: none;
     display: flex;
     overflow: hidden;
     cursor: pointer;
+    flex-shrink: 0;
 }
+
 
 .img-wrapper {
     height: 100%;

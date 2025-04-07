@@ -1,0 +1,68 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--backgroundColor);
+  flex-direction: row;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 1rem;
+}
+
+.image-grid img {
+  object-fit: contain;
+  border-radius: 8px;
+  width: 100px;
+  height: 76px;
+}
+
+.form-wrapper {
+  max-width: 640px;
+  flex-shrink: 0;
+}
+
+.form-wrapper iframe {
+  width: 640px;
+  height: 800px;
+  border: none;
+}
+
+/* 📱 Responsive: stack vertically and make iframe full width */
+@media (max-width: 1600px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(3, 80px);
+  }
+
+  .form-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .form-wrapper iframe {
+    width: 100%;
+    height: 100vh;
+  }
+  .image-grid {
+    grid-template-columns: repeat(10, 100px);
+  }
+}
+@media (max-width: 1150px){
+  .image-grid {
+    grid-template-columns: repeat(6, 100px);
+  }
+}
+@media (max-width: 750px){
+  .image-grid {
+    grid-template-columns: repeat(3, 100px);
+  }
+}

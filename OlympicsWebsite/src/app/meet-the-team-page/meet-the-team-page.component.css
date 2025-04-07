@@ -12,7 +12,10 @@ body{
 
 .header{
     color: var(--textColor);
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
     /* text-shadow: 10px 10px 1px black; */
     font-size: 3.5rem;
     text-align: center;
@@ -25,10 +28,11 @@ body{
 
 .member-wrapper{
     width: 85%;
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 40px;
-    background-color: var(--textColor);
+    background-color: var(--meetTheTeamColor);
     border-radius: 15px;
     box-shadow: 0 8px 16px grey;
     margin-bottom: 3%;
@@ -39,9 +43,6 @@ body{
 .container{
     margin-top: 30px;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media (width <= 820px) {

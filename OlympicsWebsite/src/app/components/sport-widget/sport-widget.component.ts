@@ -1,4 +1,5 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { RotateDirective } from '../../directives/rotate.directive';
 import { CommonModule } from '@angular/common';
 import { Sport } from '../../models/sport';
@@ -6,7 +7,7 @@ import { Sport } from '../../models/sport';
 @Component({
   selector: 'app-sport-widget',
   standalone: true,
-  imports: [RotateDirective, CommonModule],
+  imports: [RotateDirective, CommonModule,RouterModule],
   templateUrl: './sport-widget.component.html',
   styleUrl: './sport-widget.component.css',
   encapsulation: ViewEncapsulation.None,

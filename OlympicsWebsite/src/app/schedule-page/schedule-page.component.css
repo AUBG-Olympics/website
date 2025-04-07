@@ -3,7 +3,10 @@ body{
 }
 
 .header{
-    font-family:  "Luckiest Guy", cursive;
+    font-family:  "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
     justify-content: center;
     align-content: center;
     display: flex;
@@ -23,7 +26,10 @@ body{
 .subheader{
     color: var(--textColor);
     font-size: 6vh;
-    font-family:  "Luckiest Guy", cursive;
+    font-family:  "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
     text-align: center;
     justify-content: center;
     align-items: center;

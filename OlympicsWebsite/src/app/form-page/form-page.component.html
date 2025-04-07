@@ -1,0 +1,31 @@
+<app-navigation></app-navigation>
+<div class="form-container">
+    <!-- Left image grid -->
+     <div class="image-grid">
+    <div *ngFor="let image of leftPhotos" >
+        <img class="img" [ngSrc]="image.src" width="100" height="76" priority/>
+    </div>
+</div>
+  
+    <!-- Embedded Google Form -->
+    <div class="form-wrapper">
+      <iframe
+        [src]="safeUrl"
+        width="640"
+        height="800"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        loading="lazy"
+      >
+        Loading…
+      </iframe>
+    </div>
+  
+    <!-- Right image grid -->
+     <div class="image-grid">
+    <div *ngFor="let image of rightPhotos" >
+        <img class="img" [ngSrc]="image.src" width="100" height="76" priority/>
+    </div>
+</div>
+  </div>

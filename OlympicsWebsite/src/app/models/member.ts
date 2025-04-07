@@ -5,6 +5,7 @@ export class Member {
     Head?: boolean;
     Position: string = '';
     ImageURL: string = '';
+    DDayImageUrl:string='';
     Department: string = '';
     FacebookURL?: string | null = null;
     InstragramURL?: string | null = null;

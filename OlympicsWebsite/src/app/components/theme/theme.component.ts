@@ -32,9 +32,9 @@ export class ThemeComponent {
     }
   }
 
-  public selectedTraditional: boolean = true;
+  public selectedTraditional: boolean = false;
   public selectedReversed: boolean = false;
-  public selectedDDay: boolean = false;
+  public selectedDDay: boolean = true;
 
   isDropdownOpen = false;
 

@@ -1,8 +1,8 @@
-import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation,HostListener } from '@angular/core';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { ThemeService } from '../services/theme.service';
-import { zeusSponsors, poseidonSponsors, artemisSponsors, athenaSponsors, hephaestusSponsors } from './sponsorsInfo';
+import { zeusSponsors, poseidonSponsors, artemisSponsors, athenaSponsors, hephaestusSponsors, financialSponsors } from './sponsorsInfo';
 import { Image } from '../models/image';
 import { CommonModule, IMAGE_LOADER, ImageLoader, NgOptimizedImage, provideCloudinaryLoader } from '@angular/common';
 
@@ -41,6 +41,7 @@ export function customCloudinaryLoader(): any {
 export class SponsorsPageComponent {
   @ViewChild(CarouselComponent) car?: CarouselComponent;
   @ViewChild(NavigationComponent) nav?: NavigationComponent;
+  photosFinancial:Image[]=[];
   photosTier2: Image[] = [];
   photosTier1: Image[] = [];
   photosTier3: Image[] = [];
@@ -48,8 +49,17 @@ export class SponsorsPageComponent {
   photosTier5: Image[] = [];
   numOfSlides: number = 1;
   innerWidth: any;
-
+  isMobile: boolean = false;
   constructor(private themeService: ThemeService) { }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.checkScreenSize();
+  }
+
+  checkScreenSize() {
+    this.isMobile = window.innerWidth <= 768;
+  }
 
   ngOnInit() {
 
@@ -60,7 +70,7 @@ export class SponsorsPageComponent {
       this.themeService.setDarkTheme();
     } else if (themePreference === 'light') {
       this.themeService.setLightTheme();
-    } else if (themePreference === 'dday') {
+    } else {
       this.themeService.setDDayTheme();
     }
   }
@@ -74,6 +84,7 @@ export class SponsorsPageComponent {
   }
 
   getPhotos() {
+    this.photosFinancial=financialSponsors
     this.photosTier1 = zeusSponsors;
     this.photosTier2 = poseidonSponsors;
     this.photosTier3 = athenaSponsors;

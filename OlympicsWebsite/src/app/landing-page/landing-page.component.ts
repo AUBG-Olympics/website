@@ -23,7 +23,7 @@ export class LandingPageComponent {
   endDate = new Date('April 13, 2025 09:00:00').getTime();
   public innerWidth: any;
   public innerHeight:any;
-  public timer:boolean = false;
+  public timer:boolean = true;
   desktop: boolean = true;
 
   @HostListener('window:resize', ['$event'])
@@ -59,10 +59,12 @@ export class LandingPageComponent {
       this.themeService.setDarkTheme();
     } else if (themePreference === 'light') {
       this.themeService.setLightTheme();
-    } else if (themePreference === 'dday') {
+    } else  {
       this.themeService.setDDayTheme();
     }
   }
+
+
 
   ngAfterViewInit() {
     setInterval(() => {

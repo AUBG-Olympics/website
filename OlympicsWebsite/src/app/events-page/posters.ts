@@ -18,33 +18,33 @@ export const postersFall24: Event[] = [
     }
 ]
 
-export const postersSpring24: Event[]=[
+export const postersSpring25: Event[]=[
     {
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1709552784/Posters/3_elgpd8.png",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1743406525/Posters/CW_Poster_Sponsors_-_7_hy0qpc.png",
         description: "Basketball",
-        url:"https://www.instagram.com/reel/C3sGdteIEWa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        url:"https://www.instagram.com/reel/DGTnLz9I4SN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1711995382/Posters/5_ghq9ks.png",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1743406551/Posters/CW_Poster_Sponsors_-_9_yrvp46.png",
         description: "Dodgeball",
-        url:"https://www.instagram.com/reel/C3-o461IPc1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        url:"https://www.instagram.com/reel/DGoOYQLICzb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
-        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1711995383/Posters/4_tsqih8.png",
+        src: "https://res.cloudinary.com/dq9gemegi/image/upload/v1743406516/Posters/CW_Poster_Sponsors_-_11_coldzv.png",
         description: "Spikeball",
-        url:"https://www.instagram.com/reel/C4Qq-1lI_kv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        url:"https://www.instagram.com/reel/DG3vLcuI_ut/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==  "
     }
 ]
 
-export const postersDDay24: Event[]=[
+export const postersDDay25: Event[]=[
     {
-        src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712856248/Posters/Opening_mftgic.png",
+        src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1743406677/Posters/Opening_Ceremony_Poster_-_3_qyqiic.png",
         description:"Opening Ceremony",
-        url:"https://www.instagram.com/reel/C6Rr6zPIV65/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        url:""
     },
     {
-        src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1712440231/Posters/20_days_till_dday_1_vkavmt.png",
+        src:"https://res.cloudinary.com/dq9gemegi/image/upload/v1743406686/Posters/DDAY_th6pcx.png",
         description:"D-DAY",
-        url:"https://www.instagram.com/reel/DACPUyxIj0o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        url:""
     }
 ]
